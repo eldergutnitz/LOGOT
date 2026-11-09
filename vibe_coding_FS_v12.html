@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Framework de Gobernanza: Vibe Coding @ FS</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+  :root{--seat-red:#E30613;--seat-dark:#1a1a2e;--seat-accent:#ff4757;--seat-green:#2ed573;--seat-yellow:#ffa502;--seat-blue:#3742fa;--text-primary:#fff;--text-secondary:#b0b0c8;--card-bg:rgba(255,255,255,0.06);--card-border:rgba(255,255,255,0.1)}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:var(--seat-dark);color:var(--text-primary);overflow:hidden;height:100vh;width:100vw;-webkit-font-smoothing:antialiased}
+  .progress-bar{position:fixed;top:0;left:0;height:4px;background:linear-gradient(90deg,var(--seat-red),var(--seat-accent));transition:width .5s cubic-bezier(.4,0,.2,1);z-index:1000;box-shadow:0 0 10px var(--seat-red)}
+  .slide-counter{position:fixed;bottom:24px;right:32px;font-size:14px;font-weight:500;color:var(--text-secondary);z-index:1000;letter-spacing:1px}
+  .slide-counter span{color:var(--seat-red);font-weight:700}
+  .nav-arrows{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);display:flex;gap:12px;z-index:1000}
+  .nav-btn{width:44px;height:44px;border-radius:50%;border:1px solid var(--card-border);background:var(--card-bg);color:var(--text-secondary);cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:18px;transition:all .3s;backdrop-filter:blur(10px)}
+  .nav-btn:hover{background:var(--seat-red);color:#fff;border-color:var(--seat-red)}
+  .slides-container{width:100vw;height:100vh;position:relative}
+  .slide{position:absolute;top:0;left:0;width:100%;height:100%;display:flex;flex-direction:column;justify-content:center;padding:60px 80px;opacity:0;visibility:hidden;transition:opacity .6s cubic-bezier(.4,0,.2,1),transform .6s cubic-bezier(.4,0,.2,1);transform:translateY(20px)}
+  .slide.active{opacity:1;visibility:visible;transform:translateY(0)}
+  .slide-title{text-align:center;justify-content:center;align-items:center;background:linear-gradient(135deg,#1a1a2e 0%,#16213e 50%,#1a1a2e 100%)}
+  .slide-title::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:radial-gradient(circle at 50% 50%,rgba(227,6,19,.08) 0%,transparent 60%);animation:pulse 8s infinite}
+  @keyframes pulse{0%,100%{transform:scale(1);opacity:.5}50%{transform:scale(1.1);opacity:1}}
+  .badge{display:inline-block;padding:6px 16px;border-radius:20px;font-size:12px;font-weight:600;letter-spacing:2px;text-transform:uppercase;margin-bottom:20px}
+  .badge-red{background:rgba(227,6,19,.15);color:var(--seat-red);border:1px solid rgba(227,6,19,.3)}
+  h1{font-size:52px;font-weight:800;line-height:1.15;margin-bottom:16px;position:relative}
+  h1 .highlight{color:var(--seat-red)}
+  h2{font-size:36px;font-weight:700;margin-bottom:32px;line-height:1.2}
+  h2 .highlight{color:var(--seat-red)}
+  .subtitle{font-size:20px;color:var(--text-secondary);font-weight:400;margin-bottom:32px;line-height:1.5}
+  .meta{font-size:14px;color:var(--text-secondary);font-weight:400;line-height:2}
+  .meta strong{color:var(--text-primary);font-weight:600}
+  .cards-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:8px}
+  .cards-grid-3{grid-template-columns:repeat(3,1fr)}
+  .cards-grid-2{grid-template-columns:repeat(2,1fr)}
+  .card{background:var(--card-bg);border:1px solid var(--card-border);border-radius:16px;padding:24px;transition:all .3s;backdrop-filter:blur(5px)}
+  .card:hover{border-color:rgba(255,255,255,.2);transform:translateY(-2px)}
+  .card-icon{font-size:28px;margin-bottom:12px}
+  .card-title{font-size:16px;font-weight:700;margin-bottom:8px}
+  .card-text{font-size:13px;color:var(--text-secondary);line-height:1.6}
+  .zone-green{border-left:4px solid var(--seat-green)}
+  .zone-yellow{border-left:4px solid var(--seat-yellow)}
+  .zone-red{border-left:4px solid var(--seat-red)}
+  .check-list{list-style:none;display:flex;flex-direction:column;gap:14px}
+  .check-list li{font-size:17px;line-height:1.5;padding-left:32px;position:relative;color:var(--text-secondary)}
+  .check-list li::before{content:'\2705';position:absolute;left:0;top:0}
+  .check-list li strong{color:var(--text-primary)}
+  .styled-table{width:100%;border-collapse:collapse;margin-top:8px;font-size:14px}
+  .styled-table th{background:rgba(227,6,19,.15);color:var(--seat-red);padding:12px 16px;text-align:left;font-weight:700;font-size:13px;text-transform:uppercase;letter-spacing:1px;border-bottom:2px solid rgba(227,6,19,.3)}
+  .styled-table td{padding:12px 16px;border-bottom:1px solid var(--card-border);color:var(--text-secondary)}
+  .styled-table td:first-child{color:var(--text-primary);font-weight:600}
+  .styled-table tr:hover td{background:rgba(255,255,255,.03)}
+  .flow-container{display:flex;align-items:center;gap:0;margin:24px 0;flex-wrap:wrap;justify-content:center}
+  .flow-step{display:flex;flex-direction:column;align-items:center;gap:6px;padding:16px 12px;background:var(--card-bg);border:1px solid var(--card-border);border-radius:12px;min-width:110px;text-align:center;transition:all .3s}
+  .flow-step:hover{border-color:var(--seat-red);transform:scale(1.05)}
+  .flow-step .step-icon{font-size:24px}
+  .flow-step .step-label{font-size:11px;font-weight:600;color:var(--text-primary)}
+  .flow-step .step-desc{font-size:10px;color:var(--text-secondary)}
+  .flow-arrow{font-size:20px;color:var(--seat-red);padding:0 4px}
+  .timeline{display:flex;flex-direction:column;gap:0;margin-top:16px}
+  .timeline-item{display:flex;align-items:flex-start;gap:20px;padding:14px 0;position:relative}
+  .timeline-item::before{content:'';position:absolute;left:57px;top:38px;width:2px;height:calc(100% - 24px);background:var(--card-border)}
+  .timeline-item:last-child::before{display:none}
+  .timeline-date{min-width:100px;font-size:12px;font-weight:700;color:var(--seat-red);text-align:right;padding-top:2px}
+  .timeline-dot{width:16px;height:16px;border-radius:50%;background:var(--seat-red);flex-shrink:0;margin-top:3px;box-shadow:0 0 10px rgba(227,6,19,.4)}
+  .timeline-dot.future{background:var(--card-border);box-shadow:none}
+  .timeline-content{flex:1}
+  .timeline-title{font-size:15px;font-weight:700;color:var(--text-primary);margin-bottom:2px}
+  .timeline-desc{font-size:13px;color:var(--text-secondary)}
+  .stats-row{display:flex;gap:20px;margin:20px 0}
+  .stat-card{flex:1;background:var(--card-bg);border:1px solid var(--card-border);border-radius:16px;padding:24px;text-align:center}
+  .stat-value{font-size:36px;font-weight:800;color:var(--seat-red)}
+  .stat-label{font-size:12px;color:var(--text-secondary);margin-top:4px;font-weight:500}
+  .two-cols{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-top:12px}
+  .risk-card{display:flex;gap:16px;align-items:flex-start;padding:16px;background:var(--card-bg);border:1px solid var(--card-border);border-radius:12px;margin-bottom:12px}
+  .risk-icon{font-size:28px;flex-shrink:0}
+  .risk-title{font-weight:700;font-size:15px;margin-bottom:4px}
+  .risk-desc{font-size:13px;color:var(--text-secondary);line-height:1.5}
+  .section-label{font-size:11px;text-transform:uppercase;letter-spacing:3px;color:var(--seat-red);font-weight:700;margin-bottom:8px}
+  .cta-card{background:linear-gradient(135deg,rgba(227,6,19,.15),rgba(227,6,19,.05));border:1px solid rgba(227,6,19,.3);border-radius:16px;padding:28px 32px;margin-top:20px}
+  .cta-title{font-size:20px;font-weight:700;margin-bottom:8px}
+  .cta-text{font-size:14px;color:var(--text-secondary);line-height:1.6}
+  .slide-content{max-height:calc(100vh - 120px);overflow-y:auto;padding-right:12px}
+  .slide-content::-webkit-scrollbar{width:4px}
+  .slide-content::-webkit-scrollbar-track{background:transparent}
+  .slide-content::-webkit-scrollbar-thumb{background:var(--card-border);border-radius:4px}
+  @keyframes fadeInUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+  .slide.active .badge{animation:fadeInUp .5s .1s both}
+  .slide.active h1,.slide.active h2{animation:fadeInUp .5s .2s both}
+  .slide.active .subtitle{animation:fadeInUp .5s .3s both}
+  .slide.active .card,.slide.active .risk-card,.slide.active .timeline-item{animation:fadeInUp .5s .3s both}
+  .small{font-size:12px;color:var(--text-secondary)}
+  .watermark{position:fixed;top:16px;right:32px;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,.15);font-weight:700;z-index:1000}
+  .kpi-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:16px}
+  .kpi-card{background:var(--card-bg);border:1px solid var(--card-border);border-radius:12px;padding:20px 16px;text-align:center}
+  .kpi-icon{font-size:32px;margin-bottom:8px}
+  .kpi-name{font-size:13px;font-weight:700;color:var(--text-primary);margin-bottom:4px}
+  .kpi-desc{font-size:11px;color:var(--text-secondary);line-height:1.4}
+  .tag{display:inline-block;padding:3px 10px;border-radius:6px;font-size:11px;font-weight:600}
+  .tag-green{background:rgba(46,213,115,.15);color:var(--seat-green)}
+  .tag-yellow{background:rgba(255,165,2,.15);color:var(--seat-yellow)}
+  .tag-red{background:rgba(227,6,19,.15);color:var(--seat-red)}
+  .tag-blue{background:rgba(55,66,250,.15);color:#5352ed}
+  .pp-container{display:flex;justify-content:center;align-items:flex-start;gap:60px;margin:16px 0}
+  .pp-column{display:flex;flex-direction:column;align-items:center;width:280px}
+  .pp-header{font-size:14px;font-weight:800;text-transform:uppercase;letter-spacing:1px;text-align:center;margin-bottom:16px;line-height:1.4}
+  .pp-cylinder{width:220px;display:flex;flex-direction:column;gap:8px;height:420px}
+  .pp-block{display:flex;align-items:center;justify-content:center;border-radius:16px;font-size:36px;font-weight:800;color:#333}
+  .pp-prompt{background:#FFD93D;flex:1}
+  .pp-pray{background:#FF9BB3;flex:1}
+  .pp-stack{width:280px;display:flex;flex-direction:column;gap:2px;height:420px}
+  .pp-bar{flex:1;display:flex;align-items:center;justify-content:center;border-radius:6px;font-size:11px;font-weight:700;color:#333;min-height:0}
+  .lang-pill{display:inline-block;padding:4px 10px;border-radius:8px;font-size:12px;font-weight:600;margin:3px;background:rgba(255,255,255,0.08);color:var(--text-primary);border:1px solid rgba(255,255,255,0.15);font-family:'SF Mono',Monaco,Consolas,monospace}
+</style>
+</head>
+<body>
+
+<div class="progress-bar" id="progressBar"></div>
+<div class="watermark">INTERNAL</div>
+<div class="slide-counter"><span id="currentSlide">1</span> / <span id="totalSlides">13</span></div>
+<div class="nav-arrows">
+  <button class="nav-btn" onclick="prevSlide()">&#8592;</button>
+  <button class="nav-btn" onclick="nextSlide()">&#8594;</button>
+</div>
+<div class="slides-container" id="slides">
+
+  <div class="slide slide-title active" data-slide="1">
+    <span class="badge badge-red">COMIT&#201; EJECUTIVO FS &#183; JUNIO 2026</span>
+    <h1>Framework de Gobernanza:<br><span class="highlight">Vibe Coding</span> @ FS</h1>
+    <p class="subtitle">Propuesta de marco corporativo para el desarrollo<br>de software asistido por IA en SEAT S.A.</p>
+    <div class="meta">
+      <strong>Antonio Betran Martinez</strong> &#183; SEA/FS-I &#183; IT Platforms &amp; Digital Workplace<br>
+      3 de junio de 2026
+    </div>
+  </div>
+
+  <div class="slide" data-slide="2">
+    <div class="slide-content">
+      <p class="section-label">Contexto</p>
+      <h2>&#191;Por qu&#233; necesitamos<br>actuar <span class="highlight">ahora</span>?</h2>
+      <div class="stats-row">
+        <div class="stat-card"><div class="stat-value">41%</div><div class="stat-label">del c&#243;digo ya es<br>generado por IA</div></div>
+        <div class="stat-card"><div class="stat-value">2.74&#215;</div><div class="stat-label">m&#225;s vulnerabilidades en<br>c&#243;digo generado por IA</div></div>
+        <div class="stat-card"><div class="stat-value">63%</div><div class="stat-label">de usuarios de vibe coding<br>NO son developers</div></div>
+        <div class="stat-card"><div class="stat-value">90%</div><div class="stat-label">de empresas a&#250;n sin<br>gobernanza IA adecuada</div></div>
+      </div>
+      <div class="cards-grid cards-grid-2" style="margin-top:20px;">
+        <div class="card"><div class="card-icon">&#9889;</div><div class="card-title">La oportunidad</div><div class="card-text">El vibe coding con gobernanza es un <strong>multiplicador de productividad</strong>. Reducciones del 30-60% en tiempos de ciclo de desarrollo.</div></div>
+        <div class="card"><div class="card-icon">&#128680;</div><div class="card-title">El riesgo</div><div class="card-text">Sin gobernanza es una <strong>f&#225;brica de deuda t&#233;cnica</strong> con vulnerabilidades incluidas. El Shadow AI ya existe.</div></div>
+      </div>
+      <p class="small" style="margin-top:16px;text-align:center;">Fuentes: State of Vibe Coding 2026 &#183; CodeRabbit 2025 &#183; Deloitte Access Economics &#183; Gartner</p>
+    </div>
+  </div>
+
+  <div class="slide" data-slide="3">
+    <div class="slide-content" style="display:flex;flex-direction:column;align-items:center;">
+      <p class="section-label">La realidad</p>
+      <h2 style="text-align:center;">Lo que negocio <span class="highlight">cree que es</span> vs. lo que realmente hay detr&#225;s</h2>
+      <p class="subtitle" style="font-size:15px;margin-bottom:16px;text-align:center;max-width:800px;">Las &#225;reas de negocio ven el vibe coding como algo m&#225;gico. Nuestro trabajo es que funcione de verdad &#8212; y para eso necesitamos un framework.</p>
+      <div class="pp-container">
+        <div class="pp-column">
+          <div class="pp-header" style="color:var(--text-secondary);">LO QUE NEGOCIO<br><span style="color:var(--seat-red);">CREE QUE ES</span></div>
+          <div class="pp-cylinder">
+            <div class="pp-block pp-prompt">Prompt</div>
+            <div class="pp-block pp-pray">Pray</div>
+          </div>
+        </div>
+        <div class="pp-column">
+          <div class="pp-header" style="color:var(--text-secondary);">LO QUE<br><span style="color:var(--seat-green);">REALMENTE ES</span></div>
+          <div class="pp-stack">
+            <div class="pp-bar" style="background:#B8E6B8;">Specification First</div>
+            <div class="pp-bar" style="background:#FFB3BA;">Plan &amp; Task Breakdown</div>
+            <div class="pp-bar" style="background:#FFFFBA;">CLAUDE.md / AGENTS.md</div>
+            <div class="pp-bar" style="background:#BAE1FF;">Subagents &#183; Skills &#183; Hooks</div>
+            <div class="pp-bar" style="background:#E8BAFF;">Context Management</div>
+            <div class="pp-bar" style="background:#FFD9BA;">Retrieval Stack</div>
+            <div class="pp-bar" style="background:#B8E6B8;">Test-Driven Implementation</div>
+            <div class="pp-bar" style="background:#FFB3BA;">Verification Loops</div>
+            <div class="pp-bar" style="background:#FFFFBA;">Exit Criteria &amp; Gates</div>
+            <div class="pp-bar" style="background:#BAE1FF;">Sandboxing &amp; Isolation</div>
+            <div class="pp-bar" style="background:#E8BAFF;">Trajectory Review</div>
+            <div class="pp-bar" style="background:#FFD9BA;">Agentic CI/CD</div>
+            <div class="pp-bar" style="background:#B8E6B8;">Guardrails</div>
+            <div class="pp-bar" style="background:#FFB3BA;">Knowledge Hub &#183; Hub &amp; Spoke</div>
+            <div class="pp-bar" style="background:#FFFFBA;">Feedback &amp; Iteration Loop</div>
+          </div>
+        </div>
+      </div>
+      <div class="cta-card" style="max-width:800px;margin-top:12px;">
+        <div class="cta-title">&#128161; Por eso existe este framework</div>
+        <div class="cta-text">Para que el <strong>&#8220;Prompt &amp; Pray&#8221;</strong> se convierta en un <strong>proceso controlado, seguro y escalable</strong>.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide" data-slide="4">
+    <div class="slide-content">
+      <p class="section-label">Kick-off &#183; 2 junio 2026</p>
+      <h2>Lo que <span class="highlight">acordamos</span></h2>
+      <p class="subtitle" style="font-size:15px;margin-bottom:20px;">Reuni&#243;n de arranque con participaci&#243;n de Desarrollo, Seguridad, Infraestructura y Verticales.<br>Acta documentada en <em>Definici&#243;n Framework - Vibe Coding - FS.loop</em></p>
+      <ul class="check-list">
+        <li><strong>Crear un framework corporativo controlado</strong> de Vibe Coding, pilotando en FS y escalando a negocio</li>
+        <li><strong>Empezar con un MVP b&#225;sico</strong> &#8212; rapidez sobre perfecci&#243;n</li>
+        <li><strong>Definir un equipo promotor transversal</strong> &#8212; sin este equipo la iniciativa muere (consenso un&#225;nime)</li>
+        <li><strong>Basarse en capacidades existentes</strong> &#8212; Azure AI Foundry, procesos de IT Sec Risk, Pentest, OSS ya disponibles</li>
+        <li><strong>No restringir en exceso</strong> &#8212; equilibrio entre control y agilidad</li>
+        <li><strong>Cubrir el ciclo completo</strong> &#8212; desde Discovery hasta puesta en producci&#243;n</li>
+      </ul>
+      <div class="cta-card" style="margin-top:24px;">
+        <div class="cta-title">&#128161; Consenso clave</div>
+        <div class="cta-text">El principal reto <strong>no es tecnol&#243;gico, sino de gobernanza y velocidad de respuesta</strong>.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide" data-slide="5">
+    <div class="slide-content">
+      <p class="section-label">Modelo de gobierno</p>
+      <h2>&#127922; Del autoservicio al <span class="highlight">c&#243;digo experto</span></h2>
+      <p class="subtitle" style="font-size:15px;margin-bottom:24px;">Cada soluci&#243;n tiene un nivel de complejidad diferente. Este modelo define qu&#233; nivel de acompa&#241;amiento necesitas.</p>
+      <div class="cards-grid" style="grid-template-columns:1fr;">
+        <div class="card zone-green" style="padding:28px;">
+          <div style="display:flex;align-items:center;gap:16px;margin-bottom:12px;">
+            <span style="font-size:36px;">&#128994;</span>
+            <div><div class="card-title" style="font-size:20px;color:var(--seat-green);">Nivel 1 &#8212; Autoservicio &#128640;</div><span class="tag tag-green">Sin supervisi&#243;n previa &#8212; vuela libre</span></div>
+          </div>
+          <div class="card-text" style="font-size:14px;">Soluciones <strong>autocontenidas</strong>: sin autenticaci&#243;n, sin conexiones a APIs externas, sin bases de datos propias. La informaci&#243;n es autocontenida o utiliza datos p&#250;blicos disponibles dentro de <strong>O365</strong>.<br><br>&#128300; <strong>Ejemplos:</strong> dashboards con datos de O365, herramientas internas autocontenidas, mockups, prototipos, scripts locales, calculadoras, generadores de documentos.</div>
+        </div>
+        <div class="card zone-yellow" style="padding:28px;">
+          <div style="display:flex;align-items:center;gap:16px;margin-bottom:12px;">
+            <span style="font-size:36px;">&#128993;</span>
+            <div><div class="card-title" style="font-size:20px;color:var(--seat-yellow);">Nivel 2 &#8212; Desarrollo guiado &#128736;&#65039;</div><span class="tag tag-yellow">IT Security Risk + Pentest + IT Cost Review</span></div>
+          </div>
+          <div class="card-text" style="font-size:14px;">Soluciones que <strong>conectan con datos internos</strong>: APIs corporativas, bases de datos, Snowflake, sistemas internos. Requieren validaci&#243;n de arquitectura por parte de IT, IT Security Risk Assessment y Pentest.<br><br>&#9729;&#65039; <strong>Todo autodesarrollo que requiera subirse al cloud para su publicaci&#243;n debe pasar por supervisi&#243;n del equipo de IT</strong>, ya que la estructura de costes cloud es responsabilidad de IT.<br><br>&#128101; <strong>El rol de aseguramiento en este nivel lo realizar&#225;n los compa&#241;eros de IT de las verticales: FSK, FSE, FSP.</strong> Ellos validar&#225;n que las soluciones cumplen los est&#225;ndares antes de pasar a producci&#243;n.</div>
+        </div>
+        <div class="card zone-red" style="padding:28px;">
+          <div style="display:flex;align-items:center;gap:16px;margin-bottom:12px;">
+            <span style="font-size:36px;">&#128308;</span>
+            <div><div class="card-title" style="font-size:20px;color:var(--seat-red);">Nivel 3 &#8212; Territorio nuevo &#127759;</div><span class="tag tag-red">Requiere equipo experto + arquitectura dedicada</span></div>
+          </div>
+          <div class="card-text" style="font-size:14px;">Dos escenarios clave:<br><br>&#127760; <strong>Publicaci&#243;n a Internet:</strong> soluciones que necesitan ser accesibles desde fuera de la red corporativa.<br><br>&#127959;&#65039; <strong>Arquitecturas nuevas:</strong> soluciones que utilizan tecnolog&#237;as o patrones <strong>que no est&#225;n disponibles en el portal de autoservicios</strong> actual. Territorio genuinamente nuevo a nivel tecnol&#243;gico.<br><br>Aqu&#237; necesitas al equipo completo detr&#225;s: arquitectura dedicada, seguridad, infraestructura y compliance.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide" data-slide="6">
+    <div class="slide-content">
+      <p class="section-label">Organizaci&#243;n</p>
+      <h2>Equipo <span class="highlight">promotor</span></h2>
+      <p class="subtitle" style="font-size:15px;margin-bottom:20px;">Sin un equipo dedicado que dinamice, actualice y mantenga el framework, la iniciativa se muere. <em>(Consenso total del 02.06)</em></p>
+      <div class="cards-grid" style="grid-template-columns:repeat(4,1fr);">
+        <div class="card"><div class="card-icon">&#128295;</div><div class="card-title">Plataformas &amp; Desarrollo</div><div class="card-text"><strong>&#193;lvaro Regal&#243;n</strong> (FS-I)<br><br>Framework t&#233;cnico, guardrails, patterns, revisi&#243;n de PRs</div></div>
+        <div class="card"><div class="card-icon">&#128737;&#65039;</div><div class="card-title">Seguridad</div><div class="card-text"><strong>Henoc Marti</strong> (FS-X1)<br><strong>Sergio Arcos</strong> (FS-X1)<br><br>OWASP, pentest, secret management, compliance de c&#243;digo generado</div></div>
+        <div class="card"><div class="card-icon">&#127959;&#65039;</div><div class="card-title">Infraestructura</div><div class="card-text"><strong>David El&#237;as</strong><br><br>Azure Foundry, modelos, APIs, plataformas de despliegue</div></div>
+        <div class="card"><div class="card-icon">&#128203;</div><div class="card-title">Compliance</div><div class="card-text"><strong>Juan Carlos Pallas</strong> (FS-V2)<br><br>EU AI Act, TISAX, GDPR, clasificaci&#243;n de informaci&#243;n</div></div>
+      </div>
+      <div class="cards-grid" style="grid-template-columns:repeat(3,1fr);margin-top:16px;">
+        <div class="card"><div class="card-icon">&#127981;</div><div class="card-title">Verticales / Negocio</div><div class="card-text"><strong>Victor Palacios</strong><br><strong>Ramon Junquera</strong> (FS-E1)<br><strong>Ernesto Mucci</strong> (FS-K11)<br><br>Consumidores del framework, validaci&#243;n funcional, casos de uso</div></div>
+        <div class="card" style="border-color:rgba(227,6,19,.3);"><div class="card-icon">&#127919;</div><div class="card-title" style="color:var(--seat-red);">Coordinaci&#243;n General</div><div class="card-text"><strong>Antonio Betran Martinez</strong> (FS-I)<br><br>Coordinaci&#243;n general del framework, nexo con direcci&#243;n, seguimiento de tareas</div></div>
+        <div class="card"><div class="card-icon">&#128226;</div><div class="card-title">Comunicaci&#243;n, Formaci&#243;n y Portal</div><div class="card-text"><strong>Xavier Farre Lopez</strong> (FS-I1)<br><strong>Oscar Iglesias</strong> (equipo de Oscar Lopez, FS-I1)<br><br>Plan de comunicaci&#243;n, acciones formativas, portal, difusi&#243;n y onboarding</div></div>
+      </div>
+      <p class="small" style="margin-top:16px;">Funciones: revisi&#243;n de PRs &#183; actualizaci&#243;n de guardrails &#183; documentaci&#243;n &#183; formaci&#243;n &#183; medici&#243;n de valor</p>
+    </div>
+  </div>
+
+  <div class="slide" data-slide="7">
+    <div class="slide-content">
+      <p class="section-label">Stack tecnol&#243;gico</p>
+      <h2>Cat&#225;logo <span class="highlight">estandarizado</span></h2>
+      <p class="subtitle" style="font-size:15px;margin-bottom:20px;">Punto de partida basado en lo disponible en la organizaci&#243;n. Cat&#225;logo vivo que evoluciona con el equipo promotor.</p>
+      <table class="styled-table">
+        <thead><tr><th style="width:22%">Componente</th><th style="width:38%">Recomendaci&#243;n</th><th style="width:40%">Notas</th></tr></thead>
+        <tbody>
+          <tr><td>&#129302; Modelo IA</td><td><strong>Copilot 365 corporativo</strong></td><td>Ya disponible en la organizaci&#243;n. Integrado en Microsoft 365. Acceso inmediato para todos.</td></tr>
+          <tr><td>&#128187; IDE / Editor</td><td><strong>OpenCode</strong> como base; Codex, Windsurf como alternativas</td><td>Metodolog&#237;a built-in: research &#8594; implementation &#8594; validation &#8594; documentation.</td></tr>
+          <tr><td>&#128193; Repositorio</td><td><strong>GitHub</strong></td><td>Plataforma natural para c&#243;digo, PRs y colaboraci&#243;n. Ya disponible.</td></tr>
+          <tr><td>&#128268; MCPs</td><td><strong>Cat&#225;logo curado</strong> de conexiones</td><td>Cat&#225;logo de conexiones a diferentes sistemas core de la organizaci&#243;n.</td></tr>
+        </tbody>
+      </table>
+
+      <!-- LANGUAGES BY LEVEL -->
+      <h3 style="margin-top:24px;font-size:16px;color:var(--text-primary);">&#128292; Lenguajes y frameworks por nivel de profundidad</h3>
+      <p class="small" style="margin-bottom:12px;">Cat&#225;logo EAM vigente. Los lenguajes de Nivel 1 est&#225;n abiertos para que negocio pueda crear soluciones en autoservicio.</p>
+      
+      <div class="cards-grid cards-grid-3">
+        <div class="card zone-green">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
+            <span style="font-size:22px;">&#128994;</span>
+            <div class="card-title" style="font-size:14px;color:var(--seat-green);margin:0;">Nivel 1 &#8212; Frontend puro</div>
+          </div>
+          <span class="tag tag-green" style="margin-bottom:12px;">Autoservicio &#8212; negocio puede usar libremente</span><br><br>
+          <div>
+            <span class="lang-pill">HTML</span>
+            <span class="lang-pill">CSS</span>
+            <span class="lang-pill">JavaScript</span>
+            <span class="lang-pill">TypeScript</span>
+            <span class="lang-pill">React</span>
+          </div>
+          <p class="small" style="margin-top:12px;">Ejecuci&#243;n 100% en navegador. Sin servidor, sin backend, sin base de datos.</p>
+        </div>
+        <div class="card zone-yellow">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
+            <span style="font-size:22px;">&#128993;</span>
+            <div class="card-title" style="font-size:14px;color:var(--seat-yellow);margin:0;">Nivel 2 &#8212; Backend &amp; Apps</div>
+          </div>
+          <span class="tag tag-yellow" style="margin-bottom:12px;">Revisi&#243;n IT de verticales (FSK &#183; FSE &#183; FSP)</span><br><br>
+          <div>
+            <span class="lang-pill">Python</span>
+            <span class="lang-pill">Java</span>
+            <span class="lang-pill">Spring Boot</span>
+            <span class="lang-pill">Go</span>
+            <span class="lang-pill">Express</span>
+            <span class="lang-pill">NestJS</span>
+            <span class="lang-pill">Kotlin</span>
+            <span class="lang-pill">Swift</span>
+            <span class="lang-pill">SQL</span>
+            <span class="lang-pill">Streamlit</span>
+            <span class="lang-pill">Flutter</span>
+          </div>
+          <p class="small" style="margin-top:12px;">Requieren servidor, acceso a datos o despliegue. Supervisados por IT de cada vertical.</p>
+        </div>
+        <div class="card zone-red">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
+            <span style="font-size:22px;">&#128308;</span>
+            <div class="card-title" style="font-size:14px;color:var(--seat-red);margin:0;">Nivel 3 &#8212; Infraestructura</div>
+          </div>
+          <span class="tag tag-red" style="margin-bottom:12px;">Equipo experto + arquitectura dedicada</span><br><br>
+          <div>
+            <span class="lang-pill">Docker</span>
+          </div>
+          <p class="small" style="margin-top:12px;">Containerizaci&#243;n y despliegue. Gestionado exclusivamente por el equipo de infraestructura.</p>
+        </div>
+      </div>
+      <p class="small" style="margin-top:12px;text-align:center;">&#128260; <strong>Git</strong> es transversal a todos los niveles como herramienta de control de versiones.</p>
+
+      <div class="cta-card" style="margin-top:12px;">
+        <div class="cta-title">&#128161; Copilot 365 como punto de entrada + Azure AI Foundry para IT</div>
+        <div class="cta-text"><strong>Copilot 365 corporativo</strong> es la puerta de entrada para todas las &#225;reas. Para desarrollo avanzado de IT, se complementa con <strong>Azure AI Foundry</strong> (modelos del Grupo VW).</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide" data-slide="8">
+    <div class="slide-content">
+      <p class="section-label">Est&#225;ndares obligatorios</p>
+      <h2>Guardrails <span class="highlight">t&#233;cnicos</span></h2>
+      <p class="subtitle" style="font-size:15px;margin-bottom:20px;">&#34;No os preocup&#233;is por ponerle l&#237;mites: tiene que tenerlos todos.&#34; &#8212; Victor Palacios</p>
+      <div class="cards-grid cards-grid-3">
+        <div class="card"><div class="card-icon">&#128272;</div><div class="card-title">Seguridad</div><div class="card-text">OWASP compliance<br>Hardening obligatorio<br>Secret Management<br>SAST integrado en CI/CD<br>Clasificaci&#243;n de informaci&#243;n</div></div>
+        <div class="card"><div class="card-icon">&#128208;</div><div class="card-title">Architecture Decision Records</div><div class="card-text"><strong>Cr&#237;tico.</strong> Trazabilidad de decisiones: qu&#233; se modific&#243;, por qu&#233;, qu&#233; alternativas hab&#237;a.</div></div>
+        <div class="card"><div class="card-icon">&#129514;</div><div class="card-title">Tests unitarios</div><div class="card-text"><strong>Obligatorios.</strong> Que los genere la propia IA. Reduce ciclos de iteraci&#243;n y consumo de tokens.</div></div>
+        <div class="card"><div class="card-icon">&#128065;&#65039;</div><div class="card-title">Observabilidad</div><div class="card-text">Logs, trazas, monitorizaci&#243;n en producci&#243;n. Alertas proactivas.</div></div>
+        <div class="card"><div class="card-icon">&#128100;</div><div class="card-title">Code review humano</div><div class="card-text"><strong>Toda PR requiere revisi&#243;n humana</strong> antes de merge.</div></div>
+        <div class="card"><div class="card-icon">&#127991;&#65039;</div><div class="card-title">Ownership obligatorio</div><div class="card-text">Toda app debe tener un <strong>propietario responsable</strong> de mantenimiento y decomisi&#243;n.</div></div>
+      </div>
+      <p class="small" style="margin-top:16px;">Procesos existentes: IT Security Risk Assessment &#183; Pentest &#183; OSS Compliance &#183; LeanIX. Integrarlos, no reinventarlos.</p>
+    </div>
+  </div>
+
+  <div class="slide" data-slide="9">
+    <div class="slide-content">
+      <p class="section-label">Proceso</p>
+      <h2>Framework <span class="highlight">end-to-end</span></h2>
+      <p class="subtitle" style="font-size:15px;margin-bottom:12px;">&#34;El framework tiene que ir desde el discovery hasta la puesta en productivo.&#34; &#8212; Ernesto Mucci</p>
+      <div class="flow-container">
+        <div class="flow-step"><div class="step-icon">&#128269;</div><div class="step-label">Discovery</div><div class="step-desc">Reuni&#243;n negocio<br>IA genera mockups</div></div>
+        <div class="flow-arrow">&#8594;</div>
+        <div class="flow-step"><div class="step-icon">&#128203;</div><div class="step-label">PRD / Funcional</div><div class="step-desc">Definici&#243;n funcional<br>KPIs y datos</div></div>
+        <div class="flow-arrow">&#8594;</div>
+        <div class="flow-step"><div class="step-icon">&#128208;</div><div class="step-label">Arquitectura</div><div class="step-desc">T&#233;cnico valida<br>ADRs, trade-offs</div></div>
+        <div class="flow-arrow">&#8594;</div>
+        <div class="flow-step"><div class="step-icon">&#9881;&#65039;</div><div class="step-label">Desarrollo</div><div class="step-desc">Agente programa<br>Supervisor revisa</div></div>
+        <div class="flow-arrow">&#8594;</div>
+        <div class="flow-step"><div class="step-icon">&#129514;</div><div class="step-label">Testing</div><div class="step-desc">Unit tests + QA<br>Quality gates</div></div>
+        <div class="flow-arrow">&#8594;</div>
+        <div class="flow-step"><div class="step-icon">&#128737;&#65039;</div><div class="step-label">Security</div><div class="step-desc">IT Sec Risk<br>Pentest + OSS</div></div>
+        <div class="flow-arrow">&#8594;</div>
+        <div class="flow-step"><div class="step-icon">&#128640;</div><div class="step-label">Deploy</div><div class="step-desc">CI/CD<br>Observabilidad</div></div>
+        <div class="flow-arrow">&#8594;</div>
+        <div class="flow-step"><div class="step-icon">&#128202;</div><div class="step-label">Operaci&#243;n</div><div class="step-desc">Monitorizaci&#243;n<br>Owner asignado</div></div>
+      </div>
+      <div class="two-cols" style="margin-top:16px;">
+        <div class="card"><div class="card-icon">&#129489;&#8205;&#128188;</div><div class="card-title">Rol del &#225;rea de negocio</div><div class="card-text">Participa en <strong>Discovery</strong>: describe necesidades en lenguaje natural, la IA genera mockups.</div></div>
+        <div class="card"><div class="card-icon">&#128104;&#8205;&#128187;</div><div class="card-title">Rol de IT</div><div class="card-text">Valida <strong>arquitectura y decisiones t&#233;cnicas</strong>. Supervisa c&#243;digo, garantiza guardrails. El humano pasa de autor a <strong>director</strong>.</div></div>
+      </div>
+      <div class="cta-card" style="margin-top:16px;">
+        <div class="cta-title">&#128230; Analog&#237;a con Power Platform</div>
+        <div class="cta-text">Misma filosof&#237;a que Power Platform: otra plataforma de desarrollo con su estructura de gobierno. <strong>Mismo enfoque, nuevo paradigma.</strong></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide" data-slide="10">
+    <div class="slide-content">
+      <p class="section-label">M&#233;tricas</p>
+      <h2>&#191;C&#243;mo medimos el <span class="highlight">&#233;xito</span>?</h2>
+      <p class="subtitle" style="font-size:15px;margin-bottom:20px;">Lo que no se mide no se puede gestionar.</p>
+      <div class="kpi-grid">
+        <div class="kpi-card"><div class="kpi-icon">&#9201;&#65039;</div><div class="kpi-name">Lead Time</div><div class="kpi-desc">Tiempo de entrega antes vs. despu&#233;s</div></div>
+        <div class="kpi-card"><div class="kpi-icon">&#128241;</div><div class="kpi-name">Apps desplegadas</div><div class="kpi-desc">N&#186; de apps en producci&#243;n con el framework</div></div>
+        <div class="kpi-card"><div class="kpi-icon">&#128737;&#65039;</div><div class="kpi-name">Incidencias Sec.</div><div class="kpi-desc">Vulnerabilidades vibe-coded vs. tradicional</div></div>
+        <div class="kpi-card"><div class="kpi-icon">&#128200;</div><div class="kpi-name">Adopci&#243;n</div><div class="kpi-desc">% de developers y &#225;reas usando framework</div></div>
+        <div class="kpi-card"><div class="kpi-icon">&#128176;</div><div class="kpi-name">Coste / App</div><div class="kpi-desc">Tokens, infra y mantenimiento por app</div></div>
+      </div>
+      <div class="two-cols" style="margin-top:24px;">
+        <div class="card"><div class="card-title">&#128202; Benchmarks del sector (2026)</div><div class="card-text" style="font-size:14px;">&#8226; Reducci&#243;n <strong>30-60%</strong> en tiempos de ciclo<br>&#8226; <strong>84%</strong> de developers ya usan herramientas IA<br>&#8226; ROI positivo desde el primer trimestre con gobernanza</div></div>
+        <div class="card"><div class="card-title">&#127919; Objetivo MVP (3 meses)</div><div class="card-text" style="font-size:14px;">&#8226; M&#237;n. <strong>3 aplicaciones</strong> piloto desplegadas<br>&#8226; <strong>0 incidencias de seguridad</strong> graves<br>&#8226; <strong>100% de FS</strong> informado<br>&#8226; Proceso documentado y replicable</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide" data-slide="11">
+    <div class="slide-content">
+      <p class="section-label">Gesti&#243;n de riesgos</p>
+      <h2>Riesgos <span class="highlight">cr&#237;ticos</span></h2>
+      <div class="two-cols">
+        <div>
+          <div class="risk-card"><div class="risk-icon">&#128123;</div><div><div class="risk-title">Shadow AI <span class="tag tag-red">M&#225;x. riesgo</span></div><div class="risk-desc">La gente ya construye soluciones fuera de IT. 380.000 apps vibe-coded expuestas p&#250;blicamente.</div></div></div>
+          <div class="risk-card"><div class="risk-icon">&#129504;</div><div><div class="risk-title">Deuda de comprensi&#243;n <span class="tag tag-yellow">Alto</span></div><div class="risk-desc">C&#243;digo que nadie entiende 6 meses despu&#233;s. ADRs y code review humano mitigan.</div></div></div>
+          <div class="risk-card"><div class="risk-icon">&#128275;</div><div><div class="risk-title">Vulnerabilidades <span class="tag tag-red">Alto</span></div><div class="risk-desc">C&#243;digo IA tiene 2.74&#215; m&#225;s vulnerabilidades. SAST + pentest imprescindibles.</div></div></div>
+        </div>
+        <div>
+          <div class="risk-card"><div class="risk-icon">&#128184;</div><div><div class="risk-title">Escalada de costes <span class="tag tag-yellow">Medio</span></div><div class="risk-desc">Riesgo de cambio de modelo de precios. Evaluar modelos locales como alternativa.</div></div></div>
+          <div class="risk-card"><div class="risk-icon">&#127760;</div><div><div class="risk-title">Fragmentaci&#243;n tecnol&#243;gica <span class="tag tag-yellow">Medio</span></div><div class="risk-desc">Cada uno con su modelo, IDE y lenguaje. El cat&#225;logo estandarizado mitiga esto.</div></div></div>
+          <div class="risk-card"><div class="risk-icon">&#128220;</div><div><div class="risk-title">Compliance regulatorio <span class="tag tag-blue">En progreso</span></div><div class="risk-desc">EU AI Act, TISAX, GDPR. Grupo VW trabaja en AI Allowlist y AI Usage &amp; Control Policy.</div></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide" data-slide="12">
+    <div class="slide-content">
+      <p class="section-label">Plan de acci&#243;n</p>
+      <h2>Roadmap: <span class="highlight">MVP first</span></h2>
+      <p class="subtitle" style="font-size:15px;margin-bottom:16px;">No intentar el &#34;full equip&#34;: empezar con un MVP funcional, iterar y escalar.</p>
+      <div class="timeline">
+        <div class="timeline-item"><div class="timeline-date">Sem. 1-2<br><span style="color:var(--text-secondary);font-size:10px;">Jun 2-13</span></div><div class="timeline-dot"></div><div class="timeline-content"><div class="timeline-title">Formalizar equipo promotor</div><div class="timeline-desc">Hablar con gerentes, asignar personas. Cubrir gaps.</div></div></div>
+        <div class="timeline-item"><div class="timeline-date">Sem. 2-3<br><span style="color:var(--text-secondary);font-size:10px;">Jun 9-20</span></div><div class="timeline-dot"></div><div class="timeline-content"><div class="timeline-title">Definir flujo end-to-end a alto nivel</div><div class="timeline-desc">Ciclo Discovery &#8594; Producci&#243;n. Inputs/outputs por fase.</div></div></div>
+        <div class="timeline-item"><div class="timeline-date">Sem. 3-4<br><span style="color:var(--text-secondary);font-size:10px;">Jun 16-27</span></div><div class="timeline-dot future"></div><div class="timeline-content"><div class="timeline-title">Publicar cat&#225;logo m&#237;nimo</div><div class="timeline-desc">IDE + modelos + lenguajes aprobados + primeros guardrails.</div></div></div>
+        <div class="timeline-item"><div class="timeline-date">Sem. 4-5<br><span style="color:var(--text-secondary);font-size:10px;">Jun 23-Jul 4</span></div><div class="timeline-dot future"></div><div class="timeline-content"><div class="timeline-title">Aplicar quality gates existentes</div><div class="timeline-desc">IT Sec Risk Assessment, Pentest, OSS compliance al flujo.</div></div></div>
+        <div class="timeline-item"><div class="timeline-date">Mes 2-3<br><span style="color:var(--text-secondary);font-size:10px;">Jul - Ago</span></div><div class="timeline-dot future"></div><div class="timeline-content"><div class="timeline-title">&#129514; Piloto en FS</div><div class="timeline-desc">3-5 proyectos piloto. Medir, iterar, ajustar guardrails.</div></div></div>
+        <div class="timeline-item"><div class="timeline-date">Mes 3+<br><span style="color:var(--text-secondary);font-size:10px;">Sep &#8594;</span></div><div class="timeline-dot future"></div><div class="timeline-content"><div class="timeline-title">&#128640; Escalar a &#225;reas de negocio</div><div class="timeline-desc">Abrir plataforma a negocio. Formaci&#243;n y onboarding.</div></div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide" data-slide="13">
+    <div class="slide-content" style="text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center;">
+      <p class="section-label">Petici&#243;n a direcci&#243;n</p>
+      <h2 style="font-size:40px;">Lo que <span class="highlight">necesitamos</span></h2>
+      <div class="cards-grid cards-grid-3" style="margin-top:32px;max-width:960px;">
+        <div class="card" style="text-align:left;"><div class="card-icon">&#9989;</div><div class="card-title">Aprobaci&#243;n</div><div class="card-text">Visto bueno para constituir el equipo promotor y definir el MVP del framework.</div></div>
+        <div class="card" style="text-align:left;"><div class="card-icon">&#128101;</div><div class="card-title">Dedicaci&#243;n</div><div class="card-text">Que los gerentes liberen tiempo parcial de las personas identificadas.</div></div>
+        <div class="card" style="text-align:left;"><div class="card-icon">&#9889;</div><div class="card-title">Velocidad</div><div class="card-text">Autorizaci&#243;n para actuar r&#225;pido. Cada semana sin alternativa oficial es una semana m&#225;s de Shadow AI.</div></div>
+      </div>
+      <div class="cta-card" style="margin-top:32px;max-width:960px;text-align:left;">
+        <div class="cta-title">&#128197; Pr&#243;xima sesi&#243;n: 9 de junio de 2026</div>
+        <div class="cta-text">
+          <strong>Definici&#243;n Framework - Vibe Coding - FS &#8212; 2&#170; iteraci&#243;n</strong><br>
+          Organiza: Xavier Farre Lopez (FS-I1) &#183; 14:30-15:30<br>
+          Temas: Definir patterns, IDEs, l&#237;mites de LLM, procedimientos + equipo promotor<br><br>
+          <em>Se ha invitado a todos los gerentes de FS para que reenv&#237;en a quien consideren pertinente.</em>
+        </div>
+      </div>
+      <div style="margin-top:40px;">
+        <p class="meta"><strong>Antonio Betran Martinez</strong> &#183; SEA/FS-I &#183; IT Platforms &amp; Digital Workplace<br>Martorell</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+<script>
+  let currentSlide=1;const totalSlides=13;
+  function updateSlide(){document.querySelectorAll('.slide').forEach(s=>s.classList.remove('active'));document.querySelector('[data-slide="'+currentSlide+'"]').classList.add('active');document.getElementById('currentSlide').textContent=currentSlide;document.getElementById('progressBar').style.width=(currentSlide/totalSlides*100)+'%';}
+  function nextSlide(){if(currentSlide<totalSlides){currentSlide++;updateSlide();}}
+  function prevSlide(){if(currentSlide>1){currentSlide--;updateSlide();}}
+  document.addEventListener('keydown',function(e){if(e.key==='ArrowRight'||e.key==='ArrowDown'||e.key===' '){e.preventDefault();nextSlide();}if(e.key==='ArrowLeft'||e.key==='ArrowUp'){e.preventDefault();prevSlide();}if(e.key==='Home'){currentSlide=1;updateSlide();}if(e.key==='End'){currentSlide=totalSlides;updateSlide();}});
+  var touchStartX=0;document.addEventListener('touchstart',function(e){touchStartX=e.touches[0].clientX;});document.addEventListener('touchend',function(e){var diff=touchStartX-e.changedTouches[0].clientX;if(Math.abs(diff)>50){diff>0?nextSlide():prevSlide();}});
+</script>
+</body>
+</html>

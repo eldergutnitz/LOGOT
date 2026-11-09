@@ -1,0 +1,101 @@
+// Politica de extensiones permitidas para VS Code - perfil VIBECODING.
+// Para perfiles que no programan y trabajan apoyados en Copilot. Copilot, todo lo oficial de Microsoft y GitHub, git, y una lista corta de basicos: formateo, errores a la vista, Markdown, previsualizacion web y lectura de datos. Ni fabricantes de stacks, ni lenguajes de nicho, ni cadenas de compilacion. No se deriva del inventario: estos usuarios aun no estan en la flota.
+// Generada el 30/07/2026 a partir del inventario real de la flota.
+// Deny-by-default: lo que no aparece aqui queda bloqueado por "*": false.
+// Valores: true = cualquier version | "stable" = solo versiones estables | false = denegado.
+{
+  "extensions.allowed": {
+
+    // --- Primera parte: GitHub -------------------------------------------------
+    "github": true,
+
+    // --- Primera parte: Microsoft (publishers ms-*) -----------------------------
+    "microsoft": true,
+    "ms-azure-load-testing": true,
+    "ms-azureaispeech": true,
+    "ms-azuretools": true,
+    "ms-ceintl": true,
+    "ms-copilotstudio": true,
+    "ms-dotnettools": true,
+    "ms-edgedevtools": true,
+    "ms-kubernetes-tools": true,
+    "ms-mssql": true,
+    "ms-ossdata": true,
+    "ms-playwright": true,
+    "ms-python": true,
+    "ms-sarifvscode": true,
+    "ms-toolsai": true,
+    "ms-vscode": true,
+    "ms-vscode-remote": true,
+    "ms-vsliveshare": true,
+    "ms-windows-ai-studio": true,
+
+    // --- Microsoft con otro ID de publisher (verificar antes de ampliar) --------
+    "analysis-services": true,
+    "microsoft-isvexptools": true,
+    "powerappstools": true,
+    "powerquery": true,
+    "teamsdevapp": true,
+    "visualstudioexptteam": true,
+    "visualstudiotoolsforunity": true,
+    "vscjava": true,
+
+    // --- Basicos para perfiles no tecnicos -----------------------------------
+    "bierner.markdown-mermaid": "stable",  // diagramas dentro del Markdown
+    "christian-kohler.path-intellisense": "stable",  // autocompleta rutas de fichero
+    "editorconfig.editorconfig": "stable",  // respeta el estilo del repositorio
+    "esbenp.prettier-vscode": "stable",  // formatea el codigo automaticamente
+    "grapecity.gc-excelviewer": "stable",  // abrir hojas de calculo
+    "hediet.vscode-drawio": "stable",  // diagramas Draw.io
+    "mechatroner.rainbow-csv": "stable",  // leer ficheros CSV
+    "ritwickdey.liveserver": "stable",  // ver la pagina web en el navegador
+    "streetsidesoftware.code-spell-checker": "stable",  // corrector ortografico
+    "streetsidesoftware.code-spell-checker-spanish": "stable",  // diccionario espanol
+    "tomoki1207.pdf": "stable",  // leer PDF sin salir del editor
+    "usernamehw.errorlens": "stable",  // ensena el error en la propia linea
+    "yzhang.markdown-all-in-one": "stable",  // escribir documentacion en Markdown
+
+    // --- Control de versiones ------------------------------------------------
+    "codezombiech.gitignore": "stable",  // plantillas .gitignore
+    "donjayamanne.githistory": "stable",  // Git History
+    "eamodio.gitlens": "stable",  // GitLens
+    "mhutchie.git-graph": "stable",  // Git Graph
+
+    // --- Red corporativa -----------------------------------------------------
+    "ukoloff.win-ca": "stable",  // inyecta los certificados CA de Windows
+
+    // --- Nada mas: este nivel no permite nada por categoria ---------------------
+    // La lista de arriba es cerrada. Lo demas se pide por el canal de excepciones.
+
+    // --- IA denegada: solo se permite Copilot y lo que publique Microsoft --------
+    // Las que pertenecen a un publisher permitido (Anthropic, Google, AWS,
+    // Salesforce) SOLO quedan bloqueadas por estas entradas por ID.
+    "amazonwebservices.amazon-q-vscode": false, // Amazon Q (AWS)
+    "andrepimenta.claude-code-chat": false, // cliente Claude de terceros
+    "anthropic.claude-code": false, // Claude Code (Anthropic)
+    "blackboxapp.blackbox": false, // Blackbox
+    "blackboxapp.blackboxagent": false, // Blackbox
+    "codeium.codeium": false, // Windsurf / Codeium
+    "codeium.codeium-enterprise-updater": false, // Windsurf / Codeium
+    "continue.continue": false, // Continue (agente open-source, modelo a eleccion del usuario)
+    "danielsanmedium.dscodegpt": false, // CodeGPT
+    "danlambiase.lmstudio-copilot-provider": false, // modelos locales LM Studio
+    "google.gemini-cli-vscode-ide-companion": false, // Gemini CLI Companion (Google)
+    "google.geminicodeassist": false, // Gemini Code Assist (Google)
+    "leonkohli.snapsource": false, // Copy4AI: exporta codigo a servicios externos
+    "mintlify.document": false, // Mintlify: genera documentacion enviando el codigo a su API
+    "mistralai.mistral-vibe-code": false, // Mistral
+    "ollama.ollama": false, // modelos locales Ollama
+    "openai.chatgpt": false, // Codex (OpenAI)
+    "salesforce.salesforcedx-einstein-gpt": false, // Agentforce Vibes (Salesforce)
+    "saoudrizwan.claude-dev": false, // Cline
+    "silasnevstad.gpthelper": false, // GPT Helper
+    "sourcery.sourcery": false, // Sourcery
+    "supermaven.supermaven": false, // Supermaven
+    "tabnine.tabnine-vscode": false, // Tabnine
+    "zoocodeorganization.zoo-code": false, // Zoo Code
+
+    // --- Todo lo demas, bloqueado -------------------------------------------------
+    "*": false
+  }
+}

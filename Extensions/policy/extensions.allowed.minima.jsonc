@@ -1,0 +1,163 @@
+// Politica de extensiones permitidas para VS Code - nivel MINIMA.
+// Git y la cadena de edicion, y poco mas. Nada entra por categoria: solo Microsoft, GitHub, los fabricantes de los stacks corporativos y una lista cerrada de lenguaje, lint, formato, depuracion y control de versiones. Cualquier lenguaje de nicho que no este en esa lista tendra que pedirse por el canal de excepciones.
+// Generada el 30/07/2026 a partir del inventario real de la flota.
+// Deny-by-default: lo que no aparece aqui queda bloqueado por "*": false.
+// Valores: true = cualquier version | "stable" = solo versiones estables | false = denegado.
+{
+  "extensions.allowed": {
+
+    // --- Primera parte: GitHub -------------------------------------------------
+    "github": true,
+
+    // --- Primera parte: Microsoft (publishers ms-*) -----------------------------
+    "microsoft": true,
+    "ms-azure-load-testing": true,
+    "ms-azureaispeech": true,
+    "ms-azuretools": true,
+    "ms-ceintl": true,
+    "ms-copilotstudio": true,
+    "ms-dotnettools": true,
+    "ms-edgedevtools": true,
+    "ms-kubernetes-tools": true,
+    "ms-mssql": true,
+    "ms-ossdata": true,
+    "ms-playwright": true,
+    "ms-python": true,
+    "ms-sarifvscode": true,
+    "ms-toolsai": true,
+    "ms-vscode": true,
+    "ms-vscode-remote": true,
+    "ms-vsliveshare": true,
+    "ms-windows-ai-studio": true,
+
+    // --- Microsoft con otro ID de publisher (verificar antes de ampliar) --------
+    "analysis-services": true,
+    "microsoft-isvexptools": true,
+    "powerappstools": true,
+    "powerquery": true,
+    "teamsdevapp": true,
+    "visualstudioexptteam": true,
+    "visualstudiotoolsforunity": true,
+    "vscjava": true,
+
+    // --- Fabricantes de los stacks corporativos ------------------------------
+    "broadcommfd": true,
+    "docker": true,
+    "hashicorp": true,
+    "ibm": true,
+    "oracle": true,
+    "redhat": true,
+    "salesforce": true,
+    "sapos": true,
+    "saposs": true,
+    "sapse": true,
+    "snowflake": true,
+    "sonarsource": true,
+    "vmware": true,
+    "zowe": true,
+
+    // --- Cadena estandar: lint, formato y calidad ----------------------------
+    "charliermarsh.ruff": "stable",  // Ruff (lint/format Python) (7 usuarios)
+    "cheshirekow.cmake-format": "stable",  // formateador de CMake (1 usuarios)
+    "davidanson.vscode-markdownlint": "stable",  // markdownlint (16 usuarios)
+    "dbaeumer.vscode-eslint": "stable",  // ESLint (15 usuarios)
+    "editorconfig.editorconfig": "stable",  // EditorConfig (4 usuarios)
+    "esbenp.prettier-vscode": "stable",  // Prettier (37 usuarios)
+    "streetsidesoftware.code-spell-checker": "stable",  // Code Spell Checker (8 usuarios)
+    "streetsidesoftware.code-spell-checker-spanish": "stable",  // diccionario espanol del corrector (1 usuarios)
+    "taoklerks.poor-mans-t-sql-formatter-vscode": "stable",  // formateador T-SQL (1 usuarios)
+    "timonwong.shellcheck": "stable",  // ShellCheck (5 usuarios)
+    "usernamehw.errorlens": "stable",  // diagnosticos en linea (19 usuarios)
+
+    // --- Soporte de lenguaje y cadenas de compilacion ------------------------
+    "batisteo.vscode-django": "stable",  // Django (24 usuarios)
+    "bitlang.cobol": "stable",  // lenguaje COBOL (4 usuarios)
+    "bpruitt-goddard.mermaid-markdown-syntax-highlighting": "stable",  // sintaxis Mermaid (1 usuarios)
+    "brapifra.c-compiler": "stable",  // compilador C (1 usuarios)
+    "bscan.perlnavigator": "stable",  // servidor de lenguaje Perl (1 usuarios)
+    "chipcode-nl.gcc-arm-windows": "stable",  // toolchain ARM para Windows (1 usuarios)
+    "dart-code.dart-code": "stable",  // lenguaje Dart (Flutter depende de el) (2 usuarios)
+    "dotjoshjohnson.xml": "stable",  // XML Tools (19 usuarios)
+    "ecmel.vscode-html-css": "stable",  // HTML CSS Support (14 usuarios)
+    "fanuc.karel-for-fanuc-robot": "stable",  // lenguaje KAREL de robots FANUC (2 usuarios)
+    "flix.flix": "stable",  // lenguaje Flix (1 usuarios)
+    "fougas.msys2": "stable",  // soporte MSYS2 / MinGW / Clang (2 usuarios)
+    "gordonwalkedby.vbnet": "stable",  // gramatica VB.NET (1 usuarios)
+    "huyza.dax-language": "stable",  // DAX (Power BI) (3 usuarios)
+    "jianfajun.dax-language": "stable",  // DAX (Power BI) (4 usuarios)
+    "reditorsupport.r": "stable",  // R (2 usuarios)
+    "reditorsupport.r-syntax": "stable",  // sintaxis R (3 usuarios)
+    "rust-lang.rust-analyzer": "stable",  // Rust (3 usuarios)
+    "samuelcolvin.jinjahtml": "stable",  // plantillas Jinja en HTML (9 usuarios)
+    "slevesque.shader": "stable",  // lenguajes de shader (3 usuarios)
+    "tamasfe.even-better-toml": "stable",  // TOML (3 usuarios)
+    "twxs.cmake": "stable",  // sintaxis CMake (20 usuarios)
+    "typescriptteam.native-preview": "stable",  // TypeScript 7 (preview nativo) (1 usuarios)
+    "wholroyd.jinja": "stable",  // plantillas Jinja (20 usuarios)
+
+    // --- Depuradores ---------------------------------------------------------
+    "bmc.devx-workbench-code-debug": "stable",  // depuracion BMC DevX (mainframe) (1 usuarios)
+    "firefox-devtools.vscode-firefox-debug": "stable",  // depurador de Firefox (14 usuarios)
+    "furkansalk.qemu-gdb-debug": "stable",  // depuracion QEMU + GDB (1 usuarios)
+    "mcu-debug.debug-tracker-vscode": "stable",  // seguimiento de sesiones de depuracion (1 usuarios)
+    "mcu-debug.memory-view": "stable",  // vista de memoria en depuracion embebida (1 usuarios)
+    "mcu-debug.rtos-views": "stable",  // vistas de RTOS en depuracion embebida (1 usuarios)
+    "philschatz.vscode-xslt": "stable",  // depurador XSLT (1 usuarios)
+    "vadimcn.vscode-lldb": "stable",  // CodeLLDB (11 usuarios)
+
+    // --- Red corporativa -----------------------------------------------------
+    "ukoloff.win-ca": "stable",  // inyecta los certificados CA de Windows (2 usuarios)
+
+    // --- Control de versiones ------------------------------------------------
+    "codezombiech.gitignore": "stable",  // plantillas .gitignore (10 usuarios)
+    "donjayamanne.githistory": "stable",  // Git History (15 usuarios)
+    "eamodio.gitlens": "stable",  // GitLens (24 usuarios)
+    "mhutchie.git-graph": "stable",  // Git Graph (20 usuarios)
+
+    // --- Utilidades adicionales de git ---------------------------------------
+    "atlassian.atlascode": "stable",  // Bitbucket y Jira (revision de pull requests) (3 usuarios)
+    "git-brain.git-brain": "stable",  // Git Brain (1 usuarios)
+    "gxl.git-graph-3": "stable",  // Git Graph v3 (1 usuarios)
+    "henriquebruno.github-repository-manager": "stable",  // gestor de repositorios (1 usuarios)
+    "heroprotagonist.pandiff-vscode": "stable",  // comparacion enriquecida de textos (1 usuarios)
+    "howardzuo.vscode-git-tags": "stable",  // etiquetas de Git (1 usuarios)
+    "mccarter.start-git-bash": "stable",  // abrir git-bash desde el editor (1 usuarios)
+    "solomonkinard.git-blame": "stable",  // Git Blame (1 usuarios)
+    "vsls-contrib.gitdoc": "stable",  // GitDoc (1 usuarios)
+    "ziyasal.vscode-open-in-github": "stable",  // abrir el fichero en GitHub / GitLab / Bitbucket (7 usuarios)
+
+    // --- Nada mas: este nivel no permite nada por categoria ---------------------
+    // La lista de arriba es cerrada. Lo demas se pide por el canal de excepciones.
+
+    // --- IA denegada: solo se permite Copilot y lo que publique Microsoft --------
+    // Las que pertenecen a un publisher permitido (Anthropic, Google, AWS,
+    // Salesforce) SOLO quedan bloqueadas por estas entradas por ID.
+    "amazonwebservices.amazon-q-vscode": false, // Amazon Q (AWS) (2 usuarios)
+    "andrepimenta.claude-code-chat": false, // cliente Claude de terceros (1 usuarios)
+    "anthropic.claude-code": false, // Claude Code (Anthropic) (28 usuarios)
+    "blackboxapp.blackbox": false, // Blackbox (2 usuarios)
+    "blackboxapp.blackboxagent": false, // Blackbox (2 usuarios)
+    "codeium.codeium": false, // Windsurf / Codeium (2 usuarios)
+    "codeium.codeium-enterprise-updater": false, // Windsurf / Codeium (1 usuarios)
+    "continue.continue": false, // Continue (agente open-source, modelo a eleccion del usuario) (6 usuarios)
+    "danielsanmedium.dscodegpt": false, // CodeGPT (2 usuarios)
+    "danlambiase.lmstudio-copilot-provider": false, // modelos locales LM Studio (1 usuarios)
+    "google.gemini-cli-vscode-ide-companion": false, // Gemini CLI Companion (Google) (1 usuarios)
+    "google.geminicodeassist": false, // Gemini Code Assist (Google) (5 usuarios)
+    "leonkohli.snapsource": false, // Copy4AI: exporta codigo a servicios externos (2 usuarios)
+    "mintlify.document": false, // Mintlify: genera documentacion enviando el codigo a su API (5 usuarios)
+    "mistralai.mistral-vibe-code": false, // Mistral (1 usuarios)
+    "ollama.ollama": false, // modelos locales Ollama (1 usuarios)
+    "openai.chatgpt": false, // Codex (OpenAI) (22 usuarios)
+    "salesforce.salesforcedx-einstein-gpt": false, // Agentforce Vibes (Salesforce) (8 usuarios)
+    "saoudrizwan.claude-dev": false, // Cline (4 usuarios)
+    "silasnevstad.gpthelper": false, // GPT Helper (1 usuarios)
+    "sourcery.sourcery": false, // Sourcery (4 usuarios)
+    "supermaven.supermaven": false, // Supermaven (1 usuarios)
+    "tabnine.tabnine-vscode": false, // Tabnine (2 usuarios)
+    "zoocodeorganization.zoo-code": false, // Zoo Code (1 usuarios)
+
+    // --- Todo lo demas, bloqueado -------------------------------------------------
+    "*": false
+  }
+}

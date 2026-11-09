@@ -1,0 +1,44 @@
+name: Tarea para Copilot — Nivel 2
+description: Describe una tarea para GitHub Copilot en pocas líneas.
+title: "[Copilot] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Trata esta issue como el prompt del agente. Basta con el problema y qué debe funcionar; el resto es opcional. No incluyas secretos ni datos personales o confidenciales reales.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problema y resultado esperado
+      description: Qué hay que conseguir y para quién. No prescribas una implementación si no es un requisito.
+      placeholder: "Como ..., necesito ... para ..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Qué debe funcionar
+      description: Comportamientos comprobables, uno por línea.
+      placeholder: |
+        - [ ] Dado ..., cuando ..., entonces ...
+        - [ ] Una persona sin permiso recibe 403
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Contexto (opcional)
+      description: Rutas o ejemplos relacionados, datos o integraciones afectadas, dependencias nuevas o cualquier cambio que necesite aprobación previa.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: readiness
+    attributes:
+      label: Preparación
+      options:
+        - label: No he incluido secretos ni datos personales/confidenciales reales.
+          required: true

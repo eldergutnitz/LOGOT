@@ -1,0 +1,862 @@
+﻿ExtensionId;Nombre;Publisher;Instalaciones;UsuariosUnicos;EquiposUnicos;NumVersiones;VersionMasReciente;VersionMasAntigua;CategoriaPrincipal;Categorias;Repositorio;ClasificacionIA;ProveedorIA;NombreOrigen
+ms-python.python;Python;ms-python;351;347;351;27;2026.5.2026070801;2023.8.0;Programming Languages;Programming Languages, Debuggers, Other, Data Science, Machine Learning;https://github.com/Microsoft/vscode-python;Herramienta con IA;;manifiesto
+ms-python.vscode-pylance;Pylance;ms-python;349;345;349;29;2026.3.1;2023.8.20;Programming Languages;Programming Languages;https://github.com/microsoft/pylance-release;Sin IA;;manifiesto
+ms-python.debugpy;Python Debugger;ms-python;345;341;345;17;2026.7.12031010;2024.0.0;Debuggers;Debuggers;https://github.com/microsoft/vscode-python-debugger.git;Sin IA;;manifiesto
+ms-python.vscode-python-envs;Python Environments;ms-python;308;305;308;20;1.37.2026072401;1.0.0;Other;Other;https://github.com/microsoft/vscode-python-environments.git;Sin IA;;manifiesto
+ms-toolsai.jupyter-keymap;Jupyter Keymap;ms-toolsai;92;91;92;1;1.1.2;1.1.2;Notebooks;Notebooks;https://github.com/Microsoft/vscode-jupyter-keymap;Sin IA;;manifiesto
+ms-toolsai.jupyter;Jupyter;ms-toolsai;89;88;89;11;2025.10.2025101002;2023.10.1100000000;Extension Packs;Extension Packs, Data Science, Machine Learning, Notebooks, Visualization;https://github.com/Microsoft/vscode-jupyter;Herramienta con IA;;manifiesto
+ms-toolsai.jupyter-renderers;Jupyter Notebook Renderers;ms-toolsai;89;88;89;6;1.3.2025062701;1.0.17;Other;Other, Data Science, Machine Learning, Notebooks, Visualization;https://github.com/Microsoft/vscode-notebook-renderers;Herramienta con IA;;manifiesto
+ms-toolsai.vscode-jupyter-cell-tags;Jupyter Cell Tags;ms-toolsai;89;88;89;2;0.1.9;0.1.8;Notebooks;Notebooks;https://github.com/Microsoft/vscode-jupyter-cell-tags;Sin IA;;manifiesto
+ms-toolsai.vscode-jupyter-slideshow;Jupyter Slide Show;ms-toolsai;89;88;89;2;0.1.6;0.1.5;Notebooks;Notebooks;https://github.com/Microsoft/vscode-jupyter-slideshow;Sin IA;;manifiesto
+ms-vscode.cpptools;C/C++;ms-vscode;66;66;66;14;1.33.4;1.18.5;Programming Languages;Programming Languages, Debuggers, Formatters, Linters, Snippets;git+https://github.com/Microsoft/vscode-cpptools.git;Sin IA;;manifiesto
+ms-vscode.cpptools-themes;C/C++ Themes;ms-vscode;63;63;63;1;2.0.0;2.0.0;Themes;Themes;https://github.com/Microsoft/vscode-cpptools.git;Sin IA;;manifiesto
+github.copilot-chat;GitHub Copilot Chat;GitHub;61;60;61;14;0.48.1;0.23.2;AI;AI, Chat, Programming Languages, Machine Learning;https://github.com/microsoft/vscode-copilot-chat;Asistente de codigo IA;GitHub;manifiesto
+mechatroner.rainbow-csv;Rainbow CSV;mechatroner;61;59;61;3;3.24.1;3.18.0;Data Science;Data Science, Other, Programming Languages;https://github.com/mechatroner/vscode_rainbow_csv;Sin IA;;manifiesto
+ms-vscode.cmake-tools;CMake Tools;ms-vscode;61;61;61;8;1.24.23;1.18.44;Other;Other, Debuggers, Programming Languages;https://github.com/microsoft/vscode-cmake-tools;Sin IA;;manifiesto
+ms-dotnettools.vscode-dotnet-runtime;.NET Install Tool;ms-dotnettools;58;57;58;9;3.1.0;2.1.1;Other;Other;https://github.com/dotnet/vscode-dotnet-runtime.git;Sin IA;;manifiesto
+ms-vscode.cpptools-extension-pack;C/C++ Extension Pack;ms-vscode;56;56;56;3;1.5.1;1.3.0;Extension Packs;Extension Packs, Programming Languages;https://github.com/microsoft/vscode-cpptools.git;Sin IA;;manifiesto
+ms-vscode-remote.remote-wsl;Remote Wsl;ms-vscode-remote;50;50;50;1;0.104.3;0.104.3;Other;Other;https://github.com/Microsoft/vscode-remote-release.git;Sin IA;;derivado del ID
+ms-vscode.powershell;PowerShell;ms-vscode;50;50;50;3;2025.4.0;2024.2.2;Debuggers;Debuggers, Formatters, Programming Languages, Snippets, Linters, Themes;https://github.com/PowerShell/vscode-powershell.git;Sin IA;;manifiesto
+ms-dotnettools.csharp;C#;ms-dotnettools;46;46;46;12;2.146.2;2.22.3;Debuggers;Debuggers, Programming Languages, Linters, Snippets;https://github.com/dotnet/vscode-csharp;Sin IA;;manifiesto
+ms-ceintl.vscode-language-pack-es;Spanish Language Pack for Visual Studio Code;MS-CEINTL;42;41;42;21;1.130.2026072017;1.65.3;Language Packs;Language Packs;https://github.com/Microsoft/vscode-loc;Sin IA;;manifiesto
+ms-vscode.cpp-devtools;C/C++ DevTools;ms-vscode;42;42;42;2;0.5.13;0.4.6;Other;Other;;Sin IA;;manifiesto
+ritwickdey.liveserver;Live Server;ritwickdey;38;38;38;2;5.7.10;5.7.9;Other;Other;https://github.com/ritwickdey/vscode-live-server.git;Sin IA;;manifiesto
+esbenp.prettier-vscode;Prettier - Code formatter;esbenp;37;37;37;4;12.4.0;10.4.0;Formatters;Formatters;https://github.com/prettier/prettier-vscode.git;Sin IA;;manifiesto
+ms-dotnettools.csdevkit;Csdevkit;ms-dotnettools;35;35;35;6;3.27.196;1.16.6;Programming Languages;Programming Languages, Debuggers, Testing, Linters;https://devdiv.visualstudio.com/DevDiv/_git/vs-green;Sin IA;;derivado del ID
+pkief.material-icon-theme;Material Icon Theme;PKief;34;34;34;6;5.37.0;5.8.0;Themes;Themes;git+https://github.com/material-extensions/vscode-material-icon-theme.git;Sin IA;;manifiesto
+anthropic.claude-code;Claude Code for VS Code;Anthropic;28;28;28;11;2.1.220;2.1.101;AI;AI, Chat;;Asistente de codigo IA;Anthropic;manifiesto
+ms-azuretools.vscode-containers;Container Tools;ms-azuretools;28;28;28;2;2.4.5;2.4.4;Programming Languages;Programming Languages, Linters, Azure;https://github.com/microsoft/vscode-containers;Sin IA;;manifiesto
+njpwerner.autodocstring;autoDocstring - Python Docstring Generator;njpwerner;27;27;27;1;0.6.1;0.6.1;Snippets;Snippets, Formatters, Programming Languages;https://github.com/NilsJPWerner/autoDocstring;Sin IA;;manifiesto
+visualstudioexptteam.vscodeintellicode;IntelliCode;VisualStudioExptTeam;25;25;25;3;1.3.2;1.2.30;Other;Other;https://github.com/MicrosoftDocs/intellicode;Asistente de codigo IA;Microsoft (IntelliCode);manifiesto
+batisteo.vscode-django;Django;batisteo;24;24;24;2;1.15.0;1.14.0;Programming Languages;Programming Languages, Snippets;https://github.com/vscode-django/vscode-django;Sin IA;;manifiesto
+eamodio.gitlens;GitLens — Git supercharged;eamodio;24;24;24;7;18.3.0;14.2.1;Other;Other, SCM Providers;https://github.com/gitkraken/vscode-gitlens.git;Sin IA;;manifiesto
+kevinrose.vsc-python-indent;Python Indent;KevinRose;24;24;24;2;1.21.0;1.18.0;Formatters;Formatters, Keymaps, Programming Languages;https://github.com/kbrose/vsc-python-indent;Sin IA;;manifiesto
+visualstudioexptteam.intellicode-api-usage-examples;Intellicode Api Usage Examples;VisualStudioExptTeam;24;24;24;2;0.2.9;0.2.8;Other;Other;https://github.com/MicrosoftDocs/intellicode;Sin IA;;derivado del ID
+redhat.vscode-yaml;YAML;redhat;23;23;23;5;1.24.0;1.17.0;Programming Languages;Programming Languages, Linters, Snippets, Formatters;https://github.com/redhat-developer/vscode-yaml;Sin IA;;manifiesto
+ms-vscode.remote-explorer;Remote Explorer;ms-vscode;22;22;22;1;0.5.0;0.5.0;Other;Other;https://github.com/Microsoft/vscode-remote-release.git;Sin IA;;derivado del ID
+openai.chatgpt;Codex – OpenAI’s coding agent;openai;22;22;22;10;26.5721.30844;26.513.21555;AI;AI, Chat;;Asistente de codigo IA;OpenAI;manifiesto
+redhat.java;Language Support for Java(TM) by Red Hat;redhat;22;22;22;5;1.55.0;1.40.0;Programming Languages;Programming Languages, Linters, Formatters, Snippets;https://github.com/redhat-developer/vscode-java;Sin IA;;manifiesto
+redhat.vscode-xml;XML;redhat;22;22;22;4;0.29.3;0.28.0;Programming Languages;Programming Languages, Linters, Formatters, Snippets;https://github.com/redhat-developer/vscode-xml;Sin IA;;manifiesto
+ms-vscode-remote.remote-ssh;Remote - SSH;ms-vscode-remote;21;21;21;3;0.124.0;0.122.0;Other;Other;https://github.com/Microsoft/vscode-remote-release.git;Sin IA;;manifiesto
+ms-vscode-remote.remote-ssh-edit;Remote - SSH: Editing Configuration Files;ms-vscode-remote;21;21;21;1;0.87.0;0.87.0;Programming Languages;Programming Languages, Snippets;https://github.com/Microsoft/vscode-remote-release.git;Sin IA;;manifiesto
+mhutchie.git-graph;Git Graph;mhutchie;20;20;20;1;1.30.0;1.30.0;Other;Other;https://github.com/mhutchie/vscode-git-graph.git;Sin IA;;manifiesto
+twxs.cmake;CMake;twxs;20;20;20;1;0.0.17;0.0.17;Languages;Languages, Snippets, Other;https://github.com/twxs/vs.language.cmake.git;Sin IA;;manifiesto
+usernamehw.errorlens;Error Lens;usernamehw;20;19;20;3;3.28.0;3.24.0;Other;Other;https://github.com/usernamehw/vscode-error-lens;Sin IA;;manifiesto
+vscjava.vscode-gradle;Gradle for Java;vscjava;20;20;20;4;3.18.0;3.16.4;Programming Languages;Programming Languages, Other;https://github.com/microsoft/vscode-gradle/;Sin IA;;manifiesto
+vscjava.vscode-java-debug;Debugger for Java;vscjava;20;20;20;4;0.59.0;0.58.1;Debuggers;Debuggers, Programming Languages, Other;https://github.com/Microsoft/vscode-java-debug.git;Sin IA;;manifiesto
+vscjava.vscode-java-dependency;Project Manager for Java;vscjava;20;20;20;4;0.27.6;0.24.1;Sin categoria;;https://github.com/Microsoft/vscode-java-dependency.git;Sin IA;;manifiesto
+vscjava.vscode-java-pack;Extension Pack for Java;vscjava;20;20;20;4;0.31.1;0.29.0;Programming Languages;Programming Languages, Linters, Debuggers, Formatters, Snippets, Extension Packs;https://github.com/Microsoft/vscode-java-pack;Sin IA;;manifiesto
+vscjava.vscode-java-test;Test Runner for Java;vscjava;20;20;20;5;0.46.0;0.43.0;Testing;Testing;https://github.com/Microsoft/vscode-java-test;Sin IA;;manifiesto
+vscjava.vscode-maven;Maven for Java;vscjava;20;20;20;3;0.45.3;0.44.0;Programming Languages;Programming Languages, Other;https://github.com/Microsoft/vscode-maven.git;Sin IA;;manifiesto
+wholroyd.jinja;Jinja;wholroyd;20;20;20;1;0.0.8;0.0.8;Languages;Languages, Snippets, Linters;https://github.com/wholroyd/vscode-jinja.git;Sin IA;;manifiesto
+donjayamanne.python-environment-manager;Python Environment Manager (deprecated);donjayamanne;19;19;19;1;1.2.7;1.2.7;Programming Languages;Programming Languages, Machine Learning, Other, Data Science;https://github.com/DonJayamanne/vscode-python-manager;Herramienta con IA;;manifiesto
+donjayamanne.python-extension-pack;Python Extension Pack;donjayamanne;19;19;19;1;1.7.0;1.7.0;Extension Packs;Extension Packs;https://github.com/DonJayamanne/python-extension-pack;Sin IA;;manifiesto
+dotjoshjohnson.xml;XML Tools;DotJoshJohnson;19;19;19;1;2.5.1;2.5.1;Formatters;Formatters, Programming Languages, Linters, Other;https://github.com/DotJoshJohnson/vscode-xml.git;Sin IA;;manifiesto
+ibm.db2forzosdeveloperextension;IBM Db2 for z/OS Developer Extension;IBM;18;18;18;3;2.2.6;2.2.0;Debuggers;Debuggers, Formatters, Programming Languages, Snippets;https://github.com/IBM/db2forzosdeveloperextension-about;Sin IA;;manifiesto
+ms-python.isort;isort;ms-python;18;18;18;4;2026.6.0;2023.10.1;Programming Languages;Programming Languages, Formatters;https://github.com/microsoft/vscode-isort.git;Sin IA;;manifiesto
+github.copilot;GitHub Copilot;GitHub;17;17;17;4;1.388.0;1.331.0;AI;AI, Chat, Programming Languages, Machine Learning;;Asistente de codigo IA;GitHub;manifiesto
+oderwat.indent-rainbow;indent-rainbow;oderwat;17;17;17;1;8.3.1;8.3.1;Other;Other;https://github.com/oderwat/vscode-indent-rainbow.git;Sin IA;;manifiesto
+zainchen.json;json;ZainChen;17;17;17;1;2.0.2;2.0.2;Extension Packs;Extension Packs, Other;https://github.com/ZainChen/vscode-json;Sin IA;;manifiesto
+davidanson.vscode-markdownlint;markdownlint;DavidAnson;16;16;16;2;0.62.0;0.61.2;Linters;Linters, Formatters;https://github.com/DavidAnson/vscode-markdownlint.git;Sin IA;;manifiesto
+github.codespaces;Codespaces;GitHub;16;16;16;4;1.18.15;1.17.3;Other;Other;;Sin IA;;derivado del ID
+dbaeumer.vscode-eslint;ESLint;dbaeumer;15;15;15;2;3.0.34;3.0.24;Programming Languages;Programming Languages, Linters;https://github.com/Microsoft/vscode-eslint.git;Sin IA;;manifiesto
+donjayamanne.githistory;Git History;donjayamanne;15;15;15;1;0.6.20;0.6.20;Other;Other;https://github.com/DonJayamanne/gitHistoryVSCode;Sin IA;;manifiesto
+formulahendry.code-runner;Code Runner;formulahendry;15;15;15;1;0.12.2;0.12.2;Programming Languages;Programming Languages, Other;https://github.com/formulahendry/vscode-code-runner.git;Sin IA;;manifiesto
+ms-azuretools.vscode-docker;Docker;ms-azuretools;15;15;15;1;2.0.0;2.0.0;Sin categoria;;https://github.com/microsoft/vscode-docker;Sin IA;;manifiesto
+ms-vscode-remote.remote-containers;Remote Containers;ms-vscode-remote;15;15;15;4;0.466.0;0.452.0;Other;Other;https://github.com/Microsoft/vscode-remote-release.git;Sin IA;;derivado del ID
+vscode-icons-team.vscode-icons;vscode-icons;vscode-icons-team;15;15;15;2;12.19.0;12.18.0;Themes;Themes;https://github.com/vscode-icons/vscode-icons;Sin IA;;manifiesto
+ecmel.vscode-html-css;HTML CSS Support;ecmel;14;14;14;2;2.0.14;2.0.13;Programming Languages;Programming Languages;https://github.com/ecmel/vscode-html-css.git;Sin IA;;manifiesto
+firefox-devtools.vscode-firefox-debug;Debugger for Firefox;firefox-devtools;14;14;14;3;2.15.0;2.9.10;Debuggers;Debuggers;https://github.com/firefox-devtools/vscode-firefox-debug.git;Sin IA;;manifiesto
+snowflake.snowflake-vsc;Snowflake;snowflake;14;14;14;5;1.35.0;1.23.0;Programming Languages;Programming Languages, Data Science, Snippets, Other;;Sin IA;;manifiesto
+ms-vscode.live-server;Live Preview;ms-vscode;13;13;13;2;0.4.19;0.4.15;Other;Other;https://github.com/microsoft/vscode-livepreview;Sin IA;;manifiesto
+github.vscode-pull-request-github;Pull Request Github;GitHub;12;12;12;4;0.160.0;0.146.0;Other;Other, AI, Chat;https://github.com/Microsoft/vscode-pull-request-github;Herramienta con IA;;derivado del ID
+ibm.zopeneditor;IBM Z Open Editor;IBM;12;12;12;7;6.6.1;5.1.0;Programming Languages;Programming Languages, Snippets;https://github.com/IBM/zopeneditor-about;Sin IA;;manifiesto
+yutengjing.open-in-external-app;Open in External App;YuTengjing;12;12;12;1;0.11.3;0.11.3;Other;Other;https://github.com/tjx666/open-in-external-app;Sin IA;;manifiesto
+yzhang.markdown-all-in-one;Markdown All In One;yzhang;12;12;12;1;3.6.3;3.6.3;Programming Languages;Programming Languages, Formatters, Other;https://github.com/yzhang-gh/vscode-markdown;Sin IA;;derivado del ID
+zowe.vscode-extension-for-zowe;Extension For Zowe;Zowe;12;12;12;5;3.5.1;3.3.0;Other;Other;https://github.com/zowe/zowe-explorer-vscode;Sin IA;;derivado del ID
+github.remotehub;Remotehub;GitHub;11;11;11;1;0.64.0;0.64.0;Other;Other;https://github.com/microsoft/vscode-remote-repositories-github.git;Sin IA;;derivado del ID
+ms-azuretools.vscode-azureresourcegroups;Azure Resources;ms-azuretools;11;11;11;2;0.12.7;0.12.6;Azure;Azure;https://github.com/Microsoft/vscode-azureresourcegroups;Sin IA;;manifiesto
+ms-edgedevtools.vscode-edge-devtools;Microsoft Edge Tools for VS Code;ms-edgedevtools;11;11;11;1;2.1.10;2.1.10;Debuggers;Debuggers;https://github.com/Microsoft/vscode-edge-devtools;Sin IA;;manifiesto
+ms-mssql.data-workspace-vscode;Data Workspace;ms-mssql;11;11;11;1;0.6.3;0.6.3;Sin categoria;;https://github.com/Microsoft/azuredatastudio.git;Sin IA;;manifiesto
+ms-mssql.mssql;SQL Server (mssql);ms-mssql;11;11;11;2;1.44.0;1.43.0;Programming Languages;Programming Languages, Azure;https://github.com/Microsoft/vscode-mssql.git;Sin IA;;manifiesto
+ms-mssql.sql-bindings-vscode;Sql Bindings;ms-mssql;11;11;11;1;0.4.1;0.4.1;Sin categoria;;https://github.com/Microsoft/azuredatastudio.git;Sin IA;;derivado del ID
+ms-mssql.sql-database-projects-vscode;SQL Database Projects;ms-mssql;11;11;11;2;1.6.2;1.6.1;Sin categoria;;https://github.com/Microsoft/vscode-mssql.git;Sin IA;;manifiesto
+ms-python.black-formatter;Black Formatter;ms-python;11;11;11;2;2026.6.0;2023.6.0;Programming Languages;Programming Languages, Formatters;https://github.com/microsoft/vscode-black-formatter.git;Sin IA;;manifiesto
+ms-vscode.azure-repos;Azure Repos;ms-vscode;11;11;11;1;0.40.0;0.40.0;Other;Other;https://github.com/microsoft/vscode-remote-repositories-github.git;Sin IA;;derivado del ID
+ms-vscode.remote-repositories;Remote Repositories;ms-vscode;11;11;11;1;0.42.0;0.42.0;Other;Other;https://github.com/microsoft/vscode-remote-repositories-github.git;Sin IA;;derivado del ID
+platformio.platformio-ide;PlatformIO IDE;platformio;11;11;11;3;3.3.4;3.3.2;Programming Languages;Programming Languages, Linters, Debuggers, Testing, Other;https://github.com/platformio/platformio-vscode-ide.git;Sin IA;;manifiesto
+qwtel.sqlite-viewer;SQLite Viewer;qwtel;11;10;11;3;26.2.5;0.10.6;Other;Other;https://github.com/qwtel/sqlite-viewer-vscode;Sin IA;;manifiesto
+vadimcn.vscode-lldb;CodeLLDB;vadimcn;11;11;11;5;1.12.2;1.9.0;Debuggers;Debuggers;https://github.com/vadimcn/codelldb.git;Sin IA;;manifiesto
+aaron-bond.better-comments;Better Comments;aaron-bond;10;10;10;1;3.0.2;3.0.2;Formatters;Formatters;https://github.com/aaron-bond/better-comments;Sin IA;;manifiesto
+codezombiech.gitignore;gitignore;codezombiech;10;10;10;2;0.10.0;0.9.0;Programming Languages;Programming Languages, Other;https://github.com/CodeZombieCH/vscode-gitignore;Sin IA;;manifiesto
+github.github-vscode-theme;GitHub Theme;GitHub;10;10;10;1;6.3.5;6.3.5;Themes;Themes;https://github.com/primer/github-vscode-theme;Sin IA;;manifiesto
+ms-python.autopep8;autopep8;ms-python;10;10;10;2;2026.4.0;2025.2.0;Programming Languages;Programming Languages, Formatters;https://github.com/microsoft/vscode-autopep8.git;Sin IA;;manifiesto
+tomoki1207.pdf;vscode-pdf;tomoki1207;10;10;10;1;1.2.2;1.2.2;Programming Languages;Programming Languages;https://github.com/tomoki1207/vscode-pdfviewer.git;Sin IA;;manifiesto
+ibm.zcommoncomponent;IBM ADFz Common Component for z/OS;IBM;9;9;9;5;16.1.426060911;16.1.125082220;Other;Other;https://github.com/IBM/fm-vs-code-extension;Sin IA;;manifiesto
+ibm.zfilemanager;IBM File Manager for z/OS;IBM;9;9;9;5;16.1.426060911;16.1.125082220;Other;Other;https://github.com/IBM/fm-vs-code-extension;Sin IA;;manifiesto
+ibm.zopendebug;IBM Z Open Debug;IBM;9;9;9;4;5.6.6;5.5.3;Debuggers;Debuggers;https://github.com/IBM/zopendebug-about;Sin IA;;manifiesto
+ms-azuretools.vscode-azure-github-copilot;GitHub Copilot for Azure;ms-azuretools;9;9;9;1;1.0.209;1.0.209;AI;AI, Azure, Chat;https://github.com/microsoft/GitHub-Copilot-for-Azure;Asistente de codigo IA;GitHub;manifiesto
+ms-azuretools.vscode-azure-mcp-server;Azure MCP Server;ms-azuretools;9;9;9;3;2.0.46;2.0.44;AI;AI, Azure, Chat, Extension Packs;https://github.com/microsoft/mcp;Herramienta con IA;;manifiesto
+ms-vsliveshare.vsliveshare;Vsliveshare;ms-vsliveshare;9;9;9;3;1.1.122;1.0.5936;Other;Other;https://github.com/MicrosoftDocs/live-share;Sin IA;;derivado del ID
+samuelcolvin.jinjahtml;Better Jinja;samuelcolvin;9;9;9;1;0.20.0;0.20.0;Programming Languages;Programming Languages;https://github.com/samuelcolvin/jinjahtml-vscode.git;Sin IA;;manifiesto
+shd101wyy.markdown-preview-enhanced;Markdown Preview Enhanced;shd101wyy;9;9;9;1;0.8.30;0.8.30;Other;Other;;Sin IA;;derivado del ID
+zhuangtongfa.material-theme;One Dark Pro;zhuangtongfa;9;9;9;1;3.19.0;3.19.0;Themes;Themes;https://github.com/Binaryify/OneDark-Pro;Sin IA;;manifiesto
+zowe.cics-extension-for-zowe;Zowe Explorer for IBM CICS Transaction Server;Zowe;9;9;9;4;3.22.0;3.13.2;Other;Other;https://github.com/zowe/cics-for-zowe-client.git;Sin IA;;manifiesto
+franneck94.c-cpp-runner;C/C++ Runner;franneck94;8;8;8;3;9.5.0;9.4.8;Programming Languages;Programming Languages, Debuggers, Snippets;https://github.com/franneck94/vscode-c-cpp-runner.git;Sin IA;;manifiesto
+ibm.zfaultanalyzer;IBM Fault Analyzer for z/OS;IBM;8;8;8;5;16.1.426060911;16.1.125082220;Other;Other;https://github.com/IBM/fa-vs-code-extension;Sin IA;;manifiesto
+mohsen1.prettify-json;Prettify JSON;mohsen1;8;8;8;1;0.0.3;0.0.3;Other;Other;git@github.com:mohsen1/vscode-prettify-json.git;Sin IA;;manifiesto
+ms-vscode-remote.vscode-remote-extensionpack;Remote Extensionpack;ms-vscode-remote;8;8;8;1;0.26.0;0.26.0;Other;Other, Extension Packs;https://github.com/Microsoft/vscode-remote-release.git;Sin IA;;derivado del ID
+ms-vscode.notepadplusplus-keybindings;Notepad++ keymap;ms-vscode;8;8;8;1;1.0.7;1.0.7;Keymaps;Keymaps;https://github.com/Microsoft/vscode-notepadplusplus-keybindings.git;Sin IA;;manifiesto
+ms-vscode.remote-server;Remote - Tunnels;ms-vscode;8;8;8;1;1.5.3;1.5.3;Other;Other;https://github.com/Microsoft/vscode-remote-release.git;Sin IA;;manifiesto
+ms-vscode.test-adapter-converter;Test Adapter Converter;ms-vscode;8;8;8;2;0.2.1;0.1.8;Other;Other;git+https://github.com/microsoft/vscode-test-adapter-converter.git;Sin IA;;manifiesto
+njqdev.vscode-python-typehint;Python Type Hint;njqdev;8;8;8;1;1.5.1;1.5.1;Programming Languages;Programming Languages;https://github.com/njqdev/vscode-python-typehint;Sin IA;;manifiesto
+salesforce.agent-script-language-client;Agent Script;Salesforce;8;8;8;1;2.6.0;2.6.0;Programming Languages;Programming Languages;;Sin IA;;manifiesto
+salesforce.agentforce-vibes-autocomplete;Agentforce Vibes Autocomplete;salesforce;8;8;8;1;1.0.0;1.0.0;Other;Other;https://github.com/forcedotcom/Einstein-GPT-for-Developers;Sin IA;;manifiesto
+salesforce.salesforce-vscode-slds;SLDS Validator;salesforce;8;8;8;1;2.0.12;2.0.12;Programming Languages;Programming Languages;;Sin IA;;manifiesto
+salesforce.salesforcedx-einstein-gpt;Agentforce Vibes;salesforce;8;8;8;3;4.19.0;4.15.0;AI;AI, Chat, Machine Learning, Other;https://github.com/forcedotcom/Einstein-GPT-for-Developers;Asistente de codigo IA;Salesforce;manifiesto
+salesforce.salesforcedx-vscode-agents;Agentforce DX;Salesforce;8;8;8;1;1.17.2;1.17.2;Extension Packs;Extension Packs;https://github.com/salesforcecli/vsode-agents;Sin IA;;manifiesto
+salesforce.salesforcedx-vscode-apex;Apex;salesforce;8;8;8;4;67.7.1;67.4.0;Programming Languages;Programming Languages;https://github.com/forcedotcom/salesforcedx-vscode;Sin IA;;manifiesto
+salesforce.salesforcedx-vscode-apex-log;Salesforce Apex Log;salesforce;8;8;8;4;67.7.1;67.4.0;Other;Other;https://github.com/forcedotcom/salesforcedx-vscode;Sin IA;;manifiesto
+salesforce.salesforcedx-vscode-apex-oas;Apex OpenAPI Specification;salesforce;8;8;8;4;67.7.1;67.4.0;Programming Languages;Programming Languages;https://github.com/forcedotcom/salesforcedx-vscode;Sin IA;;manifiesto
+salesforce.salesforcedx-vscode-apex-replay-debugger;Apex Replay Debugger;salesforce;8;8;8;4;67.7.1;67.4.0;Debuggers;Debuggers;https://github.com/forcedotcom/salesforcedx-vscode;Sin IA;;manifiesto
+salesforce.salesforcedx-vscode-apex-testing;Apex Testing;salesforce;8;8;8;4;67.7.1;67.4.0;Other;Other;https://github.com/forcedotcom/salesforcedx-vscode;Sin IA;;manifiesto
+salesforce.salesforcedx-vscode-core;Salesforce CLI;salesforce;8;8;8;5;67.7.1;66.5.2;Other;Other;https://github.com/forcedotcom/salesforcedx-vscode;Sin IA;;manifiesto
+salesforce.salesforcedx-vscode-lightning;Aura Components;salesforce;8;8;8;4;67.7.1;67.4.0;Programming Languages;Programming Languages;https://github.com/forcedotcom/salesforcedx-vscode;Sin IA;;manifiesto
+salesforce.salesforcedx-vscode-lwc;Lightning Web Components;salesforce;8;8;8;4;67.7.1;67.4.0;Programming Languages;Programming Languages;https://github.com/forcedotcom/salesforcedx-vscode;Sin IA;;manifiesto
+salesforce.salesforcedx-vscode-metadata;Salesforce Metadata;salesforce;8;8;8;4;67.7.1;67.4.0;Other;Other;https://github.com/forcedotcom/salesforcedx-vscode;Sin IA;;manifiesto
+salesforce.salesforcedx-vscode-org;Salesforce Org Management;salesforce;8;8;8;4;67.7.1;67.4.0;Other;Other;https://github.com/forcedotcom/salesforcedx-vscode;Sin IA;;manifiesto
+salesforce.salesforcedx-vscode-org-browser;Salesforce Org Browser;salesforce;8;8;8;4;67.7.1;67.4.0;Other;Other;https://github.com/forcedotcom/salesforcedx-vscode;Sin IA;;manifiesto
+salesforce.salesforcedx-vscode-services;Salesforce Services;salesforce;8;8;8;4;67.7.1;67.4.0;Other;Other;https://github.com/forcedotcom/salesforcedx-vscode;Sin IA;;manifiesto
+salesforce.salesforcedx-vscode-soql;SOQL;salesforce;8;8;8;4;67.7.1;67.4.0;Programming Languages;Programming Languages;https://github.com/forcedotcom/salesforcedx-vscode;Sin IA;;manifiesto
+salesforce.salesforcedx-vscode-visualforce;Visualforce;salesforce;8;8;8;4;67.7.1;67.4.0;Programming Languages;Programming Languages;https://github.com/forcedotcom/salesforcedx-vscode;Sin IA;;manifiesto
+salesforce.sfdx-code-analyzer-vscode;Salesforce Code Analyzer;salesforce;8;8;8;2;1.20.0;1.19.0;Programming Languages;Programming Languages, Linters, Testing;https://github.com/forcedotcom/sfdx-code-analyzer-vscode;Sin IA;;manifiesto
+streetsidesoftware.code-spell-checker;Code Spell Checker;streetsidesoftware;8;8;8;4;4.5.6;2.20.5;Linters;Linters, Other;https://github.com/streetsidesoftware/vscode-spell-checker;Sin IA;;manifiesto
+alefragnani.project-manager;Project Manager;alefragnani;7;7;7;3;13.1.0;12.7.0;Other;Other;https://github.com/alefragnani/vscode-project-manager.git;Sin IA;;manifiesto
+charliermarsh.ruff;Ruff;charliermarsh;7;7;7;5;2026.66.0;2026.40.0;Programming Languages;Programming Languages, Linters, Formatters;https://github.com/astral-sh/ruff-vscode.git;Sin IA;;manifiesto
+cweijan.dbclient-jdbc;Database Client JDBC;cweijan;7;7;7;2;1.4.6;1.3.6;Other;Other;https://github.com/database-client/jdbc-adapter-server.git;Sin IA;;manifiesto
+docker.docker;Docker DX;docker;7;7;7;1;0.18.0;0.18.0;Programming Languages;Programming Languages, Linters, Debuggers;https://github.com/docker/vscode-extension;Sin IA;;manifiesto
+enkia.tokyo-night;Tokyo Night;enkia;7;7;7;1;1.1.2;1.1.2;Themes;Themes, Other;https://github.com/enkia/tokyo-night-vscode-theme;Sin IA;;manifiesto
+github.vscode-github-actions;GitHub Actions;github;7;7;7;1;0.32.3;0.32.3;Other;Other;https://github.com/github/vscode-github-actions;Sin IA;;manifiesto
+grapecity.gc-excelviewer;Spreadsheet Viewer;GrapeCity;7;7;7;1;4.2.66;4.2.66;Other;Other;https://github.com/wijmo/gc-excelviewer.git;Sin IA;;manifiesto
+hbenl.vscode-test-explorer;Test Explorer UI;hbenl;7;7;7;2;2.22.1;2.21.1;Other;Other;https://github.com/hbenl/vscode-test-explorer.git;Sin IA;;manifiesto
+ibm.application-delivery-foundation-for-zos-vscode-extension-pack;IBM Application Delivery Foundation for z/OS (ADFz) Extension Pack;IBM;7;7;7;4;6.6.0;6.0.0;Extension Packs;Extension Packs;https://github.com/IBM/zopeneditor-about;Sin IA;;manifiesto
+mgesbert.python-path;Python Path;mgesbert;7;7;7;1;0.0.14;0.0.14;Programming Languages;Programming Languages, Snippets, Formatters, Other, Extension Packs;https://github.com/mgesbert/vscode-python-path.git;Sin IA;;manifiesto
+ms-toolsai.datawrangler;Data Wrangler;ms-toolsai;7;7;7;1;1.24.2;1.24.2;Data Science;Data Science, Machine Learning;https://github.com/microsoft/vscode-data-wrangler;Herramienta con IA;;manifiesto
+mtxr.sqltools;SQLTools;mtxr;7;7;7;2;0.28.6;0.28.5;Programming Languages;Programming Languages, Snippets, Formatters, Other;https://github.com/mtxr/vscode-sqltools.git;Sin IA;;manifiesto
+oracle.oracle-java;Java;Oracle;7;7;7;1;26.0.0;26.0.0;Programming Languages;Programming Languages, Debuggers, Testing, Snippets, Linters, Formatters, Other;https://github.com/oracle/javavscode;Sin IA;;manifiesto
+salesforce.apex-language-server-extension;Salesforce Apex Language Server (Typescript);salesforce;7;7;7;1;0.8.0;0.8.0;Programming Languages;Programming Languages, Linters, Snippets;https://github.com/forcedotcom/apex-language-support.git;Sin IA;;manifiesto
+salesforce.salesforcedx-metadata-visualizer-vscode;Metadata Visualizer;salesforce;7;7;7;2;1.2.0;1.1.0;Visualization;Visualization, Other;https://github.com/forcedotcom/salesforce-metadata-visualizer-support;Sin IA;;manifiesto
+salesforce.salesforcedx-vscode;Salesforce Extension Pack;salesforce;7;7;7;4;67.7.1;67.4.0;Extension Packs;Extension Packs;https://github.com/forcedotcom/salesforcedx-vscode;Sin IA;;manifiesto
+xabikos.javascriptsnippets;JavaScript (ES6) code snippets;xabikos;7;7;7;1;1.8.0;1.8.0;Snippets;Snippets;https://github.com/xabikos/vscode-javascript;Sin IA;;manifiesto
+ziyasal.vscode-open-in-github;Open in GitHub, Bitbucket, Gitlab, VisualStudio.com !;ziyasal;7;7;7;1;1.3.6;1.3.6;Other;Other;https://github.com/ziyasal/vscode-open-in-github.git;Sin IA;;manifiesto
+almenon.arepl;AREPL for python;almenon;6;6;6;2;3.0.0;2.0.5;Other;Other, Debuggers;https://github.com/almenon/arepl-vscode.git;Sin IA;;manifiesto
+bierner.markdown-mermaid;Markdown Preview Mermaid Support;bierner;6;6;6;1;1.32.1;1.32.1;Other;Other;https://github.com/mjbvz/vscode-markdown-mermaid.git;Sin IA;;manifiesto
+christian-kohler.npm-intellisense;npm Intellisense;christian-kohler;6;6;6;1;1.4.5;1.4.5;Other;Other;https://github.com/ChristianKohler/NpmIntellisense.git;Sin IA;;manifiesto
+continue.continue;Continue - open-source AI code agent;Continue;6;6;6;2;2.0.0;1.2.22;AI;AI, Chat, Programming Languages, Education, Machine Learning, Snippets;https://github.com/continuedev/continue;Asistente de codigo IA;Continue;manifiesto
+dongli.python-preview;Python Preview;dongli;6;6;6;1;0.0.4;0.0.4;Programming Languages;Programming Languages, Debuggers;https://github.com/dongli0x00/python-preview;Sin IA;;derivado del ID
+donjayamanne.git-extension-pack;Git Extension Pack;donjayamanne;6;6;6;1;0.1.3;0.1.3;Extension Packs;Extension Packs;https://github.com/DonJayamanne/git-extension-pack;Sin IA;;manifiesto
+financialforce.lana;Apex Log Analyzer;FinancialForce;6;6;6;2;1.20.1;1.20.0;Other;Other;https://github.com/certinia/debug-log-analyzer.git;Sin IA;;manifiesto
+formulahendry.auto-close-tag;Auto Close Tag;formulahendry;6;6;6;1;0.5.15;0.5.15;Other;Other, Programming Languages;https://github.com/formulahendry/vscode-auto-close-tag.git;Sin IA;;manifiesto
+george-alisson.html-preview-vscode;Html Preview;george-alisson;6;6;6;1;0.2.5;0.2.5;Programming Languages;Programming Languages;https://github.com/george-alisson/html-preview-vscode;Sin IA;;derivado del ID
+graphql.vscode-graphql-syntax;GraphQL: Syntax Highlighting;GraphQL;6;6;6;2;1.3.10;1.3.8;Programming Languages;Programming Languages;https://github.com/graphql/graphiql;Sin IA;;manifiesto
+kisstkondoros.vscode-gutter-preview;Image preview;kisstkondoros;6;6;6;1;0.32.2;0.32.2;Other;Other;https://github.com/kisstkondoros/gutter-preview.git;Sin IA;;manifiesto
+littlefoxteam.vscode-python-test-adapter;Python Test Explorer for Visual Studio Code;littlefoxteam;6;6;6;2;0.8.2;0.8.1;Other;Other;https://github.com/kondratyev-nv/vscode-python-test-adapter.git;Sin IA;;manifiesto
+mathematic.vscode-pdf;PDF Viewer;mathematic;6;6;6;1;0.1.11;0.1.11;Visualization;Visualization, Other;https://github.com/mathematic-inc/vscode-pdf.git;Sin IA;;manifiesto
+meezilla.json;JSON;Meezilla;6;6;6;1;0.1.2;0.1.2;Formatters;Formatters;git+https://gitlab.meezilla.com/Meezilla/json.git;Sin IA;;manifiesto
+ms-azuretools.vscode-azurevirtualmachines;Azure Virtual Machines;ms-azuretools;6;6;6;2;0.6.11;0.6.9;Azure;Azure;https://github.com/microsoft/vscode-azurevirtualmachines;Sin IA;;manifiesto
+ms-windows-ai-studio.windows-ai-studio;Foundry Toolkit for VS Code;ms-windows-ai-studio;6;6;6;2;1.6.5;1.6.2;AI;AI, Azure, Chat, Data Science, Machine Learning, Other;https://github.com/Microsoft/windows-ai-studio.git;Herramienta con IA;;manifiesto
+vscjava.migrate-java-to-azure;GitHub Copilot modernization;vscjava;6;6;6;1;1.22.0;1.22.0;AI;AI, Chat;;Asistente de codigo IA;GitHub;manifiesto
+akamud.vscode-theme-onedark;Atom One Dark Theme;akamud;5;5;5;1;2.3.0;2.3.0;Themes;Themes;https://github.com/akamud/vscode-theme-onedark;Sin IA;;manifiesto
+alefragnani.bookmarks;Bookmarks;alefragnani;5;5;5;1;14.1.1;14.1.1;Other;Other;https://github.com/alefragnani/vscode-bookmarks.git;Sin IA;;manifiesto
+alexcvzz.vscode-sqlite;SQLite;alexcvzz;5;5;5;1;0.14.1;0.14.1;Other;Other;https://github.com/AlexCovizzi/vscode-sqlite;Sin IA;;manifiesto
+amazonwebservices.aws-toolkit-vscode;AWS Toolkit;amazonwebservices;5;5;5;5;4.11.0;3.65.0;Debuggers;Debuggers, Linters, Visualization, Notebooks, Other;https://github.com/aws/aws-toolkit-vscode;Sin IA;;manifiesto
+angular.ng-template;Angular Language Service;Angular;5;5;5;1;22.0.1;22.0.1;Programming Languages;Programming Languages;https://github.com/angular/angular.git;Sin IA;;manifiesto
+asciidoctor.asciidoctor-vscode;Asciidoctor;asciidoctor;5;5;5;1;3.4.5;3.4.5;Programming Languages;Programming Languages;https://github.com/asciidoctor/asciidoctor-vscode;Sin IA;;derivado del ID
+bierner.emojisense;:emojisense:;bierner;5;5;5;1;0.10.0;0.10.0;Other;Other;https://github.com/mattbierner/vscode-emojisense.git;Sin IA;;manifiesto
+christian-kohler.path-intellisense;Path Intellisense;christian-kohler;5;5;5;1;2.10.0;2.10.0;Other;Other;https://github.com/ChristianKohler/PathIntellisense.git;Sin IA;;manifiesto
+cstrap.python-snippets;python-snippets;cstrap;5;5;5;1;0.1.2;0.1.2;Snippets;Snippets;https://github.com/cstrap/python-snippets.git;Sin IA;;manifiesto
+deerawan.vscode-dash;Dash;deerawan;5;5;5;1;2.4.0;2.4.0;Other;Other;https://github.com/deerawan/vscode-dash;Sin IA;;manifiesto
+demystifying-javascript.python-extensions-pack;Python Development Extensions Pack;demystifying-javascript;5;5;5;2;1.0.3;1.0.2;Extension Packs;Extension Packs, Snippets, Linters, Programming Languages, Formatters, Other;https://github.com/demystifying-javascript/python-extension-pack;Sin IA;;manifiesto
+figma.figma-vscode-extension;Figma for VS Code;figma;5;5;5;1;0.4.5;0.4.5;Snippets;Snippets, Formatters, Other;http://github.com/figma/figma;Sin IA;;manifiesto
+formulahendry.auto-rename-tag;Auto Rename Tag;formulahendry;5;5;5;1;0.1.10;0.1.10;Other;Other, Programming Languages;https://github.com/formulahendry/vscode-auto-rename-tag.git;Sin IA;;manifiesto
+github.vscode-codeql;CodeQL;GitHub;5;5;5;2;1.17.8;1.17.7;Programming Languages;Programming Languages;https://github.com/github/vscode-codeql;Sin IA;;manifiesto
+google.geminicodeassist;Gemini Code Assist;google;5;5;5;2;2.93.0;2.79.0;AI;AI, Programming Languages, Machine Learning, Chat;;Asistente de codigo IA;Google;manifiesto
+hediet.vscode-drawio;Draw.io Integration;hediet;5;5;5;1;1.9.0;1.9.0;Visualization;Visualization;https://github.com/hediet/vscode-drawio.git;Sin IA;;manifiesto
+ibm.apa-extension;IBM Application Performance Analyzer for z/OS;IBM;5;5;5;1;16.1.22512101;16.1.22512101;Other;Other;;Sin IA;;manifiesto
+ibm.compiledcodecoverage;IBM Compiled Code Coverage;IBM;5;5;5;3;1.0.5;1.0.3;Other;Other;;Sin IA;;manifiesto
+james-yu.latex-workshop;LaTeX Workshop;James-Yu;5;5;5;1;10.16.1;10.16.1;Programming Languages;Programming Languages, Snippets, Linters, Formatters;https://github.com/James-Yu/LaTeX-Workshop.git;Sin IA;;manifiesto
+jebbs.plantuml;PlantUML;jebbs;5;5;5;1;2.18.1;2.18.1;Programming Languages;Programming Languages, Formatters, Snippets, Other;https://github.com/qjebbs/vscode-plantuml.git;Sin IA;;manifiesto
+johnpapa.angular2;Angular Snippets (Version 22);johnpapa;5;5;5;2;22.0.0;18.0.2;Snippets;Snippets, Other;https://github.com/johnpapa/vscode-angular-snippets.git;Sin IA;;manifiesto
+kaih2o.python-resource-monitor;Python Resource Monitor;kaih2o;5;5;5;2;0.3.0;0.2.2;Visualization;Visualization, Debuggers, Other;;Sin IA;;manifiesto
+microsoft-isvexptools.powerplatform-vscode;Power Platform Tools;microsoft-IsvExpTools;5;5;5;2;2.0.150;2.0.145;Snippets;Snippets, Other, Chat, AI;https://github.com/microsoft/powerplatform-vscode;Herramienta con IA;;manifiesto
+mintlify.document;Mintlify Doc Writer for Python, JavaScript, TypeScript, C++, PHP, Java, C#, Ruby & more;mintlify;5;5;5;2;2.2.2;2.2.1;Machine Learning;Machine Learning, Programming Languages;https://github.com/mintlify/vscode-docs;Herramienta con IA;;manifiesto
+ms-azuretools.azure-dev;Azure Developer CLI;ms-azuretools;5;5;5;2;0.10.0;0.9.0;Azure;Azure;https://github.com/azure/azure-dev;Sin IA;;manifiesto
+ms-azuretools.vscode-azureappservice;Azure App Service;ms-azuretools;5;5;5;2;0.27.0;0.26.2;Azure;Azure;https://github.com/Microsoft/vscode-azureappservice;Sin IA;;manifiesto
+ms-azuretools.vscode-azurecontainerapps;Azure Container Apps;ms-azuretools;5;5;5;2;0.11.2;0.8.2;Azure;Azure;https://github.com/microsoft/vscode-azurecontainerapps;Sin IA;;manifiesto
+ms-azuretools.vscode-azurefunctions;Azure Functions;ms-azuretools;5;5;5;2;1.22.0;1.17.3;Azure;Azure;https://github.com/Microsoft/vscode-azurefunctions;Sin IA;;manifiesto
+ms-azuretools.vscode-azurestaticwebapps;Azure Static Web Apps;ms-azuretools;5;5;5;2;0.13.3;0.13.1;Azure;Azure;https://github.com/Microsoft/vscode-azurestaticwebapps;Sin IA;;manifiesto
+ms-azuretools.vscode-azurestorage;Azure Storage;ms-azuretools;5;5;5;2;0.17.2;0.16.5;Azure;Azure;https://github.com/microsoft/vscode-azurestorage;Sin IA;;manifiesto
+ms-azuretools.vscode-cosmosdb;Azure Cosmos DB;ms-azuretools;5;5;5;2;0.34.0;0.26.0;Azure;Azure, Data Science;https://github.com/microsoft/vscode-cosmosdb;Sin IA;;manifiesto
+ms-sarifvscode.sarif-viewer;SARIF Viewer;MS-SarifVSCode;5;5;5;1;3.4.5;3.4.5;Other;Other;https://github.com/Microsoft/sarif-vscode-extension.git;Sin IA;;manifiesto
+ms-vscode.vscode-node-azure-pack;Azure Tools;ms-vscode;5;5;5;2;1.8.2;1.6.0;Azure;Azure, Extension Packs;https://github.com/microsoft/vscode-node-azure-pack;Sin IA;;manifiesto
+nhoizey.gremlins;Gremlins tracker for Visual Studio Code;nhoizey;5;5;5;1;0.26.0;0.26.0;Linters;Linters;;Sin IA;;manifiesto
+postman.postman-for-vscode;Postman;Postman;5;5;5;1;1.19.1;1.19.1;Programming Languages;Programming Languages, Education, Testing, Other;https://github.com/postmanlabs/postman-app-support;Sin IA;;manifiesto
+salesforce.salesforcedx-vscode-expanded;Salesforce Extension Pack (Expanded);salesforce;5;5;5;2;67.7.1;67.6.0;Extension Packs;Extension Packs;https://github.com/forcedotcom/salesforcedx-vscode;Sin IA;;manifiesto
+salesforce.salesforcedx-vscode-ui-preview;Salesforce Live Preview;salesforce;5;5;5;1;1.3.0;1.3.0;Programming Languages;Programming Languages;https://github.com/forcedotcom/salesforcedx-vscode;Sin IA;;manifiesto
+shakram02.bash-beautify;Bash Beautify;shakram02;5;5;5;1;0.1.1;0.1.1;Formatters;Formatters;;Sin IA;;manifiesto
+thebarkman.vscode-djaneiro;Djaneiro - Django Snippets;thebarkman;5;5;5;1;1.4.2;1.4.2;Snippets;Snippets;https://github.com/ScottBarkman/vscode-djaneiro;Sin IA;;manifiesto
+timonwong.shellcheck;ShellCheck;timonwong;5;5;5;2;0.39.5;0.39.3;Linters;Linters, Programming Languages;https://github.com/vscode-shellcheck/vscode-shellcheck.git;Sin IA;;manifiesto
+trabpukcip.wolf;Wolf;traBpUkciP;5;5;5;1;0.4.3;0.4.3;Debuggers;Debuggers, Other;https://github.com/Duroktar/Wolf;Sin IA;;manifiesto
+vignaeshrama.sfdx-package-xml-generator;Salesforce Package.xml Generator Extension for VS Code;VignaeshRamA;5;5;5;2;2.1.0;2.0.14;Extension Packs;Extension Packs, Other;;Sin IA;;manifiesto
+wallabyjs.console-ninja;Console Ninja;WallabyJs;5;5;5;2;1.0.537;1.0.486;Debuggers;Debuggers, Other, AI, Chat;;Herramienta con IA;;manifiesto
+xirider.livecode;LiveCode for python;xirider;5;5;5;1;1.3.10;1.3.10;Other;Other, Debuggers;https://github.com/xirider/livecode.git;Sin IA;;manifiesto
+yzane.markdown-pdf;Markdown PDF;yzane;5;5;5;1;2.1.0;2.1.0;Other;Other;https://github.com/yzane/vscode-markdown-pdf.git;Sin IA;;manifiesto
+analysis-services.powerbi-modeling-mcp;Power BI Modeling MCP Server;analysis-services;4;4;4;1;0.4.0;0.4.0;AI;AI, Chat;https://github.com/microsoft/powerbi-modeling-mcp;Herramienta con IA;;manifiesto
+bierner.markdown-checkbox;Markdown Checkboxes;bierner;4;4;4;1;0.4.0;0.4.0;Other;Other;https://github.com/mjbvz/vscode-markdown-checkboxes.git;Sin IA;;manifiesto
+bierner.markdown-emoji;Markdown Emoji;bierner;4;4;4;1;0.3.1;0.3.1;Other;Other;https://github.com/mjbvz/vscode-markdown-emoji.git;Sin IA;;manifiesto
+bitlang.cobol;Cobol;bitlang;4;4;4;3;26.7.21;25.3.9;Sin categoria;;;Sin IA;;derivado del ID
+broadcommfd.cobol-language-support;COBOL Language Support;BroadcomMFD;4;4;4;2;2.5.1;2.4.0;Programming Languages;Programming Languages;https://github.com/eclipse/che-che4z-lsp-for-cobol.git;Sin IA;;manifiesto
+cyrilletuzi.angular-schematics;Angular Schematics;cyrilletuzi;4;4;4;1;8.0.4;8.0.4;Other;Other;https://github.com/cyrilletuzi/vscode-angular-schematics/;Sin IA;;manifiesto
+danielpinto8zz6.c-cpp-compile-run;C/C++ Compile Run;danielpinto8zz6;4;4;4;4;1.0.92;1.0.58;Programming Languages;Programming Languages, Other;https://github.com/danielpinto8zz6/c-cpp-compile-run.git;Sin IA;;manifiesto
+dbtlabsinc.dbt;dbt;dbtLabsInc;4;4;4;3;0.92.0;0.26.0;Programming Languages;Programming Languages, Data Science, Linters, Debuggers;https://github.com/dbt-labs/dbt-core;Sin IA;;manifiesto
+dracula-theme.theme-dracula;Dracula Theme Official;dracula-theme;4;4;4;1;2.25.1;2.25.1;Themes;Themes;https://github.com/dracula/visual-studio-code.git;Sin IA;;manifiesto
+dvirtz.parquet-viewer;parquet-viewer;dvirtz;4;4;4;2;3.1.0;3.0.2;Other;Other;https://github.com/dvirtz/vscode-parquet-viewer.git;Sin IA;;manifiesto
+editorconfig.editorconfig;EditorConfig;EditorConfig;4;4;4;1;0.18.2;0.18.2;Other;Other;https://github.com/editorconfig/editorconfig-vscode.git;Sin IA;;manifiesto
+etmoffat.pip-packages;pip-packages;etmoffat;4;4;4;1;0.4.3;0.4.3;Other;Other;;Sin IA;;manifiesto
+hashicorp.terraform;HashiCorp Terraform;hashicorp;4;4;4;2;2.40.0;2.39.2;Programming Languages;Programming Languages, Other, Formatters, Linters;https://github.com/hashicorp/vscode-terraform.git;Sin IA;;manifiesto
+humao.rest-client;REST Client;humao;4;4;4;1;0.25.1;0.25.1;Other;Other, Snippets, Linters, Programming Languages;https://github.com/Huachao/vscode-restclient.git;Sin IA;;manifiesto
+jianfajun.dax-language;DAX for Power BI;jianfajun;4;4;4;2;0.1.1;0.0.13;Programming Languages;Programming Languages, Formatters, Linters;https://github.com/logicislogic/daxforpowerbi;Sin IA;;manifiesto
+miguelsolorio.symbols;Symbols;miguelsolorio;4;4;4;2;0.0.26;0.0.24;Themes;Themes;https://github.com/miguelsolorio/vscode-symbols.git;Sin IA;;manifiesto
+ms-dotnettools.vscodeintellicode-csharp;Vscodeintellicode Csharp;ms-dotnettools;4;4;4;1;2.2.3;2.2.3;Programming Languages;Programming Languages;;Sin IA;;derivado del ID
+ms-ossdata.vscode-pgsql;PostgreSQL;ms-ossdata;4;4;4;1;1.26.0;1.26.0;Programming Languages;Programming Languages, Azure;https://github.com/microsoft/vscode-pgsql;Sin IA;;manifiesto
+ms-toolsai.vscode-jupyter-powertoys;Jupyter PowerToys;ms-toolsai;4;4;4;1;0.1.1;0.1.1;Other;Other, Data Science, Machine Learning, Notebooks, Visualization;https://github.com/Microsoft/vscode-jupyter-powertoys;Herramienta con IA;;manifiesto
+powerappstools.powerfx;Power FX Interpreter;PowerAppsTools;4;4;4;1;1.0.13;1.0.13;Programming Languages;Programming Languages;https://github.com/leorrusso/powerfx-vscode-extension;Sin IA;;manifiesto
+powerquery.vscode-powerquery;Power Query / M Language;PowerQuery;4;4;4;1;1.0.0;1.0.0;Programming Languages;Programming Languages;git+https://github.com/microsoft/vscode-powerquery.git;Sin IA;;manifiesto
+quicktype.quicktype;Paste JSON as Code;quicktype;4;4;4;1;23.0.170;23.0.170;Other;Other;https://github.com/glideapps/quicktype;Sin IA;;manifiesto
+rangav.vscode-thunder-client;Thunder Client;rangav;4;4;4;1;2.41.0;2.41.0;Programming Languages;Programming Languages, Snippets, Testing;https://github.com/thunderclient/thunder-client-support;Sin IA;;manifiesto
+robbowen.synthwave-vscode;SynthWave '84;RobbOwen;4;4;4;1;0.1.20;0.1.20;Themes;Themes;https://github.com/robb0wen/synthwave-vscode;Sin IA;;manifiesto
+salesforce.salesforcedx-vscode-apex-debugger;Apex Interactive Debugger;salesforce;4;4;4;2;67.6.0;67.4.0;Debuggers;Debuggers;https://github.com/forcedotcom/salesforcedx-vscode;Sin IA;;manifiesto
+saoudrizwan.claude-dev;Cline;saoudrizwan;4;4;4;1;4.0.10;4.0.10;AI;AI, Chat, Programming Languages, Education, Snippets, Testing;https://github.com/cline/cline;Asistente de codigo IA;Cline;manifiesto
+sidthesloth.html5-boilerplate;HTML Boilerplate;sidthesloth;4;4;4;1;1.1.1;1.1.1;Snippets;Snippets;https://github.com/sidthesloth92/vsc_html5_boilerplate.git;Sin IA;;manifiesto
+slightc.pip-manager;Pip Manager;slightc;4;4;4;1;1.1.4;1.1.4;Other;Other;https://github.com/slightc/pip-manager;Sin IA;;manifiesto
+sonarsource.sonarlint-vscode;SonarQube for IDE;SonarSource;4;4;4;2;5.6.0;5.5.0;Linters;Linters, Education, Programming Languages, Notebooks, AI;https://github.com/SonarSource/sonarlint-vscode.git;Herramienta con IA;;manifiesto
+sourcery.sourcery;Sourcery;sourcery;4;4;4;3;1.43.0;1.14.0;AI;AI, Linters, Machine Learning, Other, Programming Languages, Snippets;;Asistente de codigo IA;Sourcery;manifiesto
+tonybaloney.vscode-pets;vscode-pets;tonybaloney;4;4;4;2;1.36.0;1.35.0;Other;Other;https://github.com/tonybaloney/vscode-pets;Sin IA;;manifiesto
+tushortz.python-extended-snippets;Python Extended;tushortz;4;4;4;1;0.0.1;0.0.1;Snippets;Snippets;https://github.com/tushortz/vscode-Python-Extended.git;Sin IA;;manifiesto
+visualstudiotoolsforunity.vstuc;Vstuc;visualstudiotoolsforunity;4;4;4;1;1.2.2;1.2.2;Programming Languages;Programming Languages, Debuggers, Linters, Other;;Sin IA;;derivado del ID
+vscjava.vscode-java-upgrade;GitHub Copilot modernization - upgrade for Java;vscjava;4;4;4;1;2.1.2;2.1.2;AI;AI, Chat;https://github.com/microsoft/vscode-app-mod-pack;Asistente de codigo IA;GitHub;manifiesto
+vue.volar;Vue (Official);Vue;4;4;4;2;3.3.8;3.3.7;Programming Languages;Programming Languages;https://github.com/vuejs/language-tools.git;Sin IA;;manifiesto
+1tontech.angular-material;Angular Material 2, Flex layout 1, Covalent 1 & Material icon snippets;1tontech;3;3;3;1;0.13.0;0.13.0;Snippets;Snippets;https://github.com/1tontech/material2-snippets.git;Sin IA;;manifiesto
+adpyke.codesnap;CodeSnap;adpyke;3;3;3;1;1.3.4;1.3.4;Other;Other;https://github.com/kufii/CodeSnap;Sin IA;;manifiesto
+ahmadawais.shades-of-purple;Shades of Purple;ahmadawais;3;3;3;1;7.3.6;7.3.6;Themes;Themes;https://github.com/ahmadawais/shades-of-purple-vscode;Sin IA;;manifiesto
+alexiv.vscode-angular2-files;Angular Files;alexiv;3;3;3;1;1.6.4;1.6.4;Other;Other, Programming Languages, Snippets;https://github.com/ivalexa/vscode-angular2-files;Sin IA;;manifiesto
+altimateai.vscode-altimate-mcp-server;Datamates;altimateai;3;3;3;1;0.8.8;0.8.8;Other;Other;https://github.com/AltimateAI/vscode-altimate-mcp-server.git;Sin IA;;manifiesto
+atlassian.atlascode;Atlassian: Jira, Rovo Dev, Bitbucket;atlassian;3;3;3;1;4.0.31;4.0.31;Other;Other;https://github.com/atlassian/atlascode.git;Sin IA;;manifiesto
+clemenspeters.format-json;JSON formatter;ClemensPeters;3;3;3;1;1.0.3;1.0.3;Formatters;Formatters;https://github.com/clemenspeters/vscode-extension-format-json.git;Sin IA;;manifiesto
+cweijan.vscode-mysql-client2;MySQL;cweijan;3;3;3;2;9.0.2;7.6.6;Programming Languages;Programming Languages, Keymaps;https://github.com/cweijan/vscode-database-client.git;Sin IA;;manifiesto
+cweijan.vscode-postgresql-client2;PostgreSQL;cweijan;3;3;3;1;9.0.2;9.0.2;Programming Languages;Programming Languages, Keymaps;https://github.com/cweijan/vscode-database-client.git;Sin IA;;manifiesto
+dynatrace.dynatrace-apps;Dynatrace Apps;dynatrace;3;3;3;1;0.39.2;0.39.2;Programming Languages;Programming Languages, Other;;Sin IA;;manifiesto
+eriklynd.json-tools;JSON Tools;eriklynd;3;3;3;1;1.0.2;1.0.2;Other;Other;;Sin IA;;manifiesto
+gauth.gauth-policy-editor;gAuth Policy Editor;gauth;3;3;3;2;0.18.2;0.18.1;Other;Other;;Sin IA;;manifiesto
+huyza.dax-language;DAX Language Support;huyza;3;3;3;1;0.0.2;0.0.2;Programming Languages;Programming Languages;https://github.com/huyza/dax-language;Sin IA;;manifiesto
+infinity1207.angular2-switcher;angular2-switcher;infinity1207;3;3;3;1;0.4.0;0.4.0;Keymaps;Keymaps;https://github.com/infinity1207/angular2-switcher;Sin IA;;manifiesto
+jakobhoeg.vscode-pokemon;vscode-pokemon;jakobhoeg;3;3;3;3;5.0.0;4.3.5;Other;Other;https://github.com/jakobhoeg/vscode-pokemon;Sin IA;;manifiesto
+john-crowson.angular-file-changer;Angular File Changer (Supporting Touch Bar and NgRx);john-crowson;3;3;3;1;0.0.4;0.0.4;Keymaps;Keymaps, Other;https://github.com/jtcrowson/angular-file-changer;Sin IA;;manifiesto
+johnpapa.vscode-peacock;Peacock;johnpapa;3;3;3;2;4.3.4;4.2.2;Other;Other;https://github.com/johnpapa/vscode-peacock.git;Sin IA;;manifiesto
+loiane.angular-extension-pack;Angular Extension Pack;loiane;3;3;3;1;1.2.4;1.2.4;Extension Packs;Extension Packs;;Sin IA;;manifiesto
+mathematic.vscode-latex;LaTeX;mathematic;3;3;3;1;2.0.0;2.0.0;Programming Languages;Programming Languages, Formatters, Snippets, Linters;https://github.com/mathematic-inc/vscode-latex.git;Sin IA;;manifiesto
+miguelsolorio.fluent-icons;Fluent Icons;miguelsolorio;3;3;3;1;0.0.19;0.0.19;Themes;Themes;https://github.com/misolori/vscode-fluent-icons.git;Sin IA;;manifiesto
+mohd-akram.vscode-html-format;HTML Format;mohd-akram;3;3;3;1;0.1.6;0.1.6;Formatters;Formatters;https://github.com/mohd-akram/vscode-html-format.git;Sin IA;;manifiesto
+monokai.theme-monokai-pro-vscode;Monokai Pro;monokai;3;3;3;2;2.0.13;2.0.8;Themes;Themes;;Sin IA;;manifiesto
+ms-azure-load-testing.microsoft-testing;Azure Load Testing;ms-azure-load-testing;3;3;3;1;0.2.0;0.2.0;Azure;Azure, AI, Testing;https://github.com/microsoft/azureloadtesting-extension;Herramienta con IA;;manifiesto
+ms-playwright.playwright;Playwright Test for VSCode;ms-playwright;3;3;3;2;1.1.19;1.1.17;Testing;Testing;;Sin IA;;manifiesto
+ms-python.mypy-type-checker;Mypy Type Checker;ms-python;3;3;3;1;2026.6.0;2026.6.0;Programming Languages;Programming Languages, Linters, Formatters;https://github.com/microsoft/vscode-mypy.git;Sin IA;;manifiesto
+ms-python.pylint;Pylint;ms-python;3;3;3;2;2026.6.0;2025.2.0;Programming Languages;Programming Languages, Linters;https://github.com/microsoft/vscode-pylint.git;Sin IA;;manifiesto
+ms-toolsai.jupyter-hub;JupyterHub;ms-toolsai;3;3;3;1;2024.5.1002432242;2024.5.1002432242;Data Science;Data Science, Machine Learning, Notebooks;https://github.com/Microsoft/vscode-jupyter-hub;Herramienta con IA;;manifiesto
+ms-vscode.hexeditor;Hexeditor;ms-vscode;3;3;3;1;1.11.1;1.11.1;Other;Other;https://github.com/microsoft/vscode-hexeditor;Sin IA;;derivado del ID
+ms-vscode.vscode-serial-monitor;Serial Monitor;ms-vscode;3;3;3;1;0.13.1;0.13.1;Visualization;Visualization, Testing;https://github.com/microsoft/vscode-serial-monitor;Sin IA;;manifiesto
+naumovs.color-highlight;Color Highlight;naumovs;3;3;3;1;2.8.0;2.8.0;Other;Other;https://github.com/naumovs/vscode-ext-color-highlight.git;Sin IA;;manifiesto
+nilssoderman.batch-runner;Batch Runner;NilsSoderman;3;3;3;1;1.4.0;1.4.0;Other;Other, Debuggers;https://github.com/nils-soderman/vscode-batch-runner;Sin IA;;manifiesto
+obenjiro.arrr;arrr;obenjiro;3;3;3;1;0.1.3;0.1.3;Programming Languages;Programming Languages;https://github.com/obenjiro/vscode-arrr.git;Sin IA;;manifiesto
+petersteiner.pip-installer;pip installer;PeterSteiner;3;3;3;1;0.0.4;0.0.4;Other;Other;;Sin IA;;manifiesto
+pmneo.tsimporter;TypeScript Importer;pmneo;3;3;3;1;2.0.1;2.0.1;Other;Other;;Sin IA;;manifiesto
+rbbit.typescript-hero;TypeScript Hero;rbbit;3;3;3;1;3.0.0;3.0.0;Formatters;Formatters, Programming Languages;https://gitlab.com/smartive/open-source/christoph/typescript-hero.git;Sin IA;;manifiesto
+rctay.karma-problem-matcher;Karma Problem Matcher;rctay;3;3;3;1;1.0.1;1.0.1;Programming Languages;Programming Languages;https://github.com/rctay/vscode-karma-problem-matcher;Sin IA;;manifiesto
+reditorsupport.r-syntax;R Syntax;REditorSupport;3;3;3;1;0.1.4;0.1.4;Programming Languages;Programming Languages;https://github.com/REditorSupport/vscode-R-syntax;Sin IA;;manifiesto
+rust-lang.rust-analyzer;rust-analyzer;rust-lang;3;3;3;2;0.3.2981;0.3.2929;Formatters;Formatters, Programming Languages;https://github.com/rust-lang/rust-analyzer.git;Sin IA;;manifiesto
+rvest.vs-code-prettier-eslint;Prettier ESLint;rvest;3;3;3;1;6.0.0;6.0.0;Formatters;Formatters;https://github.com/idahogurl/vs-code-prettier-eslint;Sin IA;;manifiesto
+segerdekort.angular-cli;Angular-cli;segerdekort;3;3;3;1;0.0.19;0.0.19;Extension Packs;Extension Packs;;Sin IA;;manifiesto
+simontest.simontest;SimonTest;SimonTest;3;3;3;1;1.9.10;1.9.10;Other;Other;https://github.com/SimonTestNet/SimonTest/issues;Sin IA;;manifiesto
+slevesque.shader;Shader languages support for VS Code;slevesque;3;3;3;1;1.1.5;1.1.5;Programming Languages;Programming Languages;https://github.com/stef-levesque/vscode-shader.git;Sin IA;;manifiesto
+steoates.autoimport;Auto Import;steoates;3;3;3;1;1.5.4;1.5.4;Other;Other;;Sin IA;;manifiesto
+stringham.move-ts;Move TS - Move TypeScript files and update relative imports;stringham;3;3;3;1;1.12.0;1.12.0;Other;Other;https://github.com/stringham/move-ts.git;Sin IA;;manifiesto
+tamasfe.even-better-toml;Even Better TOML;tamasfe;3;3;3;1;0.21.2;0.21.2;Programming Languages;Programming Languages, Linters, Formatters, Other;https://github.com/tamasfe/taplo;Sin IA;;manifiesto
+teamsdevapp.ms-teams-vscode-extension;Microsoft 365 Agents Toolkit;TeamsDevApp;3;3;3;2;6.12.0;6.10.2;Azure;Azure, Extension Packs, Snippets;https://github.com/OfficeDev/TeamsFx;Sin IA;;manifiesto
+teamsdevapp.vscode-ai-foundry;Microsoft Foundry;TeamsDevApp;3;3;3;3;1.2.4;0.16.0;AI;AI, Azure, Other;https://github.com/microsoft/ai-foundry-for-vscode;Herramienta con IA;;manifiesto
+tht13.python;Python for VSCode;tht13;3;3;3;1;0.2.3;0.2.3;Languages;Languages, Snippets, Linters;https://github.com/tht13/Python-vscode.git;Sin IA;;manifiesto
+vitest.explorer;Vitest;vitest;3;3;3;2;1.50.8;1.50.7;Testing;Testing;https://github.com/vitest-dev/vscode.git;Sin IA;;manifiesto
+zignd.html-css-class-completion;IntelliSense for CSS class names in HTML;Zignd;3;3;3;1;1.20.0;1.20.0;Programming Languages;Programming Languages, Other;https://github.com/Zignd/HTML-CSS-Class-Completion;Sin IA;;manifiesto
+adamviola.parquet-explorer;Parquet Explorer;AdamViola;2;1;2;1;1.2.1;1.2.1;Other;Other;https://github.com/adamviola/parquet-explorer;Sin IA;;manifiesto
+adpyke.vscode-sql-formatter;SQL Formatter;adpyke;2;2;2;1;1.4.4;1.4.4;Formatters;Formatters;https://github.com/kufii/vscode-sql-formatter.git;Sin IA;;manifiesto
+amazonwebservices.amazon-q-vscode;Amazon Q;amazonwebservices;2;2;2;2;2.4.0;1.111.0;AI;AI, Chat, Programming Languages, Education, Machine Learning;https://github.com/aws/aws-toolkit-vscode;Asistente de codigo IA;AWS;manifiesto
+anbuselvanrocky.bootstrap5-vscode;Bootstrap 5 Quick Snippets;AnbuselvanRocky;2;2;2;1;0.5.0;0.5.0;Snippets;Snippets;https://github.com/anburocky3/bootstrap5-snippets.git;Sin IA;;manifiesto
+anseki.vscode-color;Color Picker;anseki;2;2;2;1;0.4.5;0.4.5;Other;Other;https://github.com/anseki/vscode-color.git;Sin IA;;manifiesto
+arthurlobo.easy-codesnap;Easy CodeSnap;ArthurLobo;2;2;2;1;1.37.4;1.37.4;Other;Other;https://github.com/ArthurLobopro/easy-codesnap;Sin IA;;manifiesto
+aykutsarac.jsoncrack-vscode;JSON Crack;AykutSarac;2;2;2;1;5.1.0;5.1.0;Visualization;Visualization;https://github.com/AykutSarac/jsoncrack.com;Sin IA;;manifiesto
+bastienboutonnet.vscode-dbt;vscode-dbt;bastienboutonnet;2;2;2;1;0.5.1;0.5.1;Snippets;Snippets;https://github.com/bastienboutonnet/vscode-dbt.git;Sin IA;;manifiesto
+beardedbear.beardedtheme;Bearded Theme;BeardedBear;2;2;2;1;10.1.0;10.1.0;Themes;Themes;https://github.com/BeardedBear/bearded-theme;Sin IA;;manifiesto
+benjamin-simmonds.pythoncpp-debug;Python C++ Debugger;benjamin-simmonds;2;2;2;1;0.3.0;0.3.0;Debuggers;Debuggers, Data Science;https://github.com/benibenj/vscode-pythonCpp/;Sin IA;;manifiesto
+bierner.github-markdown-preview;GitHub Markdown Preview;bierner;2;2;2;1;0.4.0;0.4.0;Other;Other, Extension Packs;https://github.com/mjbvz/vscode-github-markdown-preview.git;Sin IA;;manifiesto
+bierner.markdown-footnotes;Markdown Footnotes;bierner;2;2;2;1;0.1.1;0.1.1;Other;Other;https://github.com/mjbvz/vscode-markdown-footnotes.git;Sin IA;;manifiesto
+bierner.markdown-preview-github-styles;Markdown Preview Github Styling;bierner;2;2;2;1;2.2.0;2.2.0;Other;Other;https://github.com/mjbvz/vscode-github-markdown-preview-style.git;Sin IA;;manifiesto
+bierner.markdown-yaml-preamble;Markdown yaml Preamble;bierner;2;2;2;1;0.1.1;0.1.1;Other;Other;https://github.com/mjbvz/vscode-markdown-yaml-preamble.git;Sin IA;;manifiesto
+bitlang.cobol-themes;COBOL Themes;bitlang;2;2;2;1;1.0.10;1.0.10;Themes;Themes;https://github.com/spgennard/vscobol-themes;Sin IA;;manifiesto
+blackboxapp.blackbox;BLACKBOXAI #1 Coding Agent +10 Million Developers;Blackboxapp;2;2;2;2;2.8.53;2.8.27;Other;Other, Programming Languages, Snippets, Machine Learning, Education;;Asistente de codigo IA;Blackbox;manifiesto
+blackboxapp.blackboxagent;BLACKBOXAI Agent;Blackboxapp;2;2;2;2;3.7.0;3.4.65;AI;AI, Other, Programming Languages, Snippets, Machine Learning, Education;;Asistente de codigo IA;Blackbox;manifiesto
+bmewburn.vscode-intelephense-client;PHP Intelephense;bmewburn;2;2;2;2;1.18.5;1.14.4;Programming Languages;Programming Languages, Linters, Formatters;https://github.com/bmewburn/vscode-intelephense.git;Sin IA;;manifiesto
+bradlc.vscode-tailwindcss;Tailwind CSS IntelliSense;bradlc;2;2;2;1;0.16.0;0.16.0;Linters;Linters, Other;https://github.com/tailwindlabs/tailwindcss-intellisense.git;Sin IA;;manifiesto
+buianhthang.xml2json;XML to JSON;buianhthang;2;2;2;1;1.2.5;1.2.5;Other;Other;https://github.com/buianhthang/vscode-xml2json;Sin IA;;manifiesto
+catppuccin.catppuccin-vsc;Catppuccin for VSCode;Catppuccin;2;2;2;1;3.19.0;3.19.0;Themes;Themes;https://github.com/catppuccin/vscode.git;Sin IA;;manifiesto
+ccimage.jsonviewer;JSON Viewer;ccimage;2;2;2;1;1.5.2;1.5.2;Formatters;Formatters;https://github.com/ccimage/jsonviewer;Sin IA;;manifiesto
+chuckjonas.apex-pmd;Apex PMD;chuckjonas;2;2;2;1;0.11.1;0.11.1;Linters;Linters;https://github.com/ChuckJonas/vscode-apex-pmd.git;Sin IA;;manifiesto
+codeium.codeium;Windsurf Plugin (formerly Codeium): AI Coding Autocomplete and Chat for Python, JavaScript, TypeScript, and more;Codeium;2;2;2;1;1.48.2;1.48.2;AI;AI, Chat, Programming Languages, Machine Learning, Snippets, Education;;Asistente de codigo IA;Windsurf/Codeium;manifiesto
+d4nuu8.language-kuka-krl;KUKA KRL;d4nuu8;2;2;2;1;1.9.0;1.9.0;Programming Languages;Programming Languages;https://github.com/d4nuu8/language-kuka-krl.git;Sin IA;;manifiesto
+dadroit.dadroit-json-generator;Dadroit JSON Generator;Dadroit;2;2;2;1;1.2.2;1.2.2;Debuggers;Debuggers, Testing, Programming Languages;https://github.com/DadroitOrganization/JSONGeneratorExtension.git;Sin IA;;manifiesto
+danielsanmedium.dscodegpt;CodeGPT: Chat & AI Agents;DanielSanMedium;2;2;2;2;3.22.1;3.6.29;Data Science;Data Science, Machine Learning, Programming Languages, Testing, Linters, Formatters, Education;https://github.com/JudiniLabs/code-gpt-docs;Asistente de codigo IA;CodeGPT;manifiesto
+dart-code.dart-code;Dart Code;dart-code;2;2;2;2;3.138.0;3.134.0;Sin categoria;;;Sin IA;;derivado del ID
+dart-code.flutter;Flutter;Dart-Code;2;2;2;2;3.138.0;3.134.0;Programming Languages;Programming Languages, Snippets, Linters, Formatters, Debuggers;https://github.com/Dart-Code/Flutter.git;Sin IA;;manifiesto
+diogonolasco.pyinit;PyInit;DiogoNolasco;2;2;2;1;0.0.3;0.0.3;Formatters;Formatters, Other;https://github.com/diogonfs/pyinit.git;Sin IA;;manifiesto
+dskwrk.vscode-generate-getter-setter;TypeScript Toolbox;DSKWRK;2;2;2;1;0.5.0;0.5.0;Other;Other;https://github.com/cybertim/vscode-gengetset.git;Sin IA;;manifiesto
+dtoplak.vscode-glsllint;GLSL Lint;dtoplak;2;2;2;1;1.9.1;1.9.1;Programming Languages;Programming Languages, Linters;https://github.com/hsimpson/vscode-glsllint.git;Sin IA;;manifiesto
+dustypomerleau.rust-syntax;Rust Syntax;dustypomerleau;2;2;2;1;0.6.1;0.6.1;Programming Languages;Programming Languages;https://github.com/dustypomerleau/rust-syntax;Sin IA;;manifiesto
+emmanuelbeziat.vscode-great-icons;VSCode Great Icons;emmanuelbeziat;2;2;2;1;2.1.121;2.1.121;Other;Other, Themes;https://github.com/EmmanuelBeziat/vscode-great-icons.git;Sin IA;;manifiesto
+ericsia.pythonsnippets3;Python Snippets 3;EricSia;2;2;2;1;3.3.20;3.3.20;Snippets;Snippets, Extension Packs, Data Science, Machine Learning, Education, Testing, Other;https://github.com/ericsia/vscode-python-snippet-pack-2.0/;Herramienta con IA;;manifiesto
+eschalk0.scientific-data-viewer;Scientific Data Viewer;eschalk0;2;2;2;1;0.12.0;0.12.0;Data Science;Data Science, Visualization, Other;https://github.com/etienneschalk/scientific-data-viewer.git;Sin IA;;manifiesto
+eserozvataf.one-dark-pro-monokai-darker;One Dark Pro Monokai Darker Theme;eserozvataf;2;2;2;1;1.1.0;1.1.0;Themes;Themes;https://github.com/eserozvataf/vscode-one-dark-pro-monokai-darker.git;Sin IA;;manifiesto
+fabi.fanuc-karel-syntax;Fanuc-Karel-Syntax;fabi;2;2;2;1;0.0.4;0.0.4;Programming Languages;Programming Languages;;Sin IA;;manifiesto
+fabianlauer.vs-code-xml-format;XML Formatter;fabianlauer;2;2;2;1;0.1.5;0.1.5;Languages;Languages, Other, Formatters;https://github.com/FabianLauer/vs-code-xml-format;Sin IA;;manifiesto
+fanuc.karel-for-fanuc-robot;KAREL for FANUC Robot;FANUC;2;2;2;1;1.1.0;1.1.0;Other;Other;;Sin IA;;manifiesto
+fill-labs.dependi;Dependi;fill-labs;2;2;2;2;0.7.25;0.7.22;Programming Languages;Programming Languages, Visualization, Other;https://github.com/filllabs/dependi.git;Sin IA;;manifiesto
+flyfly6.terminal-in-status-bar;Terminal in Status Bar;flyfly6;2;2;2;1;0.2.0;0.2.0;Other;Other;https://github.com/flyfly6/terminal-in-status-bar;Sin IA;;manifiesto
+formulahendry.vscode-mysql;MySQL;formulahendry;2;2;2;1;0.5.0;0.5.0;Programming Languages;Programming Languages, Azure;https://github.com/formulahendry/vscode-mysql.git;Sin IA;;manifiesto
+fougas.msys2;MSYS2/Cygwin/MinGW/Clang support;fougas;2;2;2;1;0.10.0;0.10.0;Other;Other;https://github.com/okhlybov/vscode-msys2.git;Sin IA;;manifiesto
+fractalbrew.backticks;Backticks;fractalbrew;2;2;2;1;1.7.0;1.7.0;Other;Other;https://github.com/Mossop/vscode-backticks.git;Sin IA;;manifiesto
+franneck94.vscode-python-config;Python Config;franneck94;2;2;2;1;12.4.0;12.4.0;Programming Languages;Programming Languages, Snippets;https://github.com/franneck94/vscode-python-config.git;Sin IA;;manifiesto
+franneck94.vscode-python-dev-extension-pack;Python Dev Extension Pack;franneck94;2;2;2;1;2.1.0;2.1.0;Extension Packs;Extension Packs;https://github.com/franneck94/vscode-python-dev-extension-pack;Sin IA;;manifiesto
+geforcelegend.vscode-glsl;GLSL Syntax for VS Code;GeForceLegend;2;2;2;1;0.3.4;0.3.4;Programming Languages;Programming Languages;https://github.com/GeForceLegend/vscode-glsl.git;Sin IA;;manifiesto
+gerhardbrueckl.powerbi-vscode;Power BI Studio;GerhardBrueckl;2;2;2;1;2.10.0;2.10.0;Azure;Azure, Extension Packs, Other;https://github.com/gbrueckl/PowerBI-VSCode;Sin IA;;manifiesto
+gruntfuggly.todo-tree;Todo Tree;Gruntfuggly;2;2;2;1;0.0.226;0.0.226;Other;Other;;Sin IA;;manifiesto
+gydunhn.javascript-essentials;Javascript-Essentials;Gydunhn;2;2;2;1;0.3.0;0.3.0;Extension Packs;Extension Packs;https://github.com/Gydunhn/Javascript-Essentials.git;Sin IA;;manifiesto
+gydunhn.typescript-essentials;Typescript-Essentials;Gydunhn;2;2;2;1;1.2.0;1.2.0;Extension Packs;Extension Packs;https://github.com/Gydunhn/Typescript-Essentials.git;Sin IA;;manifiesto
+gydunhn.vsc-essentials-core;VSC-Essentials-Core;Gydunhn;2;2;2;1;0.5.0;0.5.0;Extension Packs;Extension Packs;https://github.com/Gydunhn/VSC-Essentials-Core.git;Sin IA;;manifiesto
+gydunhn.vsc-essentials-material-themes;VSC-Essentials-Material-Themes;Gydunhn;2;2;2;1;0.1.1;0.1.1;Extension Packs;Extension Packs, Themes, Other;https://github.com/Gydunhn/VSC-Essentials-Material-Themes.git;Sin IA;;manifiesto
+gydunhn.vsc-essentials-themes-core;VSC-Essentials-Themes-Core;Gydunhn;2;2;2;1;0.1.2;0.1.2;Extension Packs;Extension Packs, Themes, Other;https://github.com/Gydunhn/VSC-Essentials-Themes-Core.git;Sin IA;;manifiesto
+hardikpthv.ngrxsnippets;NgRx Snippets (Version 9);hardikpthv;2;2;2;1;9.1.0;9.1.0;Snippets;Snippets;https://github.com/hardikpthv/vscode-ngrx-snippets.git;Sin IA;;manifiesto
+henriblancke.vscode-dbt-formatter;dbt formatter;henriblancke;2;2;2;1;1.0.1;1.0.1;Programming Languages;Programming Languages, Formatters, Other;https://github.com/henriblancke/vscode-dbt-formatter;Sin IA;;manifiesto
+ibm.output-colorizer;Output Colorizer;IBM;2;2;2;1;0.1.2;0.1.2;Languages;Languages;https://github.com/IBM-Bluemix/vscode-log-output-colorizer.git;Sin IA;;manifiesto
+inferrinizzard.prettier-sql-vscode;Prettier SQL VSCode;inferrinizzard;2;2;2;1;1.6.0;1.6.0;Formatters;Formatters, Other;https://github.com/sql-formatter-org/sql-formatter;Sin IA;;manifiesto
+innoverio.vscode-dbt-power-user;Power User for dbt;innoverio;2;2;2;2;0.64.0;0.63.0;Other;Other, Programming Languages, Snippets, Data Science, Formatters, Testing;https://github.com/AltimateAI/vscode-dbt-power-user.git;Sin IA;;manifiesto
+johnpapa.pwa-tools;PWA Tools;johnpapa;2;2;2;1;0.1.0;0.1.0;Snippets;Snippets, Other;https://github.com/johnpapa/vscode-pwa.git;Sin IA;;manifiesto
+kamikillerto.vscode-colorize;colorize;kamikillerto;2;2;2;1;0.17.1;0.17.1;Other;Other;https://github.com/kamikillerto/vscode-colorize.git;Sin IA;;manifiesto
+kaysonwu.cpptask;C/C++ Build Task;kaysonwu;2;2;2;1;0.0.1;0.0.1;Debuggers;Debuggers;https://github.com/kaysonwu/cpptask.git;Sin IA;;manifiesto
+kleber-swf.unity-code-snippets;Unity Code Snippets;kleber-swf;2;2;2;2;2.4.0;1.3.0;Snippets;Snippets;https://github.com/kleber-swf/vscode-unity-code-snippets;Sin IA;;manifiesto
+leonkohli.snapsource;Copy4AI - Copy Project Code to ChatGPT;LeonKohli;2;2;2;1;1.5.1;1.5.1;Other;Other;https://github.com/LeonKohli/copy4ai.git;Sin IA;;manifiesto
+lochbrunner.vscode-hdf5-viewer;HDF5 Preview;lochbrunner;2;2;2;1;0.0.3;0.0.3;Sin categoria;;https://github.com/lochbrunner/vscode-hdf5-viewer.git;Sin IA;;manifiesto
+mattpocock.ts-error-translator;Total TypeScript;mattpocock;2;2;2;1;0.10.1;0.10.1;Education;Education, Linters;https://github.com/mattpocock/ts-error-translator;Sin IA;;manifiesto
+mbehr1.dlt-logs;DLT-Logs;mbehr1;2;2;2;2;1.105.2;1.105.1;Other;Other;https://github.com/mbehr1/dlt-logs.git;Sin IA;;manifiesto
+mikael.angular-beastcode;Angular 17 Snippets - TypeScript, Html, Angular Material, ngRx, RxJS & Flex Layout;Mikael;2;2;2;1;17.0.4;17.0.4;Snippets;Snippets;https://github.com/BeastCode/VSCode-Angular-TypeScript-Snippets.git;Sin IA;;manifiesto
+mikeburgh.xml-format;XML Format;mikeburgh;2;2;2;1;1.1.3;1.1.3;Formatters;Formatters;https://github.com/mikeburgh/vscode-xml-format.git;Sin IA;;manifiesto
+ms-azuretools.vscode-azureterraform;Microsoft Terraform;ms-azuretools;2;2;2;1;0.10.3;0.10.3;Azure;Azure, Other;https://github.com/Azure/vscode-azureterraform.git;Sin IA;;manifiesto
+ms-copilotstudio.vscode-copilotstudio;Copilot Studio;ms-CopilotStudio;2;2;2;2;1.7.9;1.6.68;AI;AI, Azure, Chat, Programming Languages;https://github.com/microsoft/vscode-copilotstudio;Herramienta con IA;;manifiesto
+ms-vscode.makefile-tools;Makefile Tools;ms-vscode;2;2;2;1;0.12.17;0.12.17;Programming Languages;Programming Languages, Debuggers, Other;https://github.com/Microsoft/vscode-makefile-tools.git;Sin IA;;manifiesto
+ms-vscode.theme-materialkit;Material Theme Kit;ms-vscode;2;2;2;1;0.1.4;0.1.4;Themes;Themes;https://github.com/Microsoft/vscode-themes.git;Sin IA;;manifiesto
+ms-vscode.vscode-typescript-next;JavaScript and TypeScript Nightly;ms-vscode;2;2;2;1;6.0.20260416;6.0.20260416;Sin categoria;;https://github.com/microsoft/vscode-typescript-next.git;Sin IA;;manifiesto
+msoffice.microsoft-office-add-in-debugger;Microsoft Office Add-ins Development Kit;msoffice;2;2;2;1;1.0.1;1.0.1;Debuggers;Debuggers, Other;https://github.com/OfficeDev/OfficeAddinDevKit.git;Sin IA;;manifiesto
+mtxr.sqltools-driver-mssql;SQLTools SQL Server;mtxr;2;2;2;1;0.4.11;0.4.11;Programming Languages;Programming Languages, Snippets, Formatters, Other;https://github.com/mtxr/vscode-sqltools.git;Sin IA;;manifiesto
+natewallace.angular2-inline;angular2-inline;natewallace;2;2;2;1;0.0.17;0.0.17;Languages;Languages;https://github.com/natewallace/angular2-inline.git;Sin IA;;manifiesto
+nrwl.angular-console;Nx Console;nrwl;2;2;2;1;18.101.1;18.101.1;Other;Other;https://github.com/nrwl/nx-console.git;Sin IA;;manifiesto
+oracle.sql-developer;Oracle SQL Developer for VSCode;Oracle;2;2;2;1;26.2.0;26.2.0;Programming Languages;Programming Languages, Formatters, Snippets, Other;;Sin IA;;manifiesto
+pkief.material-product-icons;Material Product Icons;PKief;2;2;2;1;1.7.1;1.7.1;Themes;Themes;https://github.com/material-extensions/vscode-material-product-icons.git;Sin IA;;manifiesto
+pkosta2006.rxjs-snippets;rxjs-snippets;pkosta2006;2;2;2;1;0.0.2;0.0.2;Snippets;Snippets;https://github.com/prashantkoshta/rxjs-snippets-vscode.git;Sin IA;;manifiesto
+pomdtr.excalidraw-editor;Excalidraw;pomdtr;2;2;2;1;3.9.3;3.9.3;Visualization;Visualization;https://github.com/excalidraw/excalidraw-vscode;Sin IA;;manifiesto
+raczzalan.webgl-glsl-editor;WebGL GLSL Editor;raczzalan;2;2;2;1;1.3.9;1.3.9;Programming Languages;Programming Languages, Linters, Snippets, Formatters;https://github.com/racz16/WebGL-GLSL-Editor;Sin IA;;manifiesto
+rahulraghunathb.excel-lite;Excel Lite;rahulraghunathb;2;2;2;1;1.0.2;1.0.2;Other;Other;https://github.com/rahulraghunathb/excel-lite-vscode-extension;Sin IA;;manifiesto
+redhat.vscode-microprofile;Tools for MicroProfile;redhat;2;2;2;2;0.14.0;0.13.0;Programming Languages;Programming Languages, Snippets, Other;https://github.com/redhat-developer/vscode-microprofile;Sin IA;;manifiesto
+reditorsupport.r;R;REditorSupport;2;2;2;1;2.8.8;2.8.8;Programming Languages;Programming Languages, Snippets, Other;https://github.com/REditorSupport/vscode-R;Sin IA;;manifiesto
+regadas.sqltools-trino-driver;Trino Driver;regadas;2;2;2;1;0.2.13;0.2.13;Programming Languages;Programming Languages, Snippets, Formatters, Other;https://github.com/regadas/sqltools-trino-driver.git;Sin IA;;manifiesto
+richie5um2.vscode-statusbar-json-path;JSON Path Status Bar;richie5um2;2;2;2;1;2.0.0;2.0.0;Other;Other;https://github.com/richie5um/vscode-statusbar-json-path.git;Sin IA;;manifiesto
+seanmcshane.jar-viewer-and-decompiler;JAR Viewer and Decompiler;seanmcshane;2;2;2;1;1.6.0;1.6.0;Other;Other;git@github.com:recursean/JAR-Viewer-and-Decompiler-VSCode-Extension.git;Sin IA;;manifiesto
+sst-dev.opencode;opencode;sst-dev;2;2;2;1;0.0.13;0.0.13;Other;Other;https://github.com/sst/opencode;Sin IA;;manifiesto
+sutharlabs.confluence-mcp;Confluence MCP;SutharLabs;2;2;2;1;1.0.2;1.0.2;AI;AI, Other;https://github.com/mrsutharsuresh/confluence_mcp_server.git;Herramienta con IA;;manifiesto
+tabnine.tabnine-vscode;Tabnine AI;TabNine;2;2;2;1;3.335.0;3.335.0;Programming Languages;Programming Languages, Snippets, Machine Learning, Education, Other;https://github.com/codota/tabnine-vscode;Asistente de codigo IA;Tabnine;manifiesto
+timheuer.jsondbg;JSON Debug Visualizer;timheuer;2;2;2;1;0.2.3;0.2.3;Debuggers;Debuggers, Other, Visualization;https://github.com/timheuer/jsondbg.git;Sin IA;;manifiesto
+tintinweb.graphviz-interactive-preview;Graphviz Interactive Preview;tintinweb;2;2;2;1;0.3.5;0.3.5;Programming Languages;Programming Languages;https://github.com/tintinweb/vscode-interactive-graphviz;Sin IA;;manifiesto
+tombonnike.vscode-status-bar-format-toggle;Formatting Toggle;tombonnike;2;2;2;1;3.2.0;3.2.0;Other;Other, Formatters;https://github.com/Tom-Bonnike/vscode-formatting-toggle.git;Sin IA;;manifiesto
+ukoloff.win-ca;win-ca;ukoloff;2;2;2;1;3.5.1;3.5.1;Sin categoria;;git+https://github.com/ukoloff/win-ca.git;Sin IA;;manifiesto
+vectorgroup.capl;Vector CAPL;vectorgroup;2;2;2;1;20.0.0;20.0.0;Programming Languages;Programming Languages;https://github.com/vectorgrp/capl.git;Sin IA;;manifiesto
+vitaliymaz.vscode-svg-previewer;SVG Previewer;vitaliymaz;2;2;2;1;0.7.0;0.7.0;Other;Other;;Sin IA;;manifiesto
+vscode-arduino.vscode-arduino-community;Arduino Community Edition;vscode-arduino;2;2;2;1;0.7.2;0.7.2;Programming Languages;Programming Languages, Snippets, Formatters;https://github.com/vscode-arduino/vscode-arduino.git;Sin IA;;manifiesto
+well-ar.plantuml;PlantUML - Simple Viewer;well-ar;2;2;2;1;2.17.6;2.17.6;Programming Languages;Programming Languages, Formatters, Snippets, Other;https://github.com/well-ar/vscode-plantuml.git;Sin IA;;manifiesto
+wesbos.theme-cobalt2;Cobalt2 Theme Official;wesbos;2;2;2;1;2.5.0;2.5.0;Themes;Themes;https://github.com/wesbos/cobalt2-vscode;Sin IA;;manifiesto
+whizkydee.material-palenight-theme;Palenight Theme;whizkydee;2;2;2;1;2.0.4;2.0.4;Themes;Themes, Other;https://github.com/whizkydee/vscode-palenight-theme;Sin IA;;manifiesto
+xyz.plsql-language;Language PL/SQL;xyz;2;2;2;1;1.8.2;1.8.2;Programming Languages;Programming Languages;https://github.com/zabel-xyz/plsql-language.git;Sin IA;;manifiesto
+yoavbls.pretty-ts-errors;Pretty TypeScript Errors;YoavBls;2;2;2;1;0.8.7;0.8.7;Programming Languages;Programming Languages, Debuggers, Visualization, Other;https://github.com/yoavbls/pretty-ts-errors;Sin IA;;manifiesto
+13xforever.language-x86-64-assembly;x86 and x86_64 Assembly;13xforever;1;1;1;1;3.1.5;3.1.5;Programming Languages;Programming Languages;https://github.com/13xforever/x86_64-assembly-vscode;Sin IA;;manifiesto
+1yib.rust-bundle;rust;1YiB;1;1;1;1;1.0.0;1.0.0;Extension Packs;Extension Packs;https://github.com/1YiB/vsc-bundle;Sin IA;;manifiesto
+42crunch.vscode-openapi;OpenAPI (Swagger) Editor;42Crunch;1;1;1;1;5.5.0;5.5.0;Programming Languages;Programming Languages, Snippets, Linters, Testing, Other;https://github.com/42Crunch/vscode-openapi.git;Sin IA;;manifiesto
+4bde9604-932c-638d-b5d2-db273992f59c.python-silver-pack;Python Silver Pack;4bde9604-932c-638d-b5d2-db273992f59c;1;1;1;1;1.0.1;1.0.1;Extension Packs;Extension Packs, Linters, Formatters, Debuggers;https://github.com/echoWebNerds/VsCode-Python-Extensions;Sin IA;;manifiesto
+abusaidm.html-snippets;HTML Snippets;abusaidm;1;1;1;1;0.2.1;0.2.1;Snippets;Snippets;;Sin IA;;manifiesto
+adam-bender.commit-message-editor;Commit Message Editor;adam-bender;1;1;1;1;0.25.0;0.25.0;Other;Other;https://github.com/bendera/vscode-commit-message-editor;Sin IA;;derivado del ID
+adamhartford.vscode-base64;vscode-base64;adamhartford;1;1;1;1;0.1.0;0.1.0;Other;Other;https://github.com/adamhartford/vscode-base64.git;Sin IA;;manifiesto
+adi-projects.pyextensionpack;Python pack;adi-projects;1;1;1;1;0.0.3;0.0.3;Other;Other;;Sin IA;;manifiesto
+ahern.urscript;URScript;Ahern;1;1;1;1;0.1.23;0.1.23;Programming Languages;Programming Languages, Snippets, Other;git+https://github.com/ahernguo/urscript-extension.git;Sin IA;;manifiesto
+ahmedrasnaama.csharp-form-gui-editor;C# Form GUI Editor;AhmedRASNAAMA;1;1;1;1;1.0.1;1.0.1;Programming Languages;Programming Languages, Debuggers, Testing, Snippets, Visualization, Other;https://github.com/AhmedRASNAAMA/C_CharpFormGUIEditor.git;Sin IA;;manifiesto
+aizhe.3d-html-viewer;3D HTML Viewer;Aizhe;1;1;1;1;1.0.1;1.0.1;Other;Other;https://github.com/Aizhee/3d-html-viewer;Sin IA;;manifiesto
+alefragnani.numbered-bookmarks;Numbered Bookmarks;alefragnani;1;1;1;1;9.0.0;9.0.0;Other;Other;https://github.com/alefragnani/vscode-numbered-bookmarks.git;Sin IA;;manifiesto
+alekskrnjaic.fanuctplanguage;Fanuc TP Language;alekskrnjaic;1;1;1;1;0.11.1;0.11.1;Programming Languages;Programming Languages, Formatters;;Sin IA;;manifiesto
+alexisvt.flutter-snippets;Flutter Widget Snippets;alexisvt;1;1;1;1;3.0.0;3.0.0;Snippets;Snippets;https://github.com/Alexisvt/flutter-snippets.git;Sin IA;;manifiesto
+alexnesnes.teleplot;teleplot;alexnesnes;1;1;1;1;1.1.4;1.1.4;Other;Other;https://github.com/nesnes/teleplot;Sin IA;;manifiesto
+alin-c.vbs-formatter;VBS Formatter;alin-c;1;1;1;1;0.0.5;0.0.5;Other;Other, Formatters;https://github.com/alin-c/vbs-formatter.git;Sin IA;;manifiesto
+analysis-services.tmdl;TMDL;analysis-services;1;1;1;1;1.6.3;1.6.3;Sin categoria;;https://github.com/microsoft/vscode-tmdl.git;Sin IA;;manifiesto
+anasfiguigui.pokemon-pets;Pokemon Pets;Anasfiguigui;1;1;1;1;1.3.0;1.3.0;Other;Other;https://github.com/Anasfiguigui/Pokemon-Pets;Sin IA;;manifiesto
+andrepimenta.claude-code-chat;Chat for Claude Code;AndrePimenta;1;1;1;1;2.2.0;2.2.0;Other;Other, AI, Chat, Machine Learning, Snippets, Programming Languages, Education, Testing, Formatters, Linters;https://github.com/andrepimenta/claude-code-chat;Asistente de codigo IA;Anthropic;manifiesto
+andyyaldoo.vscode-json;vscode-json;andyyaldoo;1;1;1;1;1.5.2;1.5.2;Other;Other;https://github.com/adharmawan/vscode-json.git;Sin IA;;manifiesto
+arcanis.vscode-zipfs;ZipFS - a zip file system;arcanis;1;1;1;1;3.0.0;3.0.0;Other;Other;ssh://git@github.com/yarnpkg/berry.git;Sin IA;;manifiesto
+arianjamasb.protein-viewer;Protein Viewer;ArianJamasb;1;1;1;1;0.1.0;0.1.0;Other;Other, Visualization, Data Science;https://github.com/a-r-j/vscoding-sequence.git;Sin IA;;manifiesto
+arthurdw.rovo-lsp;Rovo for Rust;arthurdw;1;1;1;1;0.4.8;0.4.8;Programming Languages;Programming Languages, Linters;https://github.com/arthurdw/rovo;Sin IA;;manifiesto
+astro-build.astro-vscode;Astro;astro-build;1;1;1;1;2.16.17;2.16.17;Programming Languages;Programming Languages, Formatters, Linters;git+https://github.com/withastro/astro.git;Sin IA;;manifiesto
+attilathedud.data-converter;Data Converter;attilathedud;1;1;1;1;1.0.3;1.0.3;Other;Other;https://github.com/attilathedud/vscode-data-converter.git;Sin IA;;manifiesto
+bar.python-import-helper;Python Import Helper;Bar;1;1;1;1;1.0.34;1.0.34;Programming Languages;Programming Languages, Snippets, Formatters, Other;https://github.com/barnuri/vscode-extensions;Sin IA;;manifiesto
+bbenoist.doxygen;Doxygen;bbenoist;1;1;1;1;1.0.0;1.0.0;Languages;Languages;https://github.com/bbenoist/vscode-doxygen.git;Sin IA;;manifiesto
+bbenoist.shell;Shell;bbenoist;1;1;1;1;0.3.0;0.3.0;Other;Other;https://github.com/bbenoist/vscode-shell.git;Sin IA;;manifiesto
+bbugh.change-color-format;Change Color Format;bbugh;1;1;1;1;1.2.0;1.2.0;Formatters;Formatters;https://github.com/bbugh/vscode-change-color-format.git;Sin IA;;manifiesto
+be5invis.vscode-custom-css;Custom CSS and JS Loader;be5invis;1;1;1;1;7.5.1;7.5.1;Other;Other, Themes;https://github.com/be5invis/vscode-custom-css;Sin IA;;manifiesto
+beardedbear.beardedicons;Bearded Icons;BeardedBear;1;1;1;1;1.22.0;1.22.0;Other;Other, Themes;https://github.com/BeardedBear/bearded-icons;Sin IA;;manifiesto
+benjaminsu.decompile-java;Decompile Java Pretty;BenjaminSu;1;1;1;1;0.0.6;0.0.6;Programming Languages;Programming Languages;https://github.com/bjmsu/vscode-java-decompiler;Sin IA;;manifiesto
+benrogerswpg.transparent-minimap;Transparent Minimap;BenRogersWPG;1;1;1;1;3.6.9;3.6.9;Keymaps;Keymaps, Other;https://github.com/BenRogersWPG/VSCode-Transparent-Minimap;Sin IA;;manifiesto
+besthyhy.dart-data-class-better-datetime;DartDataClass better DateTime;besthyhy;1;1;1;1;0.5.4;0.5.4;Programming Languages;Programming Languages, Other;https://github.com/besthyhy/Dart-Data-Class-Generator.git;Sin IA;;manifiesto
+bianxianyang.htmlplay;HTML Play;bianxianyang;1;1;1;1;0.0.10;0.0.10;Debuggers;Debuggers, Other;;Sin IA;;manifiesto
+bibhasdn.unique-lines;Unique Lines;bibhasdn;1;1;1;1;1.0.0;1.0.0;Other;Other;;Sin IA;;manifiesto
+bmalehorn.shell-syntax;Shell Syntax;bmalehorn;1;1;1;1;1.0.5;1.0.5;Linters;Linters, Programming Languages;https://github.com/bmalehorn/vscode-shell-syntax;Sin IA;;manifiesto
+bmc.devx-workbench-code-coverage;DevX Code Coverage;BMC;1;1;1;1;26.4.0;26.4.0;Other;Other;https://bmc.com;Sin IA;;manifiesto
+bmc.devx-workbench-code-debug;DevX Code Debug;BMC;1;1;1;1;26.4.0;26.4.0;Other;Other;https://TBD;Sin IA;;manifiesto
+bmc.devx-workbench-explorer;DevX Explorer;BMC;1;1;1;1;26.4.0;26.4.0;Other;Other;https://TBD;Sin IA;;manifiesto
+bmc.devx-workbench-file-aid;DevX File-AID;BMC;1;1;1;1;26.4.0;26.4.0;Other;Other;https://TBD;Sin IA;;manifiesto
+boto3typed.boto3-ide;AWS boto3;Boto3typed;1;1;1;1;0.6.0;0.6.0;Programming Languages;Programming Languages, Linters, Other;https://github.com/youtype/boto3-ide;Sin IA;;manifiesto
+bowlerr.offline-markdown-preview;Offline Markdown Preview;bowlerr;1;1;1;1;0.4.0;0.4.0;Visualization;Visualization, Other, Debuggers, Data Science;git+https://github.com/Bowlerr/offline-markdown-preview.git;Sin IA;;manifiesto
+bpruitt-goddard.mermaid-markdown-syntax-highlighting;Mermaid Markdown Syntax Highlighting;bpruitt-goddard;1;1;1;1;1.8.1;1.8.1;Other;Other;https://github.com/bpruitt-goddard/vscode-mermaid-syntax-highlight.git;Sin IA;;manifiesto
+bracketpaircolordlw.bracket-pair-color-dlw;Bracket Pair Color DLW;BracketPairColorDLW;1;1;1;1;0.0.6;0.0.6;Other;Other;https://github.com/EmersonGarrido/bracket-pair-dlw.git;Sin IA;;manifiesto
+bradgashler.htmltagwrap;htmltagwrap;bradgashler;1;1;1;1;1.0.0;1.0.0;Other;Other;https://github.com/bgashler1/vscode-htmltagwrap;Sin IA;;manifiesto
+brandonkirbyson.vscode-animations;VSCode Animations;BrandonKirbyson;1;1;1;1;2.0.7;2.0.7;Themes;Themes, Other;https://github.com/BrandonKirbyson/VSCode-Animations;Sin IA;;manifiesto
+brapifra.c-compiler;C Compiler;brapifra;1;1;1;1;0.0.4;0.0.4;Other;Other;https://github.com/brapifra/vscode-ccompiler.git;Sin IA;;manifiesto
+broadcommfd.ccf;COBOL Control Flow;BroadcomMFD;1;1;1;1;1.1.1;1.1.1;Other;Other;https://github.com/BroadcomMFD/cobol-control-flow;Sin IA;;manifiesto
+broadcommfd.cobol-language-support-for-idms;COBOL Language Support for IDMS;BroadcomMFD;1;1;1;1;1.0.8;1.0.8;Programming Languages;Programming Languages;https://github.com/eclipse/che-che4z-lsp-for-cobol.git;Sin IA;;manifiesto
+broadcommfd.debugger-for-mainframe;Debugger for Mainframe;BroadcomMFD;1;1;1;1;1.12.0;1.12.0;Debuggers;Debuggers;https://github.com/BroadcomMFD/debugger-for-mainframe;Sin IA;;manifiesto
+broadcommfd.jcl-language-support;JCL Language Support;broadcomMFD;1;1;1;1;2.0.0;2.0.0;Programming Languages;Programming Languages;https://github.com/BroadcomMFD/jcl-language-support;Sin IA;;manifiesto
+bscan.perlnavigator;Perl Navigator;bscan;1;1;1;1;0.8.21;0.8.21;Sin categoria;;https://github.com/bscan/PerlNavigator;Sin IA;;manifiesto
+catppuccin.catppuccin-vsc-icons;Catppuccin Icons for VSCode;Catppuccin;1;1;1;1;1.26.0;1.26.0;Themes;Themes;https://github.com/catppuccin/vscode-icons;Sin IA;;manifiesto
+ccisnedev.sqlite-inspector;SQLite Inspector;ccisnedev;1;1;1;1;0.0.2;0.0.2;Testing;Testing, Debuggers, Other;https://github.com/macss-dev/sqlite-inspector-vscode;Sin IA;;manifiesto
+chaunceykiwi.json-tree-view;JSON Tree View;ChaunceyKiwi;1;1;1;1;3.6.3;3.6.3;Other;Other;https://github.com/ChaunceyKiwi/json-tree-view;Sin IA;;manifiesto
+cheshirekow.cmake-format;cmake-format;cheshirekow;1;1;1;1;0.6.11;0.6.11;Other;Other;;Sin IA;;manifiesto
+chipcode-nl.gcc-arm-windows;Arm toolchain Windows;chipcode-nl;1;1;1;1;1.0.1;1.0.1;Other;Other;https://github.com/chipcode-nl/gcc-arm-windows.git;Sin IA;;manifiesto
+chris-noring.node-snippets;node-snippets;chris-noring;1;1;1;1;1.4.0;1.4.0;Snippets;Snippets;https://github.com/softchris/node-snippets.git;Sin IA;;manifiesto
+chrisjsewell.gulp-lattice;GULP;chrisjsewell;1;1;1;1;0.2.0;0.2.0;Programming Languages;Programming Languages;https://github.com/chrisjsewell/gulp-vscode-syntax.git;Sin IA;;manifiesto
+chrmarti.regex;Regex Previewer;chrmarti;1;1;1;1;0.6.0;0.6.0;Other;Other, Chat, AI;https://github.com/chrmarti/vscode-regex.git;Herramienta con IA;;manifiesto
+chuckjonas.apex-debug;Salesforce Apex Debug;chuckjonas;1;1;1;1;1.0.3;1.0.3;Debuggers;Debuggers;https://github.com/ChuckJonas/vscode-apex-debug.git;Sin IA;;manifiesto
+chuckjonas.duckdb;DuckDB;chuckjonas;1;1;1;1;0.0.27;0.0.27;Programming Languages;Programming Languages, Data Science, Other;https://github.com/ChuckJonas/duckdb-vscode.git;Sin IA;;manifiesto
+circledev.glsl-canvas;glsl-canvas;circledev;1;1;1;1;0.2.15;0.2.15;Snippets;Snippets, Other;git://github.com/actarian/vscode-glsl-canvas.git;Sin IA;;manifiesto
+ckolkman.vscode-postgres;PostgreSQL;ckolkman;1;1;1;1;1.4.3;1.4.3;Other;Other;https://github.com/Borvik/vscode-postgres.git;Sin IA;;manifiesto
+clarkyu.vscode-sql-beautify;SQL Beautify;clarkyu;1;1;1;1;0.3.23;0.3.23;Formatters;Formatters;https://github.com/clarkyu2016/sql-beautify.git;Sin IA;;manifiesto
+codecamel.json-viewer;Json Viewer;CodeCamel;1;1;1;1;0.0.5;0.0.5;Other;Other;;Sin IA;;manifiesto
+codeium.codeium-enterprise-updater;Codeium Enterprise Updater;Codeium;1;1;1;1;1.0.18;1.0.18;Other;Other;;Asistente de codigo IA;Windsurf/Codeium;manifiesto
+coderfin.logical-properties;🧠 Logical Properties;coderfin;1;1;1;1;0.1.16;0.1.16;Debuggers;Debuggers, Formatters, Linters, Programming Languages, Other;https://github.com/coderfin/logical-properties.git;Sin IA;;manifiesto
+conradludgate.rust-playground;Rust Playground;ConradLudgate;1;1;1;1;0.2.2;0.2.2;Other;Other;https://github.com/conradludgate/vscode-rust-playground;Sin IA;;manifiesto
+coolchyni.beyond-debug;GDB Debugger - Beyond;coolchyni;1;1;1;1;0.9.16;0.9.16;Debuggers;Debuggers, Programming Languages;https://github.com/coolchyni/beyond-debug;Sin IA;;manifiesto
+cschlosser.doxdocgen;Doxygen Documentation Generator;cschlosser;1;1;1;1;1.4.0;1.4.0;Other;Other;https://github.com/cschlosser/doxdocgen.git;Sin IA;;manifiesto
+cstrap.flask-snippets;flask-snippets;cstrap;1;1;1;1;0.1.3;0.1.3;Snippets;Snippets;https://github.com/cstrap/flask-snippets.git;Sin IA;;manifiesto
+cuilian.minidump-parser;Minidump Parser;CuiLiAn;1;1;1;1;1.0.5;1.0.5;Debuggers;Debuggers, Other;https://github.com/appledragon/DumpStorm.git;Sin IA;;manifiesto
+cweijan.vscode-database-client2;Database Client;cweijan;1;1;1;1;8.4.5;8.4.5;Programming Languages;Programming Languages, Keymaps;https://github.com/cweijan/vscode-database-client.git;Sin IA;;manifiesto
+cweijan.vscode-office;Office Viewer;cweijan;1;1;1;1;4.1.7;4.1.7;Visualization;Visualization, Other;https://github.com/cweijan/vscode-office.git;Sin IA;;manifiesto
+d-biehl.robotcode;RobotCode - Robot Framework Support;d-biehl;1;1;1;1;2.7.0;2.7.0;Programming Languages;Programming Languages, Testing, Debuggers, Formatters, Linters;https://github.com/robotcodedev/robotcode;Sin IA;;manifiesto
+d9705996.perl-toolbox;Perl Toolbox;d9705996;1;1;1;1;1.4.0;1.4.0;Linters;Linters;https://github.com/d9705996/perl-toolbox;Sin IA;;manifiesto
+dabolus.uncanny-cognitive-complexity;Uncanny Cognitive Complexity;Dabolus;1;1;1;1;1.2.0;1.2.0;Visualization;Visualization;https://github.com/Dabolus/uncanny-cognitive-complexity;Sin IA;;manifiesto
+danielpinto8zz6.c-cpp-project-generator;C/C++ Project Generator;danielpinto8zz6;1;1;1;1;1.2.20;1.2.20;Other;Other;git+https://github.com/danielpinto8zz6/c-cpp-project-generator.git;Sin IA;;manifiesto
+daninemonic.mcp4humans;MCP4Humans;daninemonic;1;1;1;1;1.0.7;1.0.7;Other;Other, AI, Testing, Machine Learning;https://github.com/daninemonic/mcp4humans;Herramienta con IA;;manifiesto
+danlambiase.lmstudio-copilot-provider;LM Studio for Copilot Chat;DanLambiase;1;1;1;1;1.30.3;1.30.3;AI;AI, Chat;https://github.com/yoy123/lmstudio-copilot-provider.git;Asistente de codigo IA;Local (LM Studio);manifiesto
+datagyio.pandas-intellisense;Pandas Intellisense;datagyio;1;1;1;1;0.0.1;0.0.1;Other;Other;https://github.com/nik-pi/Pandas-Intellisense;Sin IA;;manifiesto
+devadvice.serverlessconsole;Serverless Console;devadvice;1;1;1;1;0.8.2;0.8.2;Other;Other;https://github.com/domagojk/serverless-console.git;Sin IA;;manifiesto
+dgileadi.java-decompiler;Decompiler for Java;dgileadi;1;1;1;1;0.0.4;0.0.4;Programming Languages;Programming Languages;https://github.com/dgileadi/vscode-java-decompiler;Sin IA;;manifiesto
+diemasmichiels.emulate;Android iOS Emulator;DiemasMichiels;1;1;1;1;1.8.2;1.8.2;Debuggers;Debuggers, Other;https://github.com/DiemasMichiels/Emulator.git;Sin IA;;manifiesto
+dnicolson.binary-plist;Binary Plist;dnicolson;1;1;1;1;2.0.0;2.0.0;Programming Languages;Programming Languages;https://github.com/dnicolson/binary-plist;Sin IA;;manifiesto
+dsebastien.vscode-python-pack;vscode-python-pack;dsebastien;1;1;1;1;1.4.0;1.4.0;Extension Packs;Extension Packs;https://github.com/dsebastien/vscode-extension-packs;Sin IA;;manifiesto
+dynamicengineering.dynamic-siemens-language-support;Dynamic Siemens Language Support;DynamicEngineering;1;1;1;1;2.11.2;2.11.2;Programming Languages;Programming Languages;https://github.com/Danielv123/vscode_siemens;Sin IA;;manifiesto
+dynatrace.dynatrace-auth-provider;Dynatrace Authentication;Dynatrace;1;1;1;1;0.2.4;0.2.4;Other;Other;;Sin IA;;manifiesto
+dynatrace.dynatrace-debugging-extension;Dynatrace Live Debugger;Dynatrace;1;1;1;1;2.5.0;2.5.0;Debuggers;Debuggers, Programming Languages, Testing, Other;;Sin IA;;manifiesto
+dzhavat.bracket-pair-toggler;Bracket Pair Colorization Toggler;dzhavat;1;1;1;1;0.0.3;0.0.3;Other;Other;https://github.com/dzhavat/bracket-pair-toggler.git;Sin IA;;manifiesto
+eeyore.yapf;yapf;eeyore;1;1;1;1;2026.1.108140646;2026.1.108140646;Programming Languages;Programming Languages, Linters, Formatters;https://github.com/EeyoreLee/vscode-extension-yapf.git;Sin IA;;manifiesto
+elanzalaco.grey-light-plus-pro;Grey Light+ Pro;elanzalaco;1;1;1;1;0.0.1;0.0.1;Themes;Themes;https://github.com/elanzalaco/grey-light-plus-pro;Sin IA;;manifiesto
+eliazbobadilla.python-ultisnippets;Python UltiSnippets;eliazbobadilla;1;1;1;1;2.7.0;2.7.0;Snippets;Snippets;https://github.com/EliazBobadilla/Python-UltiSnippets-VSCode-Extension.git;Sin IA;;manifiesto
+elm-land.elm-land;Elm Land;elm-land;1;1;1;1;0.3.1;0.3.1;Programming Languages;Programming Languages;;Sin IA;;manifiesto
+elmtooling.elm-ls-vscode;Elm;elmTooling;1;1;1;1;2.8.0;2.8.0;Linters;Linters, Snippets, Programming Languages;https://github.com/elm-tooling/elm-language-client-vscode;Sin IA;;manifiesto
+emilast.logfilehighlighter;Log File Highlighter;emilast;1;1;1;1;3.5.1;3.5.1;Other;Other;https://github.com/emilast/vscode-logfile-highlighter.git;Sin IA;;manifiesto
+engineernick.vscode-create-jupyter;Create Jupyter - Buttons;engineernick;1;1;1;1;0.0.5;0.0.5;Other;Other;https://github.com/thehappycheese/vscode-create-jupyter;Sin IA;;manifiesto
+enlabe.python-dev-enhancers;Python Dev Enhancers;enlabe;1;1;1;1;1.0.0;1.0.0;Extension Packs;Extension Packs;;Sin IA;;manifiesto
+epolicardo.sql-server-profiler-tool;SQL Server Profiler Tool;epolicardo;1;1;1;1;0.5.1;0.5.1;Other;Other, Debuggers;https://github.com/epolicardo/SQLProfilerTool.git;Sin IA;;manifiesto
+equimper.react-native-react-redux;React-Native/React/Redux snippets for es6/es7;EQuimper;1;1;1;1;2.0.6;2.0.6;Snippets;Snippets;https://github.com/EQuimper/VSC-React-Native-React-Redux-Snippets;Sin IA;;manifiesto
+espressif.esp-idf-extension;ESP-IDF;espressif;1;1;1;1;2.1.0;2.1.0;Programming Languages;Programming Languages, Snippets, Other, Debuggers;https://github.com/espressif/vscode-esp-idf-extension.git;Sin IA;;manifiesto
+everettjf.filter-line;Filter Line;everettjf;1;1;1;1;2.0.1;2.0.1;Formatters;Formatters, Other;https://github.com/everettjf/vscode-filter-line.git;Sin IA;;manifiesto
+evgeniypetukhov.dark-low-contrast;Dark Low Contrast Themes;EvgeniyPetukhov;1;1;1;1;0.6.0;0.6.0;Themes;Themes;https://github.com/evgeniyp/vscode-dark-low-contrast.git;Sin IA;;manifiesto
+extr0py.vscode-relative-line-numbers;Relative Line Numbers;extr0py;1;1;1;1;0.0.5;0.0.5;Other;Other;;Sin IA;;manifiesto
+fasani.coding-in-the-sun;Coding in the Sun!;Fasani;1;1;1;1;1.0.3;1.0.3;Themes;Themes;https://github.com/Fasani/coding-in-the-sun;Sin IA;;manifiesto
+fastapilabs.fastapi-vscode;FastAPI Extension;FastAPILabs;1;1;1;1;0.3.1;0.3.1;Programming Languages;Programming Languages, Other;https://github.com/fastapi/fastapi-vscode;Sin IA;;manifiesto
+file-icons.file-icons;file-icons;file-icons;1;1;1;1;1.1.0;1.1.0;Themes;Themes, Other;https://github.com/file-icons/vscode;Sin IA;;manifiesto
+finlay-ab.vscode-latex-runner;LaTeX Instant Runner;finlay-ab;1;1;1;1;0.1.0;0.1.0;Debuggers;Debuggers, Other;https://github.com/finlay-ab/vscode-latex-runner.git;Sin IA;;manifiesto
+flesler.url-encode;URL Encode;flesler;1;1;1;1;1.1.0;1.1.0;Other;Other;;Sin IA;;manifiesto
+flix.flix;flix;flix;1;1;1;1;1.56.0;1.56.0;Sin categoria;;https://github.com/flix/vscode-flix;Sin IA;;manifiesto
+flone.shader-formatter;Shader Formatter;Flone;1;1;1;1;1.0.1;1.0.1;Formatters;Formatters;https://github.com/Flone-dnb/vscode-shader-formatter;Sin IA;;manifiesto
+foam.foam-vscode;Foam;foam;1;1;1;1;0.44.2;0.44.2;Other;Other;https://github.com/foambubble/foam;Sin IA;;manifiesto
+formulahendry.docker-explorer;Docker Explorer;formulahendry;1;1;1;1;0.1.7;0.1.7;Azure;Azure, Other;https://github.com/formulahendry/vscode-docker-explorer.git;Sin IA;;manifiesto
+foxundermoon.shell-format;shell-format;foxundermoon;1;1;1;1;7.2.8;7.2.8;Formatters;Formatters;https://github.com/foxundermoon/vs-shell-format.git;Sin IA;;manifiesto
+franccesco.unity-pack-vs-code;Unity Extension Pack;franccesco;1;1;1;1;0.0.4;0.0.4;Extension Packs;Extension Packs;;Sin IA;;manifiesto
+franneck94.vscode-c-cpp-config;C/C++ Config;franneck94;1;1;1;1;6.3.0;6.3.0;Programming Languages;Programming Languages, Snippets;https://github.com/franneck94/vscode-c-cpp-config.git;Sin IA;;manifiesto
+franneck94.vscode-c-cpp-dev-extension-pack;C/C++ Extension Pack;franneck94;1;1;1;1;0.10.0;0.10.0;Extension Packs;Extension Packs;https://github.com/franneck94/vscode-c-cpp-extension-pack;Sin IA;;manifiesto
+franneck94.vscode-cpython-extension-pack;CPython Extension Pack;franneck94;1;1;1;1;0.1.0;0.1.0;Extension Packs;Extension Packs;https://github.com/franneck94/vscode-cpython-extension-pack;Sin IA;;manifiesto
+frawa.vscode-elm-test-runner;Run Elm tests;FraWa;1;1;1;1;0.9.10;0.9.10;Programming Languages;Programming Languages;https://github.com/frawa/vscode-elm-test-runner.git;Sin IA;;manifiesto
+fudge.auto-using;Auto-Using for C#;Fudge;1;1;1;1;0.7.15;0.7.15;Other;Other, Programming Languages;https://github.com/natanfudge/Auto-Using;Sin IA;;manifiesto
+furkansalk.qemu-gdb-debug;QEMU-GDB Debugging;FurkanSalk;1;1;1;1;1.0.2;1.0.2;Other;Other;;Sin IA;;manifiesto
+fuzionix.file-tree-extractor;File Tree Extractor;Fuzionix;1;1;1;1;1.4.0;1.4.0;Visualization;Visualization, Other;https://github.com/fuzionix/vscode-file-tree.git;Sin IA;;manifiesto
+fwcd.kotlin;Kotlin;fwcd;1;1;1;1;0.2.36;0.2.36;Programming Languages;Programming Languages, Debuggers, Formatters, Linters;https://github.com/fwcd/vscode-kotlin.git;Sin IA;;manifiesto
+ganeshnr.jsonviewer007;jsonviewer;GaneshNR;1;1;1;1;0.0.1;0.0.1;Other;Other;https://github.com/ganeshdevnr/jsonviewer;Sin IA;;manifiesto
+geekanant.chrome-dinosaur-game;Chrome Dinosaur Game;geekanant;1;1;1;1;0.0.1;0.0.1;Other;Other;https://github.com/geekanant/Chrome-Dinosaur-Game-VS-Code;Sin IA;;manifiesto
+geequlim.godot-tools;godot-tools;geequlim;1;1;1;1;2.7.1;2.7.1;Programming Languages;Programming Languages, Linters, Snippets, Debuggers, Formatters, Other;https://github.com/godotengine/godot-vscode-plugin;Sin IA;;manifiesto
+gimly81.fortran;fortran;Gimly81;1;1;1;1;0.2.0;0.2.0;Languages;Languages, Snippets;https://github.com/Gimly/vscode-fortran.git;Sin IA;;manifiesto
+git-brain.git-brain;Git Brain;git-brain;1;1;1;1;0.0.20;0.0.20;SCM Providers;SCM Providers, Visualization;https://github.com/Arielliv/git-brain.git;Sin IA;;manifiesto
+giyyapan.pyformat;PyFormat;giyyapan;1;1;1;1;1.0.2;1.0.2;Other;Other, Formatters;https://github.com/giyyapan/vscode-pyformat;Sin IA;;manifiesto
+good-code-solutions.md-to-pdf-blazing;MD to PDF - Blazing Fast;good-code-solutions;1;1;1;1;1.1.0;1.1.0;Other;Other, Formatters;https://github.com/good-code-solutions/vscode-md-to-pdf;Sin IA;;manifiesto
+google.colab;Colab;google;1;1;1;1;0.8.1;0.8.1;Data Science;Data Science, Machine Learning, Notebooks;https://github.com/googlecolab/colab-vscode;Herramienta con IA;;manifiesto
+google.gemini-cli-vscode-ide-companion;Gemini CLI Companion;google;1;1;1;1;0.20.0;0.20.0;AI;AI;https://github.com/google-gemini/gemini-cli.git;Asistente de codigo IA;Google;manifiesto
+googlecloudtools.cloudcode;Google Cloud Code;googlecloudtools;1;1;1;1;2.40.0;2.40.0;Snippets;Snippets, Linters, Debuggers, Other;https://github.com/GoogleCloudPlatform/cloud-code-vscode.git;Sin IA;;manifiesto
+googlecloudtools.datacloud;Google Cloud Data Agent Kit;googlecloudtools;1;1;1;1;0.7.0;0.7.0;Sin categoria;;;Sin IA;;manifiesto
+gordonwalkedby.vbnet;VB.NET Grammars and Snippets;gordonwalkedby;1;1;1;1;1.0.2;1.0.2;Sin categoria;;;Sin IA;;manifiesto
+graysonstream.airflow-templates;Airflow Templates;GraysonStream;1;1;1;1;0.0.6;0.0.6;Programming Languages;Programming Languages, Snippets;;Sin IA;;manifiesto
+gruntfuggly.mermaid-export;Mermaid Export;Gruntfuggly;1;1;1;1;0.0.8;0.0.8;Other;Other;;Sin IA;;manifiesto
+gunders89.vscode-scl;Siemens SCL;Gunders89;1;1;1;1;0.2.1;0.2.1;Programming Languages;Programming Languages;https://github.com/Gunders89/vscode-scl.git;Sin IA;;manifiesto
+guyskk.language-cython;Language-Cython;guyskk;1;1;1;1;0.0.8;0.0.8;Programming Languages;Programming Languages;;Sin IA;;manifiesto
+gxl.git-graph-3;Git Graph v3;Gxl;1;1;1;1;1.33.0;1.33.0;Other;Other;https://github.com/git-hub-tig/vscode-git-graph.git;Sin IA;;manifiesto
+gydunhn.angular-essentials;Angular-Essentials;Gydunhn;1;1;1;1;1.0.0;1.0.0;Extension Packs;Extension Packs;https://github.com/Gydunhn/Angular-Essentials.git;Sin IA;;manifiesto
+gydunhn.vsc-essentials;VSC-Essentials;Gydunhn;1;1;1;1;2.3.0;2.3.0;Extension Packs;Extension Packs;https://github.com/Gydunhn/VSC-Essentials.git;Sin IA;;manifiesto
+haknkayaa.json-visualizer;JSON Visualizer;haknkayaa;1;1;1;1;1.1.2;1.1.2;Visualization;Visualization, Other;https://github.com/haknkayaa/JSONVisualizerForVSCode;Sin IA;;manifiesto
+hanifmifta.adocs;ADocs;hanifmifta;1;1;1;1;0.0.2;0.0.2;Extension Packs;Extension Packs;https://github.com/Cybernetics354/ADocs.git;Sin IA;;manifiesto
+hansuxdev.bootstrap5-snippets;Bootstrap 5 & Font Awesome Snippets;HansUXdev;1;1;1;1;1.2.5;1.2.5;Snippets;Snippets;https://github.com/HansUXdev/B5-SNIPPETS;Sin IA;;manifiesto
+harikrishnan94.cxx-compiler-explorer;C/C++ Compiler explorer;harikrishnan94;1;1;1;1;0.7.4;0.7.4;Visualization;Visualization, Programming Languages;https://github.com/harikrishnan94/cxx-compiler-explorer.git;Sin IA;;manifiesto
+harryhopkinson.vim-theme;Vim Theme;HarryHopkinson;1;1;1;1;1.1.8;1.1.8;Themes;Themes;https://github.com/Harry-Hopkinson/vim-vscode-theme.git;Sin IA;;manifiesto
+henriquebruno.github-repository-manager;GitHub Repository Manager;henriqueBruno;1;1;1;1;1.6.1;1.6.1;Other;Other, SCM Providers;https://github.com/SrBrahma/GitHub-Repository-Manager;Sin IA;;manifiesto
+heroprotagonist.pandiff-vscode;Pandiff - Enriched Text Differences;HeroProtagonist;1;1;1;1;0.2.11;0.2.11;Other;Other;;Sin IA;;manifiesto
+hitheshpatel.snowflake-mcp-server;Snowflake MCP Server;HitheshPatel;1;1;1;1;0.0.1;0.0.1;Data Science;Data Science, Machine Learning, Other;https://github.com/yourusername/snowflake-mcp-server.git;Herramienta con IA;;manifiesto
+hollowtree.vue-snippets;Vue 3 Snippets;hollowtree;1;1;1;1;1.0.4;1.0.4;Programming Languages;Programming Languages, Snippets;https://github.com/hollowtree/vscode-vue-snippets;Sin IA;;manifiesto
+howardzuo.vscode-git-tags;Git Tags;howardzuo;1;1;1;1;1.4.4;1.4.4;Debuggers;Debuggers;https://github.com/leftstick/vscode-git-tags.git;Sin IA;;manifiesto
+hugoom.sfdx-autoheader;Salesforce Documenter;HugoOM;1;1;1;1;0.7.3;0.7.3;Other;Other;https://github.com/HugoOM/sfdx_autoheader;Sin IA;;manifiesto
+huntertran.auto-markdown-toc;Auto Markdown TOC;huntertran;1;1;1;1;3.0.17;3.0.17;Other;Other;https://github.com/huntertran/markdown-toc.git;Sin IA;;manifiesto
+hwisu.latex-pdf-preview;LaTeX PDF Preview;hwisu;1;1;1;1;0.0.11;0.0.11;Other;Other;https://github.com/hwisu/latex-pdf-preview;Sin IA;;manifiesto
+hyzeta.vscode-theme-github-light;Github Light Theme;Hyzeta;1;1;1;1;7.14.2;7.14.2;Themes;Themes;https://github.com/chuling/vscode-theme-github-light.git;Sin IA;;manifiesto
+iamhyc.overleaf-workshop;Overleaf Workshop;iamhyc;1;1;1;1;0.15.10;0.15.10;Other;Other;https://github.com/overleaf-workshop/overleaf-workshop;Sin IA;;derivado del ID
+ibm.db2-for-luw;IBM Db2 Developer Extension;IBM;1;1;1;1;1.1.2;1.1.2;Debuggers;Debuggers, Formatters, Programming Languages, Snippets;https://github.com/IBM/db2developerextension-about;Sin IA;;manifiesto
+ibm.developer-for-zos-on-vscode-extension-pack;IBM Developer for z/OS Enterprise Edition (IDzEE) Extension Pack;IBM;1;1;1;1;6.6.0;6.6.0;Extension Packs;Extension Packs;https://github.com/IBM/zopeneditor-about;Sin IA;;manifiesto
+iliazeus.vscode-ansi;ANSI Colors;iliazeus;1;1;1;1;1.1.7;1.1.7;Themes;Themes, Visualization;https://github.com/iliazeus/vscode-ansi;Sin IA;;manifiesto
+in4margaret.compareit;compareit;in4margaret;1;1;1;1;0.0.2;0.0.2;Other;Other;https://github.com/in4margaret/compareit.git;Sin IA;;manifiesto
+irvece.markdown-pdf-enhanced;Markdown PDF Enhanced;IRVece;1;1;1;1;0.5.1;0.5.1;Other;Other;https://github.com/IvanR-Vecerina/markdown-pdf-enhanced.git;Sin IA;;manifiesto
+ivory-lab.jenkinsfile-support;JenkinsFile Support;ivory-lab;1;1;1;1;1.1.0;1.1.0;Programming Languages;Programming Languages, Snippets;https://github.com/sgwozdz/jenkinsfile-support.git;Sin IA;;manifiesto
+iyulab.copy-text-selected-files;Copy Text of Selected Files;iyulab;1;1;1;1;1.2.2;1.2.2;Other;Other;https://github.com/iyulab/vs-tools;Sin IA;;manifiesto
+jackboosy.vcpkg-cmake-tools;Vcpkg CMake Tools;JackBoosY;1;1;1;1;2.3.1;2.3.1;Other;Other;https://github.com/jackboosy/vcpkg-vscode-extension.git;Sin IA;;manifiesto
+jackfranklin.jackfranklin-elm;jackfranklin-elm;jackfranklin;1;1;1;1;0.23.0;0.23.0;Languages;Languages, Snippets, Linters;https://github.com/Krzysztof-Cieslak/vscode-elm.git;Sin IA;;manifiesto
+jacqueslucke.blender-development;Blender Development;JacquesLucke;1;1;1;1;0.0.31;0.0.31;Other;Other;https://github.com/JacquesLucke/blender_vscode;Sin IA;;manifiesto
+jakebathman.mysql-syntax;MySQL Syntax;jakebathman;1;1;1;1;1.3.1;1.3.1;Languages;Languages;https://github.com/jakebathman/mysql-syntax;Sin IA;;manifiesto
+janjoerke.align-by-regex;Align by RegEx;janjoerke;1;1;1;1;1.0.4;1.0.4;Formatters;Formatters;https://github.com/janjoerke/vscode-align-by-regex.git;Sin IA;;manifiesto
+jdinhlife.gruvbox;Gruvbox Theme;jdinhlife;1;1;1;1;1.29.1;1.29.1;Themes;Themes;https://github.com/jdinhify/vscode-theme-gruvbox.git;Sin IA;;manifiesto
+jeff-hykin.better-cpp-syntax;Better C++ Syntax;jeff-hykin;1;1;1;1;1.27.1;1.27.1;Programming Languages;Programming Languages;https://github.com/jeff-hykin/better-cpp-syntax;Sin IA;;manifiesto
+jesper.vscode-hex-multi-converter;Hex Multi-Converter;jesper;1;1;1;1;0.4.2;0.4.2;Other;Other;https://github.com/jesperjohansson/vscode-hex-multi-converter;Sin IA;;manifiesto
+jgalianoz.qr-generator;QR Generator;jgalianoz;1;1;1;1;0.0.8;0.0.8;Other;Other, Snippets;https://github.com/jgalianoz/qr-generator.git;Sin IA;;manifiesto
+jjsuder.elm-module-explorer;Elm Module Explorer;jjsuder;1;1;1;1;0.1.0;0.1.0;Visualization;Visualization;https://github.com/JSuder-xx/elm-module-explorer.git;Sin IA;;manifiesto
+jlengrand.vscode-elm-signature;elm-signature;jlengrand;1;1;1;1;0.1.1;0.1.1;Other;Other;https://github.com/jlengrand/vscode-elm-signature.git;Sin IA;;manifiesto
+joaompinto.vscode-graphviz;Graphviz (dot) language support for Visual Studio Code;joaompinto;1;1;1;1;0.0.9;0.0.9;Programming Languages;Programming Languages, Snippets;https://github.com/joaompinto/vscode-graphviz;Sin IA;;manifiesto
+joeandaverde.vscode-elm-jump;vscode-elm-jump;joeandaverde;1;1;1;1;0.0.1;0.0.1;Other;Other;;Sin IA;;manifiesto
+johnpapa.angular-essentials;Angular Essentials (Version 20);johnpapa;1;1;1;1;20.0.1;20.0.1;Extension Packs;Extension Packs;https://github.com/johnpapa/vscode-angular-essentials.git;Sin IA;;manifiesto
+johnpapa.winteriscoming;Winter is Coming Theme;johnpapa;1;1;1;1;1.4.4;1.4.4;Themes;Themes, Other;https://github.com/johnpapa/vscode-winteriscoming.git;Sin IA;;manifiesto
+jolaleye.horizon-theme-vscode;Horizon Theme;jolaleye;1;1;1;1;2.0.2;2.0.2;Themes;Themes;https://github.com/jolaleye/horizon-theme-vscode;Sin IA;;manifiesto
+jorgeserrano.vscode-csharp-snippets;C# Snippets;jorgeserrano;1;1;1;1;1.1.0;1.1.0;Other;Other, Programming Languages, Snippets;https://github.com/J0rgeSerran0/vscode-csharp-snippets.git;Sin IA;;manifiesto
+joshrmosier.streamlit-runner;Streamlit Runner;joshrmosier;1;1;1;1;0.1.0;0.1.0;Other;Other;https://github.com/JoshuaMosier/vscode-streamlit-runner;Sin IA;;manifiesto
+jscearcy.rust-doc-viewer;Rust Doc Viewer;JScearcy;1;1;1;1;4.2.0;4.2.0;Programming Languages;Programming Languages, Other;https://github.com/JScearcy/rust-doc-viewer;Sin IA;;manifiesto
+jsjlewis96.one-dark-pro-italic-vivid;One Dark Pro Italic Vivid;jsjlewis96;1;1;1;1;2.12.5;2.12.5;Themes;Themes;https://github.com/jsjlewis96/OneDark-Pro;Sin IA;;manifiesto
+justuskarlsson.plan-uml;Plan UML;justuskarlsson;1;1;1;1;0.0.8;0.0.8;Visualization;Visualization, Other;https://github.com/justuskarlsson/plan-uml.git;Sin IA;;manifiesto
+k--kato.docomment;C# XML Documentation Comments;k--kato;1;1;1;1;1.0.2;1.0.2;Other;Other;https://github.com/kasecato/vscode-docomment;Sin IA;;manifiesto
+kamen.noctis-high-contrast;Noctis High Contrast;Kamen;1;1;1;1;10.39.1;10.39.1;Themes;Themes;https://github.com/KamenKolev/noctis-hc;Sin IA;;manifiesto
+kanko.aura-helper;Aura Helper;Kanko;1;1;1;1;4.5.2;4.5.2;Programming Languages;Programming Languages, Snippets, Formatters, Other, Linters;https://github.com/JJLongoria/aura-helper;Sin IA;;manifiesto
+katalonstudioz.katalon-runner;Katalon Runner;KatalonStudioz;1;1;1;1;1.0.18;1.0.18;Other;Other;https://github.com/thongnmtran/katalon-runner-extension;Sin IA;;manifiesto
+katuak.vscode-language-pack-ca;Catalan Language Pack for Visual Studio Code;Katuak;1;1;1;1;1.0.4;1.0.4;Language Packs;Language Packs;https://github.com/katuak/vscode-language-pack-ca;Sin IA;;manifiesto
+kelosky.ibm-jcl;ibm-jcl;kelosky;1;1;1;1;0.11.0;0.11.0;Programming Languages;Programming Languages;https://github.com/dkelosky/vscode-ibm-jcl;Sin IA;;manifiesto
+kiameow.npy-image-preview;Numpy Image Preview;Kiameow;1;1;1;1;1.1.0;1.1.0;Other;Other;https://github.com/Kiameow/npyPreview.git;Sin IA;;manifiesto
+kishoreithadi.dotnet-core-essentials;Dotnet Core Essentials;KishoreIthadi;1;1;1;1;0.0.8;0.0.8;Other;Other;https://github.com/KishoreIthadi/DotNet-Core-Essentials;Sin IA;;manifiesto
+kmasif.capl-vector;CAPL;kmasif;1;1;1;1;0.1.1;0.1.1;Programming Languages;Programming Languages, Snippets;https://github.com/kmasif/capl-vector.git;Sin IA;;manifiesto
+koszti.snowflake-driver-for-sqltools;Snowflake Driver for SQLTools;koszti;1;1;1;1;0.5.0;0.5.0;Programming Languages;Programming Languages, Snippets, Formatters, Other;https://github.com/koszti/sqltools-snowflake-driver.git;Sin IA;;manifiesto
+krl-officelite.krl-officelite;KUKA KRL OfficeLite;krl-officelite;1;1;1;1;1.2.2;1.2.2;Programming Languages;Programming Languages, Formatters;https://github.com/danielmuellernavarro/krl-officelite.git;Sin IA;;manifiesto
+krugercorp.k-yeoman-ui;k-yeoman-ui;KrugerCorp;1;1;1;1;1.10.10;1.10.10;Other;Other;https://github.com/kruger/yeoman-ui.git;Sin IA;;manifiesto
+leizongmin.node-module-intellisense;Node.js Modules Intellisense;leizongmin;1;1;1;1;1.5.0;1.5.0;Other;Other, Languages;https://github.com/leizongmin/vscode-node-module-intellisense.git;Sin IA;;manifiesto
+lglong519.terminal-tools;Terminal Tools;lglong519;1;1;1;1;1.0.0;1.0.0;Other;Other;https://github.com/lglong519/vscode-extension.git;Sin IA;;manifiesto
+linjun.sqlite-support;SQLite Support;LinJun;1;1;1;1;1.0.6;1.0.6;Extension Packs;Extension Packs;https://github.com/cweijan/vscode-database-client.git;Sin IA;;manifiesto
+liskinlabs.kuka-krl-extension;Kuka Krl;LiskinLabs;1;1;1;1;1.7.2;1.7.2;Programming Languages;Programming Languages, Formatters, Linters, Themes;https://gitlab.com/LiskinLabs/kuka-krl-extension.git;Sin IA;;derivado del ID
+litchi.matplotlib-pilot;Matplotlib Pilot (English);litchi;1;1;1;1;0.1.0;0.1.0;Data Science;Data Science, Visualization, Education, Notebooks, Snippets;https://github.com/wuyao1997/Matplotlib-Pilot;Sin IA;;manifiesto
+llvm-vs-code-extensions.lldb-dap;LLDB DAP;llvm-vs-code-extensions;1;1;1;1;0.4.1;0.4.1;Debuggers;Debuggers;https://github.com/llvm/llvm-project.git;Sin IA;;manifiesto
+llvm-vs-code-extensions.vscode-clangd;clangd;llvm-vs-code-extensions;1;1;1;1;0.6.0;0.6.0;Programming Languages;Programming Languages, Linters, Formatters;https://github.com/clangd/vscode-clangd.git;Sin IA;;manifiesto
+local-smart.excel-live-server;XVBA - Live Server VBA;local-smart;1;1;1;1;4.0.34;4.0.34;Programming Languages;Programming Languages, Snippets, Language Packs, Formatters, Debuggers, Testing, Visualization, Other;https://github.com/aeraphe/excel-autoload;Sin IA;;manifiesto
+lokalise.i18n-ally;i18n Ally;lokalise;1;1;1;1;2.8.1;2.8.1;Other;Other;https://github.com/lokalise/i18n-ally;Sin IA;;manifiesto
+lostfields.nodejs-repl;Node.js REPL;lostfields;1;1;1;1;0.5.15;0.5.15;Languages;Languages, Other;https://github.com/lostfields/vscode-nodejs-repl.git;Sin IA;;manifiesto
+lucafalasco.matchalk;Matchalk;lucafalasco;1;1;1;1;0.0.7;0.0.7;Themes;Themes;https://github.com/lucafalasco/matchalk.git;Sin IA;;manifiesto
+lucien-martijn.parquet-visualizer;Parquet Visualizer;lucien-martijn;1;1;1;1;0.31.1;0.31.1;Visualization;Visualization, Data Science, Formatters, Other;https://github.com/Data-Lake-Visualizer/vscode-parquet-visualizer.git;Sin IA;;manifiesto
+m4ns0ur.base64;Base64;m4ns0ur;1;1;1;1;1.0.0;1.0.0;Other;Other;https://github.com/m4ns0ur/base64-vscode-plugin;Sin IA;;manifiesto
+madeline.rwxml-lang-serv;RWXML Language Server;madeline;1;1;1;1;0.42.0;0.42.0;Language Packs;Language Packs, Debuggers, Linters, Programming Languages, Themes, Snippets;;Sin IA;;manifiesto
+mafatpanah.blf-viewer;BLF Viewer;mafatpanah;1;1;1;1;1.1.0;1.1.0;Other;Other;https://github.com/mrafatpanah/blf-viewer;Sin IA;;manifiesto
+magicstack.magicpython;MagicPython;magicstack;1;1;1;1;1.1.0;1.1.0;Languages;Languages;https://github.com/MagicStack/MagicPython.git;Sin IA;;manifiesto
+manishsencha.readme-preview;readme-preview;manishsencha;1;1;1;1;0.0.3;0.0.3;Other;Other;https://github.com/manishsencha/vscode-readme-preview;Sin IA;;manifiesto
+mariocarvajal.jupyter-to-pdf;Jupyter to PDF;MarioCarvajal;1;1;1;1;0.8.1;0.8.1;Other;Other, Data Science, Notebooks;;Sin IA;;manifiesto
+mariodefelipe.sap-btp-governance;SAP BTP on AWS Governance and Security;mariodefelipe;1;1;1;1;0.1.1;0.1.1;Other;Other, Linters;https://github.com/MarioDeFelipe/sap-btp-governance;Sin IA;;manifiesto
+marus25.cortex-debug;Cortex-Debug;marus25;1;1;1;1;1.12.1;1.12.1;Debuggers;Debuggers;https://github.com/Marus/cortex-debug.git;Sin IA;;manifiesto
+matangover.mypy;Mypy;matangover;1;1;1;1;0.4.2;0.4.2;Programming Languages;Programming Languages, Linters, Other;https://github.com/matangover/mypy-vscode;Sin IA;;manifiesto
+matepek.vscode-catch2-test-adapter;TestMate C++;matepek;1;1;1;1;4.25.2;4.25.2;Testing;Testing;https://github.com/matepek/vscode-catch2-test-adapter.git;Sin IA;;manifiesto
+mathiasfrohlich.kotlin;Kotlin Language;mathiasfrohlich;1;1;1;1;1.7.1;1.7.1;Programming Languages;Programming Languages;https://github.com/mathiasfrohlich/vscode-kotlin.git;Sin IA;;manifiesto
+matthiesen-technology.yaml-with-script;YAML with Script;matthiesen-technology;1;1;1;1;1.1.2;1.1.2;Programming Languages;Programming Languages, Linters, Debuggers, Other;https://gitlab.com/matthiesen-technology/yaml-with-script.git;Sin IA;;manifiesto
+maziac.markdown-planner;Markdown Planner;maziac;1;1;1;1;1.10.0;1.10.0;Visualization;Visualization;https://github.com/maziac/markdown-planner-issues.git;Sin IA;;manifiesto
+mblode.pretty-formatter;Pretty Formatter;mblode;1;1;1;1;0.2.4;0.2.4;Formatters;Formatters, Programming Languages, Snippets, Other;https://github.com/mblode/vscode-pretty-formatter.git;Sin IA;;manifiesto
+mccarter.start-git-bash;Start git-bash;McCarter;1;1;1;1;1.2.1;1.2.1;Other;Other;https://github.com/Robert923/vscode-start-git-bash.git;Sin IA;;manifiesto
+mcu-debug.debug-tracker-vscode;debug-tracker-vscode;mcu-debug;1;1;1;1;0.0.15;0.0.15;Other;Other;https://github.com/mcu-debug/debug-tracker-vscode.git;Sin IA;;manifiesto
+mcu-debug.memory-view;MemoryView;mcu-debug;1;1;1;1;0.0.29;0.0.29;Other;Other;https://github.com/mcu-debug/memview;Sin IA;;manifiesto
+mcu-debug.peripheral-viewer;Peripheral Viewer;mcu-debug;1;1;1;1;1.6.1;1.6.1;Debuggers;Debuggers;;Sin IA;;manifiesto
+mcu-debug.rtos-views;RTOS Views;mcu-debug;1;1;1;1;0.0.16;0.0.16;Other;Other;https://github.com/mcu-debug/rtos-views;Sin IA;;manifiesto
+mdgriffith.elm-markup-vscode;Elm Markup;mdgriffith;1;1;1;1;0.1.4;0.1.4;Other;Other;https://github.com/mdgriffith/elm-markup-vscode.git;Sin IA;;manifiesto
+meijiahao.vscode-h5-viewer;H5 Viewer — HDF5 / PyTorch / SafeTensors / GGUF / MAT / NPY / Audio;meijiahao;1;1;1;1;2.2.1;2.2.1;Visualization;Visualization, Data Science, Machine Learning;https://github.com/NieeiM/H5-Viewer.git;Herramienta con IA;;manifiesto
+melvinguerrero.latino-vscode;Latino;MelvinGuerrero;1;1;1;1;1.1.0;1.1.0;Programming Languages;Programming Languages, Debuggers, Language Packs, Formatters, Snippets, Other;https://github.com/MelvinG24/Latino-VSCode.git;Sin IA;;derivado del ID
+mengrbatinov.mssql-scripts;MSSQL Scripts and Utilities;MEngRBatinov;1;1;1;1;0.5.0;0.5.0;Other;Other, Azure, Linters, Programming Languages;https://github.com/rbatinov;Sin IA;;manifiesto
+micro-focus-amc.mfcobol;[Deprecated] Micro Focus COBOL;Micro-Focus-AMC;1;1;1;1;1.0.59;1.0.59;Programming Languages;Programming Languages, Other;;Sin IA;;manifiesto
+micro-focus-amc.mfjvmcobol;[Deprecated] Micro Focus JVM COBOL;Micro-Focus-AMC;1;1;1;1;1.0.3;1.0.3;Programming Languages;Programming Languages, Other;;Sin IA;;manifiesto
+mikeshaker.python-essentials;Python Must-Have Essentials 🐍;mikeshaker;1;1;1;1;1.0.1;1.0.1;Extension Packs;Extension Packs;https://github.com/mikeshaker/vs-code-Paython-essentials.git;Sin IA;;manifiesto
+mindaro-dev.file-downloader;File Downloader;mindaro-dev;1;1;1;1;1.0.13;1.0.13;Other;Other;https://github.com/microsoft/vscode-file-downloader.git;Sin IA;;manifiesto
+mistralai.mistral-vibe-code;Mistral Vibe VS Code;mistralai;1;1;1;1;1.14.0;1.14.0;AI;AI, Chat, Programming Languages, Machine Learning;https://github.com/mistralai/mistral-vibe.git;Asistente de codigo IA;Mistral;manifiesto
+moozzyk.arduino;Arduino;moozzyk;1;1;1;1;0.0.4;0.0.4;Languages;Languages;https://github.com/moozzyk/ArduinoCode.git;Sin IA;;manifiesto
+moshfeu.compare-folders;Compare Folders;moshfeu;1;1;1;1;0.30.0;0.30.0;Other;Other;https://github.com/moshfeu/vscode-compare-folders;Sin IA;;derivado del ID
+moyu.snapcode;Snapcode;moyu;1;1;1;1;1.1.0;1.1.0;Other;Other;https://github.com/moyus/snapcode.git;Sin IA;;manifiesto
+ms-azure-devops.azure-pipelines;Azure Pipelines;ms-azure-devops;1;1;1;1;1.249.0;1.249.0;Programming Languages;Programming Languages, Azure;https://github.com/Microsoft/azure-pipelines-vscode;Sin IA;;manifiesto
+ms-azureaispeech.azure-ai-speech-toolkit;Azure AI Speech Toolkit;ms-azureaispeech;1;1;1;1;0.0.21;0.0.21;Azure;Azure, AI;https://github.com/microsoft/AzureAISpeechToolKit;Herramienta con IA;;manifiesto
+ms-azuretools.vscode-bicep;Bicep;ms-azuretools;1;1;1;1;0.45.15;0.45.15;Azure;Azure, Programming Languages;https://github.com/Azure/bicep;Sin IA;;manifiesto
+ms-ceintl.vscode-language-pack-cs;Czech Language Pack for Visual Studio Code;MS-CEINTL;1;1;1;1;1.129.2026071717;1.129.2026071717;Language Packs;Language Packs;https://github.com/Microsoft/vscode-loc;Sin IA;;manifiesto
+ms-ceintl.vscode-language-pack-de;German Language Pack for Visual Studio Code;MS-CEINTL;1;1;1;1;1.129.2026071717;1.129.2026071717;Language Packs;Language Packs;https://github.com/Microsoft/vscode-loc;Sin IA;;manifiesto
+ms-ceintl.vscode-language-pack-fr;French Language Pack for Visual Studio Code;MS-CEINTL;1;1;1;1;1.129.2026071717;1.129.2026071717;Language Packs;Language Packs;https://github.com/Microsoft/vscode-loc;Sin IA;;manifiesto
+ms-ceintl.vscode-language-pack-it;Italian Language Pack for Visual Studio Code;MS-CEINTL;1;1;1;1;1.129.2026071717;1.129.2026071717;Language Packs;Language Packs;https://github.com/Microsoft/vscode-loc;Sin IA;;manifiesto
+ms-ceintl.vscode-language-pack-ja;Japanese Language Pack for Visual Studio Code;MS-CEINTL;1;1;1;1;1.129.2026071318;1.129.2026071318;Language Packs;Language Packs;https://github.com/Microsoft/vscode-loc;Sin IA;;manifiesto
+ms-ceintl.vscode-language-pack-ko;Korean Language Pack for Visual Studio Code;MS-CEINTL;1;1;1;1;1.129.2026071717;1.129.2026071717;Language Packs;Language Packs;https://github.com/Microsoft/vscode-loc;Sin IA;;manifiesto
+ms-ceintl.vscode-language-pack-pl;Polish Language Pack for Visual Studio Code;MS-CEINTL;1;1;1;1;1.129.2026071717;1.129.2026071717;Language Packs;Language Packs;https://github.com/Microsoft/vscode-loc;Sin IA;;manifiesto
+ms-ceintl.vscode-language-pack-pt-br;Portuguese (Brazil) Language Pack for Visual Studio Code;MS-CEINTL;1;1;1;1;1.129.2026071717;1.129.2026071717;Language Packs;Language Packs;https://github.com/Microsoft/vscode-loc;Sin IA;;manifiesto
+ms-ceintl.vscode-language-pack-ru;Russian Language Pack for Visual Studio Code;MS-CEINTL;1;1;1;1;1.129.2026071717;1.129.2026071717;Language Packs;Language Packs;https://github.com/Microsoft/vscode-loc;Sin IA;;manifiesto
+ms-ceintl.vscode-language-pack-zh-hans;Chinese (Simplified) (简体中文) Language Pack for Visual Studio Code;MS-CEINTL;1;1;1;1;1.129.2026071717;1.129.2026071717;Language Packs;Language Packs;https://github.com/Microsoft/vscode-loc;Sin IA;;manifiesto
+ms-ceintl.vscode-language-pack-zh-hant;Chinese (Traditional) Language Pack for Visual Studio Code;MS-CEINTL;1;1;1;1;1.129.2026071717;1.129.2026071717;Language Packs;Language Packs;https://github.com/Microsoft/vscode-loc;Sin IA;;manifiesto
+ms-dotnettools.vscode-dotnet-pack;.NET Extension Pack;ms-dotnettools;1;1;1;1;1.0.13;1.0.13;Extension Packs;Extension Packs, Programming Languages, Debuggers, Snippets, Linters, Notebooks;https://github.com/dotnet/vscode-dotnet-pack.git;Sin IA;;manifiesto
+ms-python.gather;Gather;ms-python;1;1;1;1;2025.4.0;2025.4.0;Programming Languages;Programming Languages, Other, Extension Packs, Data Science, Machine Learning, Notebooks;https://github.com/microsoft/vscode-gather;Herramienta con IA;;manifiesto
+ms-toolsai.tensorboard;Tensorboard;ms-toolsai;1;1;1;1;2023.10.1002992421;2023.10.1002992421;Data Science;Data Science, Machine Learning, Notebooks;https://github.com/Microsoft/vscode-tensorboard;Herramienta con IA;;manifiesto
+ms-toolsai.vscode-ai;Azure Machine Learning;ms-toolsai;1;1;1;1;1.4.1;1.4.1;Azure;Azure, Other;https://github.com/Microsoft/vscode-tools-for-ai;Sin IA;;manifiesto
+ms-toolsai.vscode-ai-remote;Azure Machine Learning - Remote;ms-toolsai;1;1;1;1;1.4.8;1.4.8;Azure;Azure, Other;https://github.com/Microsoft/vscode-tools-for-ai;Sin IA;;manifiesto
+ms-vscode.anycode-c-sharp;anycode-c-sharp;ms-vscode;1;1;1;1;0.0.8;0.0.8;Programming Languages;Programming Languages;https://github.com/microsoft/vscode-anycode;Sin IA;;manifiesto
+ms-vscode.azure-account;Azure Account;ms-vscode;1;1;1;1;0.13.0;0.13.0;Azure;Azure;https://github.com/microsoft/vscode-azure-account.git;Sin IA;;manifiesto
+ms-vscode.azurecli;Azure CLI Tools;ms-vscode;1;1;1;1;0.6.0;0.6.0;Programming Languages;Programming Languages, Snippets, Azure;https://github.com/Microsoft/vscode-azurecli.git;Sin IA;;manifiesto
+ms-vscode.debug-value-editor;JS Debug Value Editor (Experimental);ms-vscode;1;1;1;1;0.2.2;0.2.2;Debuggers;Debuggers;https://github.com/microsoft/vscode-debug-value-editor;Sin IA;;manifiesto
+ms-vscode.js-debug-nightly;JavaScript Debugger (Nightly);ms-vscode;1;1;1;1;2026.7.117;2026.7.117;Debuggers;Debuggers;https://github.com/Microsoft/vscode-pwa.git;Sin IA;;manifiesto
+ms-vscode.mono-debug;Mono Debug;ms-vscode;1;1;1;1;0.16.3;0.16.3;Debuggers;Debuggers;https://github.com/microsoft/vscode-mono-debug.git;Sin IA;;manifiesto
+ms-vscode.vscode-chat-customizations-evaluations;Chat Customizations Evaluations;ms-vscode;1;1;1;1;1.0.8;1.0.8;Linters;Linters, Programming Languages;https://github.com/microsoft/vscode-chat-customizations-evaluation;Sin IA;;manifiesto
+msjsdiag.vscode-react-native;React Native Tools;msjsdiag;1;1;1;1;1.13.0;1.13.0;Debuggers;Debuggers, Other;https://github.com/microsoft/vscode-react-native;Sin IA;;manifiesto
+msnilshartmann.blue-light;Blue Light Theme;msnilshartmann;1;1;1;1;0.6.4;0.6.4;Themes;Themes;https://github.com/nilshartmann/vscode-blue-light-theme;Sin IA;;manifiesto
+mtxr.sqltools-driver-sqlite;SQLTools SQLite;mtxr;1;1;1;1;0.5.4;0.5.4;Programming Languages;Programming Languages, Snippets, Formatters, Other;https://github.com/mtxr/vscode-sqltools.git;Sin IA;;manifiesto
+muhammad-ahmad.xlsx-viewer;XLSX, CSV, TSV & Markdown Editor;muhammad-ahmad;1;1;1;1;1.9.93;1.9.93;Other;Other;https://github.com/Mahmadabid/XLSX-CSV-TSV-MARKDOWN-Editor-Vscode-Extension;Sin IA;;manifiesto
+mukhija.urscriptsupport;URScript syntax and autocomplete;Mukhija;1;1;1;1;0.1.12;0.1.12;Programming Languages;Programming Languages, Snippets, Other;git+https://github.com/piyooshm/urscript-extension.git;Sin IA;;manifiesto
+mukundan.python-docs;Python Docs;Mukundan;1;1;1;1;0.8.3;0.8.3;Other;Other;https://github.com/Mukundan314/vscode-python-docs;Sin IA;;manifiesto
+ndrcodes.csv-file-editor;CSV Editor;ndrcodes;1;1;1;1;1.0.2;1.0.2;Other;Other;https://github.com/ndrcodes/csv-editor-ext;Sin IA;;manifiesto
+necinc.elmmet;Elm Emmet;necinc;1;1;1;1;1.0.1;1.0.1;Formatters;Formatters;https://github.com/necinc/elmmet;Sin IA;;manifiesto
+neikeq.godot-csharp-vscode;C# Tools for Godot;neikeq;1;1;1;1;0.2.1;0.2.1;Debuggers;Debuggers, Other;https://github.com/godotengine/godot-csharp-vscode;Sin IA;;manifiesto
+nhunter0.dll-structure-viewer;DLL Structure Viewer;nhunter0;1;1;1;1;1.3.1;1.3.1;Visualization;Visualization, Other;;Sin IA;;manifiesto
+nickdemayo.vscode-json-editor;Json Editor;nickdemayo;1;1;1;1;0.3.0;0.3.0;Other;Other;https://github.com/sunmorgus/vscode-json-editor.git;Sin IA;;manifiesto
+nikolapaunovic.tkinter-snippets;Tkinter Snippets;NikolaPaunovic;1;1;1;1;2.0.2;2.0.2;Snippets;Snippets;;Sin IA;;manifiesto
+nils-ballmann.python-coding-tools;Python Coding Tools;nils-ballmann;1;1;1;1;1.0.5;1.0.5;Other;Other;https://github.com/nils-ballmann/python-coding-tools.git;Sin IA;;manifiesto
+ninoish.lwc-builder;LWC Builder;ninoish;1;1;1;1;0.1.32;0.1.32;Other;Other;;Sin IA;;manifiesto
+node-projects.vscode-designer-addon;HTML Wysiwyg (What you see is what you get) Designer Addon;node-projects;1;1;1;1;1.2.0;1.2.0;Programming Languages;Programming Languages, Visualization;https://github.com/node-projects/vs-code-designer-addon;Sin IA;;manifiesto
+nokia.ttcn3;TTCN-3;Nokia;1;1;1;1;0.11.3;0.11.3;Programming Languages;Programming Languages, Snippets;https://github.com/nokia/vscode-ttcn3;Sin IA;;manifiesto
+nopeslide.vscode-drawio-plugin-mermaid;Draw.io Integration: Mermaid plugin;nopeslide;1;1;1;1;0.1.5;0.1.5;Visualization;Visualization;;Sin IA;;manifiesto
+nstechbytes.html-view;HTML View;NSTechBytes;1;1;1;1;0.0.1;0.0.1;Other;Other;https://github.com/NSTechBytes/html-view;Sin IA;;manifiesto
+oleg-shilo.cs-script;CS-Script;oleg-shilo;1;1;1;1;2.3.6;2.3.6;Programming Languages;Programming Languages, Debuggers, Other;https://github.com/oleg-shilo/cs-script.vscode.git;Sin IA;;manifiesto
+olegkunitsyn.gnucobol-debug;COBOL debugger;OlegKunitsyn;1;1;1;1;3.32.0;3.32.0;Debuggers;Debuggers;https://github.com/OlegKunitsyn/gnucobol-debug.git;Sin IA;;manifiesto
+oliversturm.fix-json;Fix JSON;oliversturm;1;1;1;1;0.2.0;0.2.0;Other;Other, Formatters;https://github.com/oliversturm/vscode-fix-json.git;Sin IA;;manifiesto
+ollama.ollama;Ollama;Ollama;1;1;1;1;0.0.5;0.0.5;AI;AI, Machine Learning, Other;https://github.com/ollama/ollama-vscode.git;Asistente de codigo IA;Local (Ollama);manifiesto
+open-liberty.liberty-dev-vscode-ext;Liberty Tools;Open-Liberty;1;1;1;1;24.0.12;24.0.12;Programming Languages;Programming Languages;https://github.com/OpenLiberty/liberty-tools-vscode;Sin IA;;manifiesto
+oracle.mysql-shell-for-vs-code;MySQL Shell for VS Code;Oracle;1;1;1;1;2026.5.0;2026.5.0;Programming Languages;Programming Languages, Visualization, Data Science;https://github.com/mysql/mysql-shell-plugins;Sin IA;;manifiesto
+orta.vscode-jest;Jest;Orta;1;1;1;1;6.4.4;6.4.4;Other;Other, Testing;https://github.com/jest-community/vscode-jest;Sin IA;;manifiesto
+outofsync42.select-compare-tabs;Select Compare Tabs;outofsync42;1;1;1;1;1.0.3;1.0.3;Other;Other;https://github.com/outofsync42/select-compare-tabs;Sin IA;;manifiesto
+parasoft.vscode-cpptest;C/C++test;Parasoft;1;1;1;1;2025.2.1;2025.2.1;Linters;Linters, Testing, Other;;Sin IA;;manifiesto
+paulmolluzzo.convert-css-in-js;CSS-in-JS;paulmolluzzo;1;1;1;1;1.1.3;1.1.3;Other;Other, Formatters, Snippets;https://github.com/ansumanshah/css-in-js.git;Sin IA;;manifiesto
+percy.vscode-numpy-viewer;vscode-numpy-viewer;Percy;1;1;1;1;0.1.10;0.1.10;Data Science;Data Science, Visualization, Other;https://github.com/haochengxia/vscode-numpy-viewer.git;Sin IA;;manifiesto
+pflannery.vscode-versionlens;Version Lens;pflannery;1;1;1;1;1.22.4;1.22.4;Programming Languages;Programming Languages, Other;https://gitlab.com/versionlens/vscode-versionlens.git;Sin IA;;manifiesto
+philipbe.theme-gray-matter;Gray Matter;philipbe;1;1;1;1;1.7.0;1.7.0;Themes;Themes;;Sin IA;;manifiesto
+philschatz.vscode-xslt;XSLT Interactive Debugger;philschatz;1;1;1;1;1.4.1;1.4.1;Sin categoria;;https://github.com/philschatz/vscode-xslt;Sin IA;;manifiesto
+philstennett.sfdx-org-list;SFDX Org List;philstennett;1;1;1;1;1.0.1;1.0.1;Other;Other;;Sin IA;;manifiesto
+phrogz.visual-scxml-editor;Visual SCXML Editor;Phrogz;1;1;1;1;0.5.0;0.5.0;Visualization;Visualization, Other;https://github.com/Phrogz/visual-scxml-editor.git;Sin IA;;manifiesto
+pixl.unity-toolbox;Unity Toolbox;pixl;1;1;1;1;3.0.0;3.0.0;Snippets;Snippets, Programming Languages;https://github.com/pixldev/Unity-Toolbox.git;Sin IA;;manifiesto
+piyushvscode.nodejs-snippets;Nodejs Snippets;piyushvscode;1;1;1;1;0.0.2;0.0.2;Snippets;Snippets;;Sin IA;;manifiesto
+pjbgf.apparmor;AppArmor;pjbgf;1;1;1;1;0.0.2;0.0.2;Programming Languages;Programming Languages, Snippets;https://github.com/pjbgf/vscode-apparmor.git;Sin IA;;manifiesto
+powerquery.vscode-powerquery-sdk;Power Query SDK;PowerQuery;1;1;1;1;0.7.1;0.7.1;Programming Languages;Programming Languages;git+https://github.com/microsoft/vscode-powerquery-sdk.git;Sin IA;;manifiesto
+pranaygp.vscode-css-peek;CSS Peek;pranaygp;1;1;1;1;4.4.3;4.4.3;Programming Languages;Programming Languages;https://github.com/pranaygp/vscode-css-peek;Sin IA;;manifiesto
+prompt-flow.prompt-flow;Prompt flow for VS Code;prompt-flow;1;1;1;1;1.20.2;1.20.2;Machine Learning;Machine Learning;;Herramienta con IA;;manifiesto
+prosolgroup.mvsharpdebugger;MVsharp Debugger;ProsolGroup;1;1;1;1;0.17.0;0.17.0;Debuggers;Debuggers;;Sin IA;;manifiesto
+prosser.json-schema-2020-validation;JSON Schema Diagnostics;prosser;1;1;1;1;0.0.8;0.0.8;Other;Other;https://github.com/prosser/json-schema-validation-extension.git;Sin IA;;manifiesto
+ptd.vscode-unitymeta;Unity3D Meta Files Watcher;PTD;1;1;1;1;0.0.7;0.0.7;Other;Other;https://github.com/potterdai/vscode-unitymeta.git;Sin IA;;manifiesto
+pycom.pymakr;Pymakr;Pycom;1;1;1;1;2.22.5;2.22.5;Other;Other;https://github.com/pycom/pymakr-vsc;Sin IA;;manifiesto
+qhoekman.language-plantuml;PlantUML Syntax;qhoekman;1;1;1;1;0.0.3;0.0.3;Languages;Languages;;Sin IA;;manifiesto
+qris.transforminator;Transforminator;qris;1;1;1;1;2.2.0;2.2.0;Programming Languages;Programming Languages, Snippets, Other;https://github.com/mvturnho/transforminator-Release.git;Sin IA;;manifiesto
+raits.python-development;Python Development Extension Pack;raits;1;1;1;1;0.0.3;0.0.3;Extension Packs;Extension Packs;https://github.com/raits-gmbh/vscode-extension-pack-python-development;Sin IA;;manifiesto
+rapidapi.vscode-rapidapi-client;RapidAPI Client;RapidAPI;1;1;1;1;1.10.2;1.10.2;Programming Languages;Programming Languages, Testing;https://github.com/RapidAPI/feedback;Sin IA;;manifiesto
+rapidapi.vscode-services;RapidAPI Services;rapidapi;1;1;1;1;1.0.2;1.0.2;Other;Other;https://github.com/RapidAPI/feedback;Sin IA;;manifiesto
+rdebugger.r-debugger;R Debugger;RDebugger;1;1;1;1;0.5.6;0.5.6;Debuggers;Debuggers;https://github.com/ManuelHentschel/VSCode-R-Debugger;Sin IA;;manifiesto
+realazy.elmx;elmx;realazy;1;1;1;1;1.0.2;1.0.2;Languages;Languages;;Sin IA;;manifiesto
+redhat.vscode-commons;Red Hat Commons;redhat;1;1;1;1;0.0.6;0.0.6;Other;Other;https://github.com/redhat-developer/vscode-commons/;Sin IA;;manifiesto
+redhat.vscode-community-server-connector;Community Server Connectors;redhat;1;1;1;1;0.26.21;0.26.21;Other;Other;https://github.com/redhat-developer/rsp-server-community.git;Sin IA;;manifiesto
+redhat.vscode-rsp-ui;Runtime Server Protocol UI;redhat;1;1;1;1;0.24.12;0.24.12;Other;Other;https://github.com/redhat-developer/vscode-rsp-ui.git;Sin IA;;manifiesto
+revrenlove.c-sharp-utilities;C# Utilities;revrenlove;1;1;1;1;1.12.5;1.12.5;Programming Languages;Programming Languages;https://github.com/revrenlove/CSharpUtilities;Sin IA;;manifiesto
+rickywhite.python-template-snippets;Python Template Snippets;RickyWhite;1;1;1;1;1.4.3;1.4.3;Snippets;Snippets;https://github.com/EndlessTrax/python-template-snippets;Sin IA;;manifiesto
+rid9.datetime;Date & Time;rid9;1;1;1;1;2.2.2;2.2.2;Other;Other;https://github.com/rid9/DateTime.git;Sin IA;;manifiesto
+rifi2k.format-html-in-php;Format HTML in PHP;rifi2k;1;1;1;1;1.7.0;1.7.0;Other;Other, Programming Languages, Formatters;https://github.com/RiFi2k/format-html-in-php;Sin IA;;manifiesto
+robodk.industrial-robots;Industrial Robots;RoboDK;1;1;1;1;0.1.5;0.1.5;Programming Languages;Programming Languages, Other;https://github.com/RoboDK/Industrial-Robots-VSCode;Sin IA;;manifiesto
+rocketsoftware.rocket-cobol;Rocket COBOL;RocketSoftware;1;1;1;1;2.0.3;2.0.3;Programming Languages;Programming Languages, Debuggers, Snippets, Notebooks, Other;;Sin IA;;manifiesto
+rocketsoftware.rocket-jvmcobol;Rocket JVM COBOL;RocketSoftware;1;1;1;1;2.0.1;2.0.1;Programming Languages;Programming Languages, Debuggers, Other;;Sin IA;;manifiesto
+rocketsoftware.rocket-mvbasic;Rocket MV BASIC;RocketSoftware;1;1;1;1;2.9.1;2.9.1;Programming Languages;Programming Languages, Linters, Snippets, Formatters, Debuggers;;Sin IA;;manifiesto
+rogalmic.bash-debug;Bash Debug;rogalmic;1;1;1;1;0.3.9;0.3.9;Debuggers;Debuggers;https://github.com/rogalmic/vscode-bash-debug.git;Sin IA;;manifiesto
+rubymaniac.vscode-paste-and-indent;Paste and Indent;Rubymaniac;1;1;1;1;0.0.8;0.0.8;Other;Other;https://github.com/rubymaniac/vscode-paste-and-indent.git;Sin IA;;manifiesto
+s-nlf-fh.glassit;GlassIt-VSC;s-nlf-fh;1;1;1;1;0.2.6;0.2.6;Themes;Themes, Other;https://github.com/hikarin522/GlassIt-VSC.git;Sin IA;;manifiesto
+salesforce.analyticsdx-vscode;Salesforce Analytics Extension Pack;salesforce;1;1;1;1;1.2.1;1.2.1;Extension Packs;Extension Packs;https://github.com/forcedotcom/analyticsdx-vscode;Sin IA;;manifiesto
+salesforce.analyticsdx-vscode-core;Salesforce Analytics CLI Integration;salesforce;1;1;1;1;1.2.1;1.2.1;Other;Other;https://github.com/forcedotcom/analyticsdx-vscode;Sin IA;;manifiesto
+salesforce.analyticsdx-vscode-templates;Salesforce Analytics - App Templates;salesforce;1;1;1;1;1.2.1;1.2.1;Other;Other;https://github.com/forcedotcom/analyticsdx-vscode;Sin IA;;manifiesto
+salesforce.mule-dx-api-component;Anypoint Code Builder - API Extension;salesforce;1;1;1;1;4.20.0;4.20.0;Other;Other;;Sin IA;;manifiesto
+salesforce.mule-dx-apikit-component;Anypoint Code Builder - APIkit Extension;salesforce;1;1;1;1;1.4.0;1.4.0;Other;Other, Programming Languages;;Sin IA;;manifiesto
+salesforce.mule-dx-data-weave-client;Anypoint Code Builder - DataWeave Extension;salesforce;1;1;1;1;2.13.0;2.13.0;Programming Languages;Programming Languages;;Sin IA;;manifiesto
+salesforce.mule-dx-dependencies;Anypoint Code Builder - Dependencies Extension;salesforce;1;1;1;1;1.7.1;1.7.1;Other;Other;https://github.com/mulesoft/mule-dx-dependencies;Sin IA;;manifiesto
+salesforce.mule-dx-extension-pack;Anypoint Extension Pack;salesforce;1;1;1;1;1.24.0;1.24.0;Extension Packs;Extension Packs;;Sin IA;;manifiesto
+salesforce.mule-dx-mule-dev-component;Anypoint Code Builder - Integration Extension;salesforce;1;1;1;1;3.31.4;3.31.4;Programming Languages;Programming Languages, Other, Debuggers, Formatters;;Sin IA;;manifiesto
+salesforce.mule-dx-munit-component;Anypoint Code Builder - MUnit Extension;salesforce;1;1;1;1;1.3.13;1.3.13;Debuggers;Debuggers, Extension Packs, Testing;https://www.github.com/mulesoft/mule-dx-munit-component;Sin IA;;manifiesto
+salesforce.mule-dx-runtime;Anypoint Code Builder - Runtime Extension;salesforce;1;1;1;1;1.2.0;1.2.0;Other;Other;https://github.com/mulesoft-emu/mule-dx-runtime;Sin IA;;manifiesto
+salesforce.mule-dx-vscode;Anypoint Code Builder - Platform Extension;salesforce;1;1;1;1;5.18.3;5.18.3;Programming Languages;Programming Languages, Other;;Sin IA;;manifiesto
+samuelepignone.fakedonalds;FakeDonald's;SamuelePignone;1;1;1;1;0.0.1;0.0.1;Themes;Themes;;Sin IA;;manifiesto
+samuelepignone.fakedonaldsicon;FakeDonald's Icon;SamuelePignone;1;1;1;1;0.0.1;0.0.1;Other;Other;;Sin IA;;manifiesto
+sankooc.pcapviewer;pcapviewer;sankooc;1;1;1;1;0.4.11;0.4.11;Debuggers;Debuggers;https://github.com/sankooc/vs-shark/tree/master/plugin;Sin IA;;manifiesto
+sapos.yeoman-ui;Application Wizard;SAPOS;1;1;1;1;1.23.0;1.23.0;Other;Other;https://github.com/SAP/yeoman-ui.git;Sin IA;;manifiesto
+saposs.app-studio-remote-access;Remote Access for SAP Business Application Studio;SAPOSS;1;1;1;1;4.1.0;4.1.0;Other;Other;https://github.com/SAP/app-studio-toolkit;Sin IA;;manifiesto
+saposs.app-studio-toolkit;SAP Business Application Studio toolkit;SAPOSS;1;1;1;1;2.8.0;2.8.0;Other;Other;https://github.com/SAP/app-studio-toolkit;Sin IA;;manifiesto
+saposs.code-snippet-tool;Code Snippet Tool;SAPOSS;1;1;1;1;2.0.4;2.0.4;Other;Other;https://github.com/SAP/code-snippet.git;Sin IA;;manifiesto
+saposs.sap-guided-answers-extension;Sap Guided Answers;SAPOSS;1;1;1;1;1.32.20;1.32.20;Education;Education;https://github.com/SAP/guided-answers-extension.git;Sin IA;;derivado del ID
+saposs.sap-hana-driver-for-sqltools;SAP HANA Driver for SQLTools;SAPOSS;1;1;1;1;0.2.1;0.2.1;Programming Languages;Programming Languages, Snippets, Formatters, Other;;Sin IA;;manifiesto
+saposs.sap-ux-sap-systems-ext;Connection Manager for SAP Systems;SAPOSS;1;1;1;1;0.5.2;0.5.2;Sin categoria;;https://github.com/SAP/open-ux-tools.git;Sin IA;;manifiesto
+saposs.vscode-ui5-language-assistant;UI5 Language Assistant;SAPOSS;1;1;1;1;4.0.94;4.0.94;Programming Languages;Programming Languages;;Sin IA;;manifiesto
+saposs.xml-toolkit;XML Toolkit;SAPOSS;1;1;1;1;1.2.1;1.2.1;Programming Languages;Programming Languages;https://github.com/SAP/xml-tools/tree/master/packages/xml-toolkit;Sin IA;;manifiesto
+sapse.hana-database-explorer;SAP HANA Database Explorer;SAPSE;1;1;1;1;1.37.0;1.37.0;Other;Other;;Sin IA;;manifiesto
+sapse.sap-ux-annotation-modeler-extension;Sap Ux Annotation Modeler;SAPSE;1;1;1;1;1.26.0;1.26.0;Programming Languages;Programming Languages, Snippets, Linters;private;Sin IA;;derivado del ID
+sapse.sap-ux-application-modeler-extension;Sap Ux Application Modeler;SAPSE;1;1;1;1;1.26.1;1.26.1;Programming Languages;Programming Languages, Snippets;private;Sin IA;;derivado del ID
+sapse.sap-ux-fiori-tools-extension-pack;SAP Fiori Tools - Extension Pack;SAPSE;1;1;1;1;1.26.0;1.26.0;Extension Packs;Extension Packs;private;Sin IA;;manifiesto
+sapse.sap-ux-help-extension;SAP Fiori Tools - Guided Development;SAPSE;1;1;1;1;1.26.0;1.26.0;Programming Languages;Programming Languages, Snippets;private;Sin IA;;manifiesto
+sapse.sap-ux-service-modeler-extension;Sap Ux Service Modeler;SAPSE;1;1;1;1;1.26.0;1.26.0;Programming Languages;Programming Languages, Snippets;private;Sin IA;;derivado del ID
+sapse.service-catalog;Service Catalog;SAPSE;1;1;1;1;1.4.0;1.4.0;Other;Other;private;Sin IA;;manifiesto
+sapse.vscode-cds;SAP CDS Language Support;SAPSE;1;1;1;1;9.9.0;9.9.0;Programming Languages;Programming Languages, Formatters, Other;;Sin IA;;manifiesto
+sarthikbhat.json-server;JSON Server;sarthikbhat;1;1;1;1;0.0.4;0.0.4;Programming Languages;Programming Languages, Testing, Visualization, Debuggers, Other;https://github.com/sarthikbhat/json-server-vscode.git;Sin IA;;manifiesto
+satoshiyamamoto.vscode-line-number;Line Number;satoshiyamamoto;1;1;1;1;3.1.0;3.1.0;Sin categoria;;;Sin IA;;derivado del ID
+savh.json5-kit;JSON5 KIT;savh;1;1;1;1;0.5.0;0.5.0;Debuggers;Debuggers, Formatters, Snippets, Language Packs, Linters, Programming Languages, Themes, Other;;Sin IA;;manifiesto
+sdras.vue-vscode-snippets;Vue VSCode Snippets;sdras;1;1;1;1;3.2.0;3.2.0;Snippets;Snippets;https://github.com/sdras/vue-vscode-snippets.git;Sin IA;;manifiesto
+sergey-agadzhanov.ampscript;MCFS [AMPScript];sergey-agadzhanov;1;1;1;1;3.0.6;3.0.6;Programming Languages;Programming Languages;https://github.com/Bizcuit/vscode-ampscript.git;Sin IA;;manifiesto
+serkonda7.vscode-vba;VBA;serkonda7;1;1;1;1;1.2.1;1.2.1;Programming Languages;Programming Languages, Snippets, Language Packs;https://github.com/serkonda7/vscode-vba;Sin IA;;manifiesto
+serpen.vbsvscode;VBS;Serpen;1;1;1;1;1.2.1;1.2.1;Programming Languages;Programming Languages, Snippets;https://github.com/Serpen/VBS-VSCode.git;Sin IA;;manifiesto
+shardulm94.trailing-spaces;Trailing Spaces;shardulm94;1;1;1;1;0.4.4;0.4.4;Other;Other;https://github.com/shardulm94/vscode-trailingspaces.git;Sin IA;;manifiesto
+showzs.markdown-pdf-m;Markdown PDF(m);showzs;1;1;1;1;0.2.1;0.2.1;Other;Other;https://github.com/showzs/vscode-markdown-pdf.git;Sin IA;;manifiesto
+siddharthverma.python-super-debugger-mode;Python Super Debugger Mode;SiddharthVerma;1;1;1;1;0.0.3;0.0.3;Debuggers;Debuggers, Programming Languages, Snippets, Formatters;https://github.com/siddharthverma-1607/python-super-debugger-mode;Sin IA;;manifiesto
+silasnevstad.gpthelper;GPT;SilasNevstad;1;1;1;1;1.2.2;1.2.2;Other;Other;git://github.com/silasnevstad/GPT-Extension-VSCode;Asistente de codigo IA;OpenAI;manifiesto
+simonsiefke.svg-preview;Svg Preview;SimonSiefke;1;1;1;1;2.8.3;2.8.3;Other;Other;https://github.com/SimonSiefke/vscode-svg-preview.git;Sin IA;;manifiesto
+sirtori.indenticator;Indenticator;SirTori;1;1;1;1;0.7.0;0.7.0;Other;Other;https://github.com/SirTori/indenticator;Sin IA;;manifiesto
+solomonkinard.chromium-context;Chromium Context;solomonkinard;1;1;1;1;0.4.5;0.4.5;SCM Providers;SCM Providers;https://github.com/solomonkinard/public;Sin IA;;manifiesto
+solomonkinard.git-blame;Git Blame;solomonkinard;1;1;1;1;0.2.127;0.2.127;SCM Providers;SCM Providers;https://github.com/solomonkinard/public;Sin IA;;manifiesto
+streetsidesoftware.code-spell-checker-spanish;Spanish - Code Spell Checker;streetsidesoftware;1;1;1;1;2.3.4;2.3.4;Linters;Linters, Other;https://github.com/streetsidesoftware/vscode-cspell-dict-extensions;Sin IA;;manifiesto
+sumanta.python-developer-extension-pack;Python Developer Extension Pack;sumanta;1;1;1;1;0.0.1;0.0.1;Extension Packs;Extension Packs;git+https://github.com/vscode-extensions-pack/python-developer-extension-pack.git;Sin IA;;manifiesto
+sunilyadav.dspysnippets;Python Snippets For Data Science;SunilYadav;1;1;1;1;0.0.6;0.0.6;Snippets;Snippets, Data Science, Machine Learning;https://github.com/talk2sunil83/DSSnippets;Herramienta con IA;;manifiesto
+supermaven.supermaven;Supermaven;Supermaven;1;1;1;1;1.1.12;1.1.12;Machine Learning;Machine Learning, Programming Languages, Snippets, AI, Chat;;Asistente de codigo IA;Supermaven;manifiesto
+svipas.prettier-plus;Prettier+;svipas;1;1;1;1;4.2.2;4.2.2;Formatters;Formatters;https://github.com/svipas/vscode-prettier-plus.git;Sin IA;;manifiesto
+swellaby.python-pack;Python Extension Pack;Swellaby;1;1;1;1;0.1.15;0.1.15;Extension Packs;Extension Packs;https://github.com/swellaby/vscode-python-pack.git;Sin IA;;manifiesto
+swellaby.rust-pack;Rust Extension Pack;Swellaby;1;1;1;1;0.3.38;0.3.38;Extension Packs;Extension Packs;https://github.com/swellaby/vscode-rust-pack.git;Sin IA;;manifiesto
+swiftlang.swift-vscode;Swift;swiftlang;1;1;1;1;2.16.6;2.16.6;Programming Languages;Programming Languages, Debuggers, Snippets, Testing;https://github.com/swiftlang/vscode-swift;Sin IA;;manifiesto
+takumii.markdowntable;Markdown Table;TakumiI;1;1;1;1;0.13.0;0.13.0;Other;Other;https://github.com/takumisoft68/vscode-markdown-table;Sin IA;;manifiesto
+tal7aouy.theme;Theme;tal7aouy;1;1;1;1;3.1.0;3.1.0;Themes;Themes, Other;https://github.com/tal7aouy/theme;Sin IA;;manifiesto
+taoklerks.poor-mans-t-sql-formatter-vscode;Poor Man's T-SQL Formatter;TaoKlerks;1;1;1;1;1.6.10;1.6.10;Other;Other;https://github.com/TaoK/poor-mans-t-sql-formatter-vscode-extension.git;Sin IA;;manifiesto
+tatsuyanakamori.resttext;reStructuredText;TatsuyaNakamori;1;1;1;1;0.1.2;0.1.2;Programming Languages;Programming Languages, Snippets, Themes, Keymaps, Other;https://github.com/TatsuyaNakamori/vscode-reStructuredText.git;Sin IA;;manifiesto
+tauri-apps.tauri-vscode;Tauri;tauri-apps;1;1;1;1;0.2.9;0.2.9;Snippets;Snippets, Linters, Other;https://github.com/tauri-apps/tauri-vscode.git;Sin IA;;manifiesto
+tberman.json-schema-validator;JSON Schema Validator;tberman;1;1;1;1;0.1.0;0.1.0;Other;Other;;Sin IA;;manifiesto
+tcwalther.cython;Cython;tcwalther;1;1;1;1;0.1.0;0.1.0;Languages;Languages;;Sin IA;;manifiesto
+tdennis4496.cmantic;C-mantic;tdennis4496;1;1;1;1;0.9.0;0.9.0;Programming Languages;Programming Languages;https://github.com/BigBahss/vscode-cmantic;Sin IA;;manifiesto
+teabyii.ayu;Ayu;teabyii;1;1;1;1;1.1.12;1.1.12;Themes;Themes;https://github.com/ayu-theme/vscode-ayu;Sin IA;;manifiesto
+tenable.vscode-auditlang;Tenable AuditLang;Tenable;1;1;1;1;1.0.8;1.0.8;Programming Languages;Programming Languages, Snippets;;Sin IA;;manifiesto
+th7as.text-compare;Text Compare;th7as;1;1;1;1;1.1.1;1.1.1;Other;Other;https://github.com/th7as/text-compare.git;Sin IA;;manifiesto
+thedavej.night-owl-black;Night Owl Black;thedavej;1;1;1;1;1.3.1;1.3.1;Themes;Themes;https://github.com/thedavej/night-owl-black;Sin IA;;manifiesto
+thekalinga.bootstrap4-vscode;Bootstrap 4, Font awesome 4, Font Awesome 5 Free & Pro snippets;thekalinga;1;1;1;1;6.1.0;6.1.0;Snippets;Snippets;https://github.com/1tontech/bootstrap4-snippets.git;Sin IA;;manifiesto
+thelastoutpostworkshop.arduino-maker-workshop;Arduino Maker Workshop;TheLastOutpostWorkshop;1;1;1;1;1.1.4;1.1.4;Programming Languages;Programming Languages, Snippets;https://github.com/thelastoutpostworkshop/vscode-arduino;Sin IA;;manifiesto
+theqtcompany.qt;Qt Extension Pack;theqtcompany;1;1;1;1;1.4.0;1.4.0;Extension Packs;Extension Packs, Programming Languages, Formatters, Snippets;https://github.com/qt-labs/vscodeext;Sin IA;;manifiesto
+theqtcompany.qt-core;Qt Core;theqtcompany;1;1;1;1;1.14.0;1.14.0;Programming Languages;Programming Languages;https://github.com/qt-labs/vscodeext;Sin IA;;manifiesto
+theqtcompany.qt-cpp;Qt C++;theqtcompany;1;1;1;1;1.14.0;1.14.0;Programming Languages;Programming Languages, Formatters, Snippets;https://github.com/qt-labs/vscodeext;Sin IA;;manifiesto
+theqtcompany.qt-python;Qt Python;theqtcompany;1;1;1;1;1.14.0;1.14.0;Programming Languages;Programming Languages, Formatters, Snippets;https://github.com/qt-labs/vscodeext;Sin IA;;manifiesto
+theqtcompany.qt-qml;Qt Qml;theqtcompany;1;1;1;1;1.14.0;1.14.0;Programming Languages;Programming Languages, Formatters, Snippets, Debuggers;https://github.com/qt-labs/vscodeext;Sin IA;;manifiesto
+theqtcompany.qt-ui;Qt UI;theqtcompany;1;1;1;1;1.14.0;1.14.0;Programming Languages;Programming Languages, Formatters, Snippets;https://github.com/qt-labs/vscodeext;Sin IA;;manifiesto
+threatcon.vba-formatter;VBA Formatter;threatcon;1;1;1;1;0.0.3;0.0.3;Other;Other, Formatters;https://github.com/threatcon/vba-formatter.git;Sin IA;;manifiesto
+timgjones.hlsltools;HLSL Tools;TimGJones;1;1;1;1;1.1.303;1.1.303;Programming Languages;Programming Languages;https://github.com/tgjones/HlslTools.git;Sin IA;;manifiesto
+tobermory.es6-string-html;es6-string-html;Tobermory;1;1;1;1;2.17.0;2.17.0;Programming Languages;Programming Languages;https://github.com/mydesireiscoma/es6-string-html;Sin IA;;manifiesto
+tock.vscode-css-custom-properties;CSS Custom Properties;Tock;1;1;1;1;0.0.5;0.0.5;Debuggers;Debuggers, Language Packs, Other;https://github.com/tocktix/vscode-css-custom-properties;Sin IA;;manifiesto
+tomoyukim.vscode-mermaid-editor;Mermaid Editor;tomoyukim;1;1;1;1;0.19.1;0.19.1;Other;Other;https://github.com/tomoyukim/vscode-mermaid-editor.git;Sin IA;;manifiesto
+toolkits.aio-python-dev;AIO_Python_Dev;Toolkits;1;1;1;1;0.0.1;0.0.1;Extension Packs;Extension Packs;git+https://github.com/Scout007-27/aio-python-dev.git;Sin IA;;manifiesto
+travismichette.adoc-snippets;ASCIIDoc Snippets;TravisMichette;1;1;1;1;0.0.5;0.0.5;Snippets;Snippets;;Sin IA;;manifiesto
+ty4z2008.html-preview;HTML Preview;ty4z2008;1;1;1;1;1.4.0;1.4.0;Other;Other;git+https://github.com/ty4z2008/vscode-html-preview.git;Sin IA;;manifiesto
+typescriptteam.native-preview;TypeScript 7;TypeScriptTeam;1;1;1;1;0.20260708.2;0.20260708.2;Sin categoria;;https://github.com/microsoft/typescript-go;Sin IA;;manifiesto
+uctakeoff.vscode-counter;VS Code Counter;uctakeoff;1;1;1;1;3.7.2;3.7.2;Other;Other, Programming Languages;https://github.com/uctakeoff/vscode-counter.git;Sin IA;;manifiesto
+unity.unity-debug;Debugger for Unity;Unity;1;1;1;1;3.0.2;3.0.2;Debuggers;Debuggers;https://github.com/Unity-Technologies/vscode-unity-debug.git;Sin IA;;manifiesto
+urin.vscode-web-visual-editor;Web Visual Editor;Urin;1;1;1;1;0.1.10;0.1.10;Visualization;Visualization;https://github.com/urin/vscode-web-visual-editor.git;Sin IA;;manifiesto
+vectorgroup.simulation-and-test-environment;Vector Simulation and Test Environment;vectorgroup;1;1;1;1;20.0.0;20.0.0;Testing;Testing, Other;https://github.com/vectorgrp/simulation-and-test-environment.git;Sin IA;;manifiesto
+vignaeshrama.sfdx-command-builder;Salesforce CLI Command Builder;VignaeshRamA;1;1;1;1;3.0.0;3.0.0;Extension Packs;Extension Packs, Other;git+https://github.com/vignaesh01/sfdx-command-builder.git;Sin IA;;manifiesto
+vinirossa.vscode-gitandgithub-pack;Git & GitHub Extension Pack;vinirossa;1;1;1;1;2.0.1;2.0.1;Extension Packs;Extension Packs;https://github.com/vinirossa/vscode-gitandgithub-pack;Sin IA;;manifiesto
+vmware.vscode-boot-dev-pack;Spring Boot Extension Pack;vmware;1;1;1;1;0.2.2;0.2.2;Programming Languages;Programming Languages, Linters, Extension Packs;https://github.com/spring-projects/sts4.git;Sin IA;;manifiesto
+vmware.vscode-manifest-yaml;Cloudfoundry Manifest YML Support;vmware;1;1;1;1;1.56.0;1.56.0;Programming Languages;Programming Languages, Linters;https://github.com/spring-projects/spring-tools.git;Sin IA;;manifiesto
+vmware.vscode-spring-boot;Spring Boot Tools;vmware;1;1;1;1;2.2.0;2.2.0;Programming Languages;Programming Languages, Linters, AI, Chat;https://github.com/spring-projects/spring-tools.git;Herramienta con IA;;manifiesto
+vomout.latex-workshop-sanity;LaTeX Workshop_sanity;vomout;1;1;1;1;8.5.0;8.5.0;Programming Languages;Programming Languages, Snippets;https://github.com/vomout/LaTeX-Workshop_sanity.git;Sin IA;;manifiesto
+vscjava.vscode-spring-boot-dashboard;Spring Boot Dashboard;vscjava;1;1;1;1;0.14.0;0.14.0;Other;Other;https://github.com/Microsoft/vscode-spring-boot-dashboard.git;Sin IA;;manifiesto
+vscjava.vscode-spring-initializr;Spring Initializr Java Support;vscjava;1;1;1;1;0.12.0;0.12.0;Other;Other;https://github.com/Microsoft/vscode-spring-initializr.git;Sin IA;;manifiesto
+vscodevim.vim;Vim;vscodevim;1;1;1;1;1.32.4;1.32.4;Other;Other, Keymaps;https://github.com/VSCodeVim/Vim.git;Sin IA;;manifiesto
+vsls-contrib.gitdoc;GitDoc;vsls-contrib;1;1;1;1;0.2.3;0.2.3;Other;Other;https://github.com/lostintangent/gitdoc.git;Sin IA;;manifiesto
+vstirbu.vscode-mermaid-preview;Mermaid Preview;vstirbu;1;1;1;1;2.1.2;2.1.2;Visualization;Visualization;https://github.com/vstirbu/vscode-mermaid-preview.git;Sin IA;;manifiesto
+wallabyjs.quokka-vscode;Quokka.js;WallabyJs;1;1;1;1;1.0.766;1.0.766;Debuggers;Debuggers, Testing, Other;;Sin IA;;manifiesto
+wasm-fmt.wasm-fmt;wasm fmt;wasm-fmt;1;1;1;1;0.6.2;0.6.2;Formatters;Formatters;https://github.com/wasm-fmt/wasm-fmt-vscode.git;Sin IA;;manifiesto
+wayou.vscode-todo-highlight;TODO Highlight;wayou;1;1;1;1;1.0.5;1.0.5;Other;Other;https://github.com/wayou/vscode-todo-highlight.git;Sin IA;;manifiesto
+webfreak.code-d;D Programming Language (code-d);webfreak;1;1;1;1;0.23.2;0.23.2;Programming Languages;Programming Languages, Snippets, Linters, Formatters, Other;https://github.com/Pure-D/code-d.git;Sin IA;;manifiesto
+wgeck.odx-commander;ODX Commander;wgeck;1;1;1;1;0.8.1;0.8.1;Visualization;Visualization;https://github.com/javahacks/odx-commander;Sin IA;;manifiesto
+wintersteiger.hex-bin-dec;hex-bin-dec;wintersteiger;1;1;1;1;0.0.1;0.0.1;Other;Other;;Sin IA;;manifiesto
+wix.vscode-import-cost;Import Cost;wix;1;1;1;1;3.3.0;3.3.0;Other;Other;https://github.com/wix/import-cost.git;Sin IA;;manifiesto
+wmanth.jar-viewer;JAR Viewer;wmanth;1;1;1;1;1.2.0;1.2.0;Other;Other;https://github.com/wmanth/vscode-jar-viewer.git;Sin IA;;manifiesto
+wmaurer.change-case;change-case;wmaurer;1;1;1;1;1.0.0;1.0.0;Other;Other;https://github.com/wmaurer/vscode-change-case.git;Sin IA;;manifiesto
+wokwi.wokwi-vscode;Wokwi Simulator;Wokwi;1;1;1;1;3.6.0;3.6.0;Other;Other;;Sin IA;;manifiesto
+wscats.html-snippets;HTML/CSS/JavaScript Snippets;wscats;1;1;1;1;1.0.6;1.0.6;Programming Languages;Programming Languages, Snippets;;Sin IA;;manifiesto
+wtc.cpp-project-template;C++ Project Template;wtc;1;1;1;1;0.3.0;0.3.0;Programming Languages;Programming Languages, Snippets;git+https://github.com/wtcpython/cpp-project-template.git;Sin IA;;manifiesto
+xdebug.php-debug;PHP Debug;xdebug;1;1;1;1;1.40.1;1.40.1;Debuggers;Debuggers;https://github.com/xdebug/vscode-php-debug.git;Sin IA;;manifiesto
+xshrim.txt-syntax;Txt Syntax;xshrim;1;1;1;1;0.2.4;0.2.4;Programming Languages;Programming Languages;;Sin IA;;manifiesto
+yandeu.five-server;Live Server (Five Server);yandeu;1;1;1;1;0.4.0;0.4.0;Other;Other;https://github.com/yandeu/five-server-vscode.git;Sin IA;;manifiesto
+yclepticstudios.unity-snippets;Unity Snippets;YclepticStudios;1;1;1;1;0.1.2;0.1.2;Snippets;Snippets;https://github.com/YclepticStudios/vscode-unity-snippets.git;Sin IA;;manifiesto
+yigitfindikli.primengsnippets;PrimeNG 7 Snippets;yigitfindikli;1;1;1;1;1.0.5;1.0.5;Snippets;Snippets;https://github.com/yigitfindikli/primengsnippets.git;Sin IA;;manifiesto
+youssef.viow;Viow Color Themes;Youssef;1;1;1;1;0.3.3;0.3.3;Themes;Themes;https://gitlab.com/youssefhad/Viow-vscode;Sin IA;;manifiesto
+yrpark99.hex-ascii-converter;Hex ascii converter;yrpark99;1;1;1;1;0.0.3;0.0.3;Other;Other;https://github.com/yrpark99/hex-ascii-converter.git;Sin IA;;manifiesto
+yseop.vscode-yseopml;YML (Yseop Markup Language) support extension;Yseop;1;1;1;1;1.16.0;1.16.0;Programming Languages;Programming Languages, Snippets;https://github.com/yseop/vscode-yseopml;Sin IA;;manifiesto
+zhouzhipeng.liveserverpp;Live ServerPP;zhouzhipeng;1;1;1;1;5.7.1;5.7.1;Other;Other;https://github.com/Zhou-zhi-peng/vscode-live-server.git;Sin IA;;manifiesto
+zhphhh.tconda;anaconda terminal;zhphhh;1;1;1;1;0.0.5;0.0.5;Other;Other;;Sin IA;;manifiesto
+zhucy.project-tree;project-tree;zhucy;1;1;1;1;0.4.0;0.4.0;Other;Other, Visualization;;Sin IA;;manifiesto
+zio069.enterprise-cobol-for-z-os;Enterprise COBOL for z/OS;zio069;1;1;1;1;0.0.1;0.0.1;Programming Languages;Programming Languages;;Sin IA;;manifiesto
+zknpr.sqlite-explorer;SQLite Explorer;zknpr;1;1;1;1;1.5.3;1.5.3;Other;Other;https://github.com/zknpr/sqlite-explorer;Sin IA;;manifiesto
+zoocodeorganization.zoo-code;Zoo Code;ZooCodeOrganization;1;1;1;1;3.70.0;3.70.0;AI;AI, Chat, Programming Languages, Education, Snippets, Testing;https://github.com/Zoo-Code-Org/Zoo-Code;Asistente de codigo IA;Zoo;derivado del ID
+zowe.zowe-explorer-ftp-extension;Zowe Explorer for IBM z/OS FTP;Zowe;1;1;1;1;3.5.1;3.5.1;Other;Other;https://github.com/zowe/zowe-explorer-vscode;Sin IA;;manifiesto

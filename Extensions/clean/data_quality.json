@@ -1,0 +1,80 @@
+{
+  "source_rows": 14659,
+  "malformed": 5,
+  "repaired": 5,
+  "empty_inventories": 7068,
+  "raw_installations": 7580,
+  "installations": 5466,
+  "duplicates": 2114,
+  "casing_mismatch": 1304,
+  "placeholder_names": 434,
+  "mojibake_fixed": 101,
+  "unreadable_manifest": 10,
+  "extensiones_unicas": 861,
+  "equipos_con_extensiones": 530,
+  "usuarios_con_extensiones": 523,
+  "sin_repositorio": 348,
+  "nombre_resuelto_por_id": 35,
+  "top_dispersion_versiones": [
+    [
+      "ms-python.vscode-pylance",
+      29
+    ],
+    [
+      "ms-python.python",
+      27
+    ],
+    [
+      "ms-ceintl.vscode-language-pack-es",
+      21
+    ],
+    [
+      "ms-python.vscode-python-envs",
+      20
+    ],
+    [
+      "ms-python.debugpy",
+      17
+    ],
+    [
+      "github.copilot-chat",
+      14
+    ],
+    [
+      "ms-vscode.cpptools",
+      14
+    ],
+    [
+      "ms-dotnettools.csharp",
+      12
+    ],
+    [
+      "ms-toolsai.jupyter",
+      11
+    ],
+    [
+      "anthropic.claude-code",
+      11
+    ],
+    [
+      "openai.chatgpt",
+      10
+    ],
+    [
+      "ms-dotnettools.vscode-dotnet-runtime",
+      9
+    ],
+    [
+      "ms-vscode.cmake-tools",
+      8
+    ],
+    [
+      "eamodio.gitlens",
+      7
+    ],
+    [
+      "ibm.zopeneditor",
+      7
+    ]
+  ]
+}

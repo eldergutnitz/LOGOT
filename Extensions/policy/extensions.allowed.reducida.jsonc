@@ -1,0 +1,401 @@
+// Politica de extensiones permitidas para VS Code - nivel REDUCIDA.
+// Desarrollo, pruebas y acceso a datos, ademas del control de versiones que llevan todos los niveles. Fuera quedan documentacion, diagramas, clientes de API, los fabricantes secundarios y todo lo que no declara repositorio.
+// Generada el 30/07/2026 a partir del inventario real de la flota.
+// Deny-by-default: lo que no aparece aqui queda bloqueado por "*": false.
+// Valores: true = cualquier version | "stable" = solo versiones estables | false = denegado.
+{
+  "extensions.allowed": {
+
+    // --- Primera parte: GitHub -------------------------------------------------
+    "github": true,
+
+    // --- Primera parte: Microsoft (publishers ms-*) -----------------------------
+    "microsoft": true,
+    "ms-azure-load-testing": true,
+    "ms-azureaispeech": true,
+    "ms-azuretools": true,
+    "ms-ceintl": true,
+    "ms-copilotstudio": true,
+    "ms-dotnettools": true,
+    "ms-edgedevtools": true,
+    "ms-kubernetes-tools": true,
+    "ms-mssql": true,
+    "ms-ossdata": true,
+    "ms-playwright": true,
+    "ms-python": true,
+    "ms-sarifvscode": true,
+    "ms-toolsai": true,
+    "ms-vscode": true,
+    "ms-vscode-remote": true,
+    "ms-vsliveshare": true,
+    "ms-windows-ai-studio": true,
+
+    // --- Microsoft con otro ID de publisher (verificar antes de ampliar) --------
+    "analysis-services": true,
+    "microsoft-isvexptools": true,
+    "powerappstools": true,
+    "powerquery": true,
+    "teamsdevapp": true,
+    "visualstudioexptteam": true,
+    "visualstudiotoolsforunity": true,
+    "vscjava": true,
+
+    // --- Fabricantes de los stacks corporativos ------------------------------
+    "broadcommfd": true,
+    "docker": true,
+    "hashicorp": true,
+    "ibm": true,
+    "oracle": true,
+    "redhat": true,
+    "salesforce": true,
+    "sapos": true,
+    "saposs": true,
+    "sapse": true,
+    "snowflake": true,
+    "sonarsource": true,
+    "vmware": true,
+    "zowe": true,
+    "amazonwebservices": true,
+    "angular": true,
+    "dbtlabsinc": true,
+    "google": true,
+    "graphql": true,
+    "platformio": true,
+    "postman": true,
+    "vue": true,
+
+    // --- Cadena estandar: lint, formato y calidad ----------------------------
+    "charliermarsh.ruff": "stable",  // Ruff (lint/format Python) (7 usuarios)
+    "cheshirekow.cmake-format": "stable",  // formateador de CMake (1 usuarios)
+    "davidanson.vscode-markdownlint": "stable",  // markdownlint (16 usuarios)
+    "dbaeumer.vscode-eslint": "stable",  // ESLint (15 usuarios)
+    "editorconfig.editorconfig": "stable",  // EditorConfig (4 usuarios)
+    "esbenp.prettier-vscode": "stable",  // Prettier (37 usuarios)
+    "streetsidesoftware.code-spell-checker": "stable",  // Code Spell Checker (8 usuarios)
+    "streetsidesoftware.code-spell-checker-spanish": "stable",  // diccionario espanol del corrector (1 usuarios)
+    "taoklerks.poor-mans-t-sql-formatter-vscode": "stable",  // formateador T-SQL (1 usuarios)
+    "timonwong.shellcheck": "stable",  // ShellCheck (5 usuarios)
+    "usernamehw.errorlens": "stable",  // diagnosticos en linea (19 usuarios)
+
+    // --- Soporte de lenguaje y cadenas de compilacion ------------------------
+    "batisteo.vscode-django": "stable",  // Django (24 usuarios)
+    "bitlang.cobol": "stable",  // lenguaje COBOL (4 usuarios)
+    "bpruitt-goddard.mermaid-markdown-syntax-highlighting": "stable",  // sintaxis Mermaid (1 usuarios)
+    "brapifra.c-compiler": "stable",  // compilador C (1 usuarios)
+    "bscan.perlnavigator": "stable",  // servidor de lenguaje Perl (1 usuarios)
+    "chipcode-nl.gcc-arm-windows": "stable",  // toolchain ARM para Windows (1 usuarios)
+    "dart-code.dart-code": "stable",  // lenguaje Dart (Flutter depende de el) (2 usuarios)
+    "dotjoshjohnson.xml": "stable",  // XML Tools (19 usuarios)
+    "ecmel.vscode-html-css": "stable",  // HTML CSS Support (14 usuarios)
+    "fanuc.karel-for-fanuc-robot": "stable",  // lenguaje KAREL de robots FANUC (2 usuarios)
+    "flix.flix": "stable",  // lenguaje Flix (1 usuarios)
+    "fougas.msys2": "stable",  // soporte MSYS2 / MinGW / Clang (2 usuarios)
+    "gordonwalkedby.vbnet": "stable",  // gramatica VB.NET (1 usuarios)
+    "huyza.dax-language": "stable",  // DAX (Power BI) (3 usuarios)
+    "jianfajun.dax-language": "stable",  // DAX (Power BI) (4 usuarios)
+    "reditorsupport.r": "stable",  // R (2 usuarios)
+    "reditorsupport.r-syntax": "stable",  // sintaxis R (3 usuarios)
+    "rust-lang.rust-analyzer": "stable",  // Rust (3 usuarios)
+    "samuelcolvin.jinjahtml": "stable",  // plantillas Jinja en HTML (9 usuarios)
+    "slevesque.shader": "stable",  // lenguajes de shader (3 usuarios)
+    "tamasfe.even-better-toml": "stable",  // TOML (3 usuarios)
+    "twxs.cmake": "stable",  // sintaxis CMake (20 usuarios)
+    "typescriptteam.native-preview": "stable",  // TypeScript 7 (preview nativo) (1 usuarios)
+    "wholroyd.jinja": "stable",  // plantillas Jinja (20 usuarios)
+
+    // --- Depuradores ---------------------------------------------------------
+    "bmc.devx-workbench-code-debug": "stable",  // depuracion BMC DevX (mainframe) (1 usuarios)
+    "firefox-devtools.vscode-firefox-debug": "stable",  // depurador de Firefox (14 usuarios)
+    "furkansalk.qemu-gdb-debug": "stable",  // depuracion QEMU + GDB (1 usuarios)
+    "mcu-debug.debug-tracker-vscode": "stable",  // seguimiento de sesiones de depuracion (1 usuarios)
+    "mcu-debug.memory-view": "stable",  // vista de memoria en depuracion embebida (1 usuarios)
+    "mcu-debug.rtos-views": "stable",  // vistas de RTOS en depuracion embebida (1 usuarios)
+    "philschatz.vscode-xslt": "stable",  // depurador XSLT (1 usuarios)
+    "vadimcn.vscode-lldb": "stable",  // CodeLLDB (11 usuarios)
+
+    // --- Red corporativa -----------------------------------------------------
+    "ukoloff.win-ca": "stable",  // inyecta los certificados CA de Windows (2 usuarios)
+
+    // --- Control de versiones ------------------------------------------------
+    "codezombiech.gitignore": "stable",  // plantillas .gitignore (10 usuarios)
+    "donjayamanne.githistory": "stable",  // Git History (15 usuarios)
+    "eamodio.gitlens": "stable",  // GitLens (24 usuarios)
+    "mhutchie.git-graph": "stable",  // Git Graph (20 usuarios)
+
+    // --- Utilidades adicionales de git ---------------------------------------
+    "atlassian.atlascode": "stable",  // Bitbucket y Jira (revision de pull requests) (3 usuarios)
+    "git-brain.git-brain": "stable",  // Git Brain (1 usuarios)
+    "gxl.git-graph-3": "stable",  // Git Graph v3 (1 usuarios)
+    "henriquebruno.github-repository-manager": "stable",  // gestor de repositorios (1 usuarios)
+    "heroprotagonist.pandiff-vscode": "stable",  // comparacion enriquecida de textos (1 usuarios)
+    "howardzuo.vscode-git-tags": "stable",  // etiquetas de Git (1 usuarios)
+    "mccarter.start-git-bash": "stable",  // abrir git-bash desde el editor (1 usuarios)
+    "solomonkinard.git-blame": "stable",  // Git Blame (1 usuarios)
+    "vsls-contrib.gitdoc": "stable",  // GitDoc (1 usuarios)
+    "ziyasal.vscode-open-in-github": "stable",  // abrir el fichero en GitHub / GitLab / Bitbucket (7 usuarios)
+
+    // --- Pruebas -------------------------------------------------------------
+    "hbenl.vscode-test-explorer": "stable",  // Test Explorer UI (7 usuarios)
+    "littlefoxteam.vscode-python-test-adapter": "stable",  // explorador de tests Python (6 usuarios)
+    "simontest.simontest": "stable",  // generacion de tests unitarios (3 usuarios)
+    "vitest.explorer": "stable",  // Vitest (3 usuarios)
+
+    // --- Acceso a datos ------------------------------------------------------
+    "alexcvzz.vscode-sqlite": "stable",  // SQLite (5 usuarios)
+    "cweijan.dbclient-jdbc": "stable",  // Database Client (JDBC) (7 usuarios)
+    "cweijan.vscode-database-client2": "stable",  // Database Client (1 usuarios)
+    "cweijan.vscode-mysql-client2": "stable",  // cliente MySQL (3 usuarios)
+    "cweijan.vscode-postgresql-client2": "stable",  // cliente PostgreSQL (3 usuarios)
+    "dvirtz.parquet-viewer": "stable",  // visor Parquet (4 usuarios)
+    "lochbrunner.vscode-hdf5-viewer": "stable",  // visor de datos HDF5 (2 usuarios)
+    "mechatroner.rainbow-csv": "stable",  // Rainbow CSV (59 usuarios)
+    "mtxr.sqltools": "stable",  // SQLTools (7 usuarios)
+    "mtxr.sqltools-driver-mssql": "stable",  // driver SQL Server de SQLTools (2 usuarios)
+    "mtxr.sqltools-driver-sqlite": "stable",  // driver SQLite de SQLTools (1 usuarios)
+    "qwtel.sqlite-viewer": "stable",  // visor SQLite (10 usuarios)
+
+    // --- Autoria en Python ---------------------------------------------------
+    "kevinrose.vsc-python-indent": "stable",  // indentacion Python (24 usuarios)
+    "mgesbert.python-path": "stable",  // rutas de import (7 usuarios)
+    "njpwerner.autodocstring": "stable",  // generacion de docstrings (27 usuarios)
+    "njqdev.vscode-python-typehint": "stable",  // type hints (8 usuarios)
+
+    // --- Capacidad de trabajo segun categoria del marketplace ------------------
+    // Categorias que cuentan aqui: Debuggers, Formatters, Languages, Linters, Programming Languages, SCM Providers, Testing.
+    // Entra sin mirar cuantos la usan: el unico especialista de KUKA KRL o de
+    // COBOL la necesita igual que los 59 usuarios de Rainbow CSV.
+    "13xforever.language-x86-64-assembly": "stable",  // x86 and x86_64 Assembly (1 usuarios)
+    "42crunch.vscode-openapi": "stable",  // OpenAPI (Swagger) Editor (1 usuarios)
+    "4bde9604-932c-638d-b5d2-db273992f59c.python-silver-pack": "stable",  // Python Silver Pack (1 usuarios)
+    "adpyke.vscode-sql-formatter": "stable",  // SQL Formatter (2 usuarios)
+    "ahern.urscript": "stable",  // URScript (1 usuarios)
+    "ahmedrasnaama.csharp-form-gui-editor": "stable",  // C# Form GUI Editor (1 usuarios)
+    "alexiv.vscode-angular2-files": "stable",  // Angular Files (3 usuarios)
+    "alin-c.vbs-formatter": "stable",  // VBS Formatter (1 usuarios)
+    "almenon.arepl": "stable",  // AREPL for python (6 usuarios)
+    "arthurdw.rovo-lsp": "stable",  // Rovo for Rust (1 usuarios)
+    "asciidoctor.asciidoctor-vscode": "stable",  // Asciidoctor (5 usuarios)
+    "astro-build.astro-vscode": "stable",  // Astro (1 usuarios)
+    "bar.python-import-helper": "stable",  // Python Import Helper (1 usuarios)
+    "bbenoist.doxygen": "stable",  // Doxygen (1 usuarios)
+    "bbugh.change-color-format": "stable",  // Change Color Format (1 usuarios)
+    "benjamin-simmonds.pythoncpp-debug": "stable",  // Python C++ Debugger (2 usuarios)
+    "benjaminsu.decompile-java": "stable",  // Decompile Java Pretty (1 usuarios)
+    "besthyhy.dart-data-class-better-datetime": "stable",  // DartDataClass better DateTime (1 usuarios)
+    "bmalehorn.shell-syntax": "stable",  // Shell Syntax (1 usuarios)
+    "bmewburn.vscode-intelephense-client": "stable",  // PHP Intelephense (2 usuarios)
+    "boto3typed.boto3-ide": "stable",  // AWS boto3 (1 usuarios)
+    "bowlerr.offline-markdown-preview": "stable",  // Offline Markdown Preview (1 usuarios)
+    "bradlc.vscode-tailwindcss": "stable",  // Tailwind CSS IntelliSense (2 usuarios)
+    "ccimage.jsonviewer": "stable",  // JSON Viewer (2 usuarios)
+    "ccisnedev.sqlite-inspector": "stable",  // SQLite Inspector (1 usuarios)
+    "chrisjsewell.gulp-lattice": "stable",  // GULP (1 usuarios)
+    "chuckjonas.apex-debug": "stable",  // Salesforce Apex Debug (1 usuarios)
+    "chuckjonas.apex-pmd": "stable",  // Apex PMD (2 usuarios)
+    "chuckjonas.duckdb": "stable",  // DuckDB (1 usuarios)
+    "clarkyu.vscode-sql-beautify": "stable",  // SQL Beautify (1 usuarios)
+    "clemenspeters.format-json": "stable",  // JSON formatter (3 usuarios)
+    "coderfin.logical-properties": "stable",  // 🧠 Logical Properties (1 usuarios)
+    "coolchyni.beyond-debug": "stable",  // GDB Debugger - Beyond (1 usuarios)
+    "cuilian.minidump-parser": "stable",  // Minidump Parser (1 usuarios)
+    "d-biehl.robotcode": "stable",  // RobotCode - Robot Framework Support (1 usuarios)
+    "d4nuu8.language-kuka-krl": "stable",  // KUKA KRL (2 usuarios)
+    "d9705996.perl-toolbox": "stable",  // Perl Toolbox (1 usuarios)
+    "dadroit.dadroit-json-generator": "stable",  // Dadroit JSON Generator (2 usuarios)
+    "danielpinto8zz6.c-cpp-compile-run": "stable",  // C/C++ Compile Run (4 usuarios)
+    "daninemonic.mcp4humans": "stable",  // MCP4Humans (1 usuarios)
+    "dart-code.flutter": "stable",  // Flutter (2 usuarios)
+    "demystifying-javascript.python-extensions-pack": "stable",  // Python Development Extensions Pack (5 usuarios)
+    "dgileadi.java-decompiler": "stable",  // Decompiler for Java (1 usuarios)
+    "diemasmichiels.emulate": "stable",  // Android iOS Emulator (1 usuarios)
+    "diogonolasco.pyinit": "stable",  // PyInit (2 usuarios)
+    "dnicolson.binary-plist": "stable",  // Binary Plist (1 usuarios)
+    "dtoplak.vscode-glsllint": "stable",  // GLSL Lint (2 usuarios)
+    "dustypomerleau.rust-syntax": "stable",  // Rust Syntax (2 usuarios)
+    "dynamicengineering.dynamic-siemens-language-support": "stable",  // Dynamic Siemens Language Support (1 usuarios)
+    "eeyore.yapf": "stable",  // yapf (1 usuarios)
+    "elmtooling.elm-ls-vscode": "stable",  // Elm (1 usuarios)
+    "epolicardo.sql-server-profiler-tool": "stable",  // SQL Server Profiler Tool (1 usuarios)
+    "ericsia.pythonsnippets3": "stable",  // Python Snippets 3 (2 usuarios)
+    "espressif.esp-idf-extension": "stable",  // ESP-IDF (1 usuarios)
+    "everettjf.filter-line": "stable",  // Filter Line (1 usuarios)
+    "fabianlauer.vs-code-xml-format": "stable",  // XML Formatter (2 usuarios)
+    "fastapilabs.fastapi-vscode": "stable",  // FastAPI Extension (1 usuarios)
+    "figma.figma-vscode-extension": "stable",  // Figma for VS Code (5 usuarios)
+    "fill-labs.dependi": "stable",  // Dependi (2 usuarios)
+    "finlay-ab.vscode-latex-runner": "stable",  // LaTeX Instant Runner (1 usuarios)
+    "flone.shader-formatter": "stable",  // Shader Formatter (1 usuarios)
+    "formulahendry.auto-close-tag": "stable",  // Auto Close Tag (6 usuarios)
+    "formulahendry.auto-rename-tag": "stable",  // Auto Rename Tag (5 usuarios)
+    "formulahendry.code-runner": "stable",  // Code Runner (15 usuarios)
+    "formulahendry.vscode-mysql": "stable",  // MySQL (2 usuarios)
+    "foxundermoon.shell-format": "stable",  // shell-format (1 usuarios)
+    "franneck94.c-cpp-runner": "stable",  // C/C++ Runner (8 usuarios)
+    "franneck94.vscode-c-cpp-config": "stable",  // C/C++ Config (1 usuarios)
+    "franneck94.vscode-python-config": "stable",  // Python Config (2 usuarios)
+    "frawa.vscode-elm-test-runner": "stable",  // Run Elm tests (1 usuarios)
+    "fudge.auto-using": "stable",  // Auto-Using for C# (1 usuarios)
+    "fwcd.kotlin": "stable",  // Kotlin (1 usuarios)
+    "geequlim.godot-tools": "stable",  // godot-tools (1 usuarios)
+    "geforcelegend.vscode-glsl": "stable",  // GLSL Syntax for VS Code (2 usuarios)
+    "gimly81.fortran": "stable",  // fortran (1 usuarios)
+    "giyyapan.pyformat": "stable",  // PyFormat (1 usuarios)
+    "good-code-solutions.md-to-pdf-blazing": "stable",  // MD to PDF - Blazing Fast (1 usuarios)
+    "googlecloudtools.cloudcode": "stable",  // Google Cloud Code (1 usuarios)
+    "gunders89.vscode-scl": "stable",  // Siemens SCL (1 usuarios)
+    "harikrishnan94.cxx-compiler-explorer": "stable",  // C/C++ Compiler explorer (1 usuarios)
+    "henriblancke.vscode-dbt-formatter": "stable",  // dbt formatter (2 usuarios)
+    "hollowtree.vue-snippets": "stable",  // Vue 3 Snippets (1 usuarios)
+    "humao.rest-client": "stable",  // REST Client (4 usuarios)
+    "inferrinizzard.prettier-sql-vscode": "stable",  // Prettier SQL VSCode (2 usuarios)
+    "innoverio.vscode-dbt-power-user": "stable",  // Power User for dbt (2 usuarios)
+    "ivory-lab.jenkinsfile-support": "stable",  // JenkinsFile Support (1 usuarios)
+    "jackfranklin.jackfranklin-elm": "stable",  // jackfranklin-elm (1 usuarios)
+    "jakebathman.mysql-syntax": "stable",  // MySQL Syntax (1 usuarios)
+    "james-yu.latex-workshop": "stable",  // LaTeX Workshop (5 usuarios)
+    "janjoerke.align-by-regex": "stable",  // Align by RegEx (1 usuarios)
+    "jebbs.plantuml": "stable",  // PlantUML (5 usuarios)
+    "jeff-hykin.better-cpp-syntax": "stable",  // Better C++ Syntax (1 usuarios)
+    "joaompinto.vscode-graphviz": "stable",  // Graphviz (dot) language support for Visual Studio Code (1 usuarios)
+    "jorgeserrano.vscode-csharp-snippets": "stable",  // C# Snippets (1 usuarios)
+    "jscearcy.rust-doc-viewer": "stable",  // Rust Doc Viewer (1 usuarios)
+    "kanko.aura-helper": "stable",  // Aura Helper (1 usuarios)
+    "kaysonwu.cpptask": "stable",  // C/C++ Build Task (2 usuarios)
+    "kelosky.ibm-jcl": "stable",  // ibm-jcl (1 usuarios)
+    "kmasif.capl-vector": "stable",  // CAPL (1 usuarios)
+    "koszti.snowflake-driver-for-sqltools": "stable",  // Snowflake Driver for SQLTools (1 usuarios)
+    "krl-officelite.krl-officelite": "stable",  // KUKA KRL OfficeLite (1 usuarios)
+    "leizongmin.node-module-intellisense": "stable",  // Node.js Modules Intellisense (1 usuarios)
+    "liskinlabs.kuka-krl-extension": "stable",  // Kuka Krl (1 usuarios)
+    "llvm-vs-code-extensions.lldb-dap": "stable",  // LLDB DAP (1 usuarios)
+    "llvm-vs-code-extensions.vscode-clangd": "stable",  // clangd (1 usuarios)
+    "local-smart.excel-live-server": "stable",  // XVBA - Live Server VBA (1 usuarios)
+    "lostfields.nodejs-repl": "stable",  // Node.js REPL (1 usuarios)
+    "lucien-martijn.parquet-visualizer": "stable",  // Parquet Visualizer (1 usuarios)
+    "magicstack.magicpython": "stable",  // MagicPython (1 usuarios)
+    "mariodefelipe.sap-btp-governance": "stable",  // SAP BTP on AWS Governance and Security (1 usuarios)
+    "marus25.cortex-debug": "stable",  // Cortex-Debug (1 usuarios)
+    "matangover.mypy": "stable",  // Mypy (1 usuarios)
+    "matepek.vscode-catch2-test-adapter": "stable",  // TestMate C++ (1 usuarios)
+    "mathematic.vscode-latex": "stable",  // LaTeX (3 usuarios)
+    "mathiasfrohlich.kotlin": "stable",  // Kotlin Language (1 usuarios)
+    "matthiesen-technology.yaml-with-script": "stable",  // YAML with Script (1 usuarios)
+    "mattpocock.ts-error-translator": "stable",  // Total TypeScript (2 usuarios)
+    "mblode.pretty-formatter": "stable",  // Pretty Formatter (1 usuarios)
+    "meezilla.json": "stable",  // JSON (6 usuarios)
+    "melvinguerrero.latino-vscode": "stable",  // Latino (1 usuarios)
+    "mengrbatinov.mssql-scripts": "stable",  // MSSQL Scripts and Utilities (1 usuarios)
+    "mikeburgh.xml-format": "stable",  // XML Format (2 usuarios)
+    "mohd-akram.vscode-html-format": "stable",  // HTML Format (3 usuarios)
+    "moozzyk.arduino": "stable",  // Arduino (1 usuarios)
+    "ms-azure-devops.azure-pipelines": "stable",  // Azure Pipelines (1 usuarios)
+    "msjsdiag.vscode-react-native": "stable",  // React Native Tools (1 usuarios)
+    "msoffice.microsoft-office-add-in-debugger": "stable",  // Microsoft Office Add-ins Development Kit (2 usuarios)
+    "mukhija.urscriptsupport": "stable",  // URScript syntax and autocomplete (1 usuarios)
+    "natewallace.angular2-inline": "stable",  // angular2-inline (2 usuarios)
+    "necinc.elmmet": "stable",  // Elm Emmet (1 usuarios)
+    "neikeq.godot-csharp-vscode": "stable",  // C# Tools for Godot (1 usuarios)
+    "nilssoderman.batch-runner": "stable",  // Batch Runner (3 usuarios)
+    "node-projects.vscode-designer-addon": "stable",  // HTML Wysiwyg (What you see is what you get) Designer Addon (1 usuarios)
+    "nokia.ttcn3": "stable",  // TTCN-3 (1 usuarios)
+    "oleg-shilo.cs-script": "stable",  // CS-Script (1 usuarios)
+    "olegkunitsyn.gnucobol-debug": "stable",  // COBOL debugger (1 usuarios)
+    "oliversturm.fix-json": "stable",  // Fix JSON (1 usuarios)
+    "open-liberty.liberty-dev-vscode-ext": "stable",  // Liberty Tools (1 usuarios)
+    "orta.vscode-jest": "stable",  // Jest (1 usuarios)
+    "paulmolluzzo.convert-css-in-js": "stable",  // CSS-in-JS (1 usuarios)
+    "pflannery.vscode-versionlens": "stable",  // Version Lens (1 usuarios)
+    "pixl.unity-toolbox": "stable",  // Unity Toolbox (1 usuarios)
+    "pjbgf.apparmor": "stable",  // AppArmor (1 usuarios)
+    "pranaygp.vscode-css-peek": "stable",  // CSS Peek (1 usuarios)
+    "qris.transforminator": "stable",  // Transforminator (1 usuarios)
+    "raczzalan.webgl-glsl-editor": "stable",  // WebGL GLSL Editor (2 usuarios)
+    "rangav.vscode-thunder-client": "stable",  // Thunder Client (4 usuarios)
+    "rapidapi.vscode-rapidapi-client": "stable",  // RapidAPI Client (1 usuarios)
+    "rbbit.typescript-hero": "stable",  // TypeScript Hero (3 usuarios)
+    "rctay.karma-problem-matcher": "stable",  // Karma Problem Matcher (3 usuarios)
+    "rdebugger.r-debugger": "stable",  // R Debugger (1 usuarios)
+    "regadas.sqltools-trino-driver": "stable",  // Trino Driver (2 usuarios)
+    "revrenlove.c-sharp-utilities": "stable",  // C# Utilities (1 usuarios)
+    "rifi2k.format-html-in-php": "stable",  // Format HTML in PHP (1 usuarios)
+    "robodk.industrial-robots": "stable",  // Industrial Robots (1 usuarios)
+    "rogalmic.bash-debug": "stable",  // Bash Debug (1 usuarios)
+    "rvest.vs-code-prettier-eslint": "stable",  // Prettier ESLint (3 usuarios)
+    "sankooc.pcapviewer": "stable",  // pcapviewer (1 usuarios)
+    "sarthikbhat.json-server": "stable",  // JSON Server (1 usuarios)
+    "sergey-agadzhanov.ampscript": "stable",  // MCFS [AMPScript] (1 usuarios)
+    "serkonda7.vscode-vba": "stable",  // VBA (1 usuarios)
+    "serpen.vbsvscode": "stable",  // VBS (1 usuarios)
+    "siddharthverma.python-super-debugger-mode": "stable",  // Python Super Debugger Mode (1 usuarios)
+    "solomonkinard.chromium-context": "stable",  // Chromium Context (1 usuarios)
+    "svipas.prettier-plus": "stable",  // Prettier+ (1 usuarios)
+    "swiftlang.swift-vscode": "stable",  // Swift (1 usuarios)
+    "tatsuyanakamori.resttext": "stable",  // reStructuredText (1 usuarios)
+    "tauri-apps.tauri-vscode": "stable",  // Tauri (1 usuarios)
+    "tdennis4496.cmantic": "stable",  // C-mantic (1 usuarios)
+    "thelastoutpostworkshop.arduino-maker-workshop": "stable",  // Arduino Maker Workshop (1 usuarios)
+    "theqtcompany.qt": "stable",  // Qt Extension Pack (1 usuarios)
+    "theqtcompany.qt-core": "stable",  // Qt Core (1 usuarios)
+    "theqtcompany.qt-cpp": "stable",  // Qt C++ (1 usuarios)
+    "theqtcompany.qt-python": "stable",  // Qt Python (1 usuarios)
+    "theqtcompany.qt-qml": "stable",  // Qt Qml (1 usuarios)
+    "theqtcompany.qt-ui": "stable",  // Qt UI (1 usuarios)
+    "threatcon.vba-formatter": "stable",  // VBA Formatter (1 usuarios)
+    "timgjones.hlsltools": "stable",  // HLSL Tools (1 usuarios)
+    "timheuer.jsondbg": "stable",  // JSON Debug Visualizer (2 usuarios)
+    "tintinweb.graphviz-interactive-preview": "stable",  // Graphviz Interactive Preview (2 usuarios)
+    "tobermory.es6-string-html": "stable",  // es6-string-html (1 usuarios)
+    "tock.vscode-css-custom-properties": "stable",  // CSS Custom Properties (1 usuarios)
+    "tombonnike.vscode-status-bar-format-toggle": "stable",  // Formatting Toggle (2 usuarios)
+    "tomoki1207.pdf": "stable",  // vscode-pdf (10 usuarios)
+    "trabpukcip.wolf": "stable",  // Wolf (5 usuarios)
+    "uctakeoff.vscode-counter": "stable",  // VS Code Counter (1 usuarios)
+    "unity.unity-debug": "stable",  // Debugger for Unity (1 usuarios)
+    "vectorgroup.capl": "stable",  // Vector CAPL (2 usuarios)
+    "vectorgroup.simulation-and-test-environment": "stable",  // Vector Simulation and Test Environment (1 usuarios)
+    "vomout.latex-workshop-sanity": "stable",  // LaTeX Workshop_sanity (1 usuarios)
+    "vscode-arduino.vscode-arduino-community": "stable",  // Arduino Community Edition (2 usuarios)
+    "wasm-fmt.wasm-fmt": "stable",  // wasm fmt (1 usuarios)
+    "webfreak.code-d": "stable",  // D Programming Language (code-d) (1 usuarios)
+    "well-ar.plantuml": "stable",  // PlantUML - Simple Viewer (2 usuarios)
+    "wtc.cpp-project-template": "stable",  // C++ Project Template (1 usuarios)
+    "xdebug.php-debug": "stable",  // PHP Debug (1 usuarios)
+    "xirider.livecode": "stable",  // LiveCode for python (5 usuarios)
+    "xyz.plsql-language": "stable",  // Language PL/SQL (2 usuarios)
+    "yoavbls.pretty-ts-errors": "stable",  // Pretty TypeScript Errors (2 usuarios)
+    "yseop.vscode-yseopml": "stable",  // YML (Yseop Markup Language) support extension (1 usuarios)
+    "yzhang.markdown-all-in-one": "stable",  // Markdown All In One (12 usuarios)
+    "zignd.html-css-class-completion": "stable",  // IntelliSense for CSS class names in HTML (3 usuarios)
+
+    // --- IA denegada: solo se permite Copilot y lo que publique Microsoft --------
+    // Las que pertenecen a un publisher permitido (Anthropic, Google, AWS,
+    // Salesforce) SOLO quedan bloqueadas por estas entradas por ID.
+    "amazonwebservices.amazon-q-vscode": false, // Amazon Q (AWS) (2 usuarios)
+    "andrepimenta.claude-code-chat": false, // cliente Claude de terceros (1 usuarios)
+    "anthropic.claude-code": false, // Claude Code (Anthropic) (28 usuarios)
+    "blackboxapp.blackbox": false, // Blackbox (2 usuarios)
+    "blackboxapp.blackboxagent": false, // Blackbox (2 usuarios)
+    "codeium.codeium": false, // Windsurf / Codeium (2 usuarios)
+    "codeium.codeium-enterprise-updater": false, // Windsurf / Codeium (1 usuarios)
+    "continue.continue": false, // Continue (agente open-source, modelo a eleccion del usuario) (6 usuarios)
+    "danielsanmedium.dscodegpt": false, // CodeGPT (2 usuarios)
+    "danlambiase.lmstudio-copilot-provider": false, // modelos locales LM Studio (1 usuarios)
+    "google.gemini-cli-vscode-ide-companion": false, // Gemini CLI Companion (Google) (1 usuarios)
+    "google.geminicodeassist": false, // Gemini Code Assist (Google) (5 usuarios)
+    "leonkohli.snapsource": false, // Copy4AI: exporta codigo a servicios externos (2 usuarios)
+    "mintlify.document": false, // Mintlify: genera documentacion enviando el codigo a su API (5 usuarios)
+    "mistralai.mistral-vibe-code": false, // Mistral (1 usuarios)
+    "ollama.ollama": false, // modelos locales Ollama (1 usuarios)
+    "openai.chatgpt": false, // Codex (OpenAI) (22 usuarios)
+    "salesforce.salesforcedx-einstein-gpt": false, // Agentforce Vibes (Salesforce) (8 usuarios)
+    "saoudrizwan.claude-dev": false, // Cline (4 usuarios)
+    "silasnevstad.gpthelper": false, // GPT Helper (1 usuarios)
+    "sourcery.sourcery": false, // Sourcery (4 usuarios)
+    "supermaven.supermaven": false, // Supermaven (1 usuarios)
+    "tabnine.tabnine-vscode": false, // Tabnine (2 usuarios)
+    "zoocodeorganization.zoo-code": false, // Zoo Code (1 usuarios)
+
+    // --- Todo lo demas, bloqueado -------------------------------------------------
+    "*": false
+  }
+}

@@ -4,14 +4,14 @@
 
 ## Project facts
 
-- **Purpose / users:** TODO
-- **Human owner:** TODO — name and email
-- **IT vertical / PO:** TODO — FSK, FSE or FSP; name and contact
-- **Stack:** TODO — Python and/or JavaScript/TypeScript (npm), with exact versions
-- **Identity provider:** TODO — ISAM, CloudIDP or GRP
-- **Data:** TODO — sources, classification and allowed operations
-- **Structure:** TODO — source, tests, docs, migrations, generated/vendor paths
-- **Delivery mode:** local prototype (change only when production approval is recorded)
+- **Purpose / users:** Aplicación para ayudar a los Product Owners a definir, priorizar, planificar y seguir proyectos de forma ágil, con un flujo guiado por objetivos, riesgos y decisiones de negocio.
+- **Human owner:** Albert Garcia Lagares
+- **IT vertical / PO:** unassigned — FSK, FSE or FSP; name and contact
+- **Stack:** Python 3.11 + Streamlit for the local prototype; no production deployment or corporate identity integration in this phase
+- **Identity provider:** unassigned — local fake auth adapter with synthetic identities only; no ISAM, CloudIDP or GRP integration
+- **Data:** Synthetic project-planning data only; no personal, corporate or production data; local JSON/CSV/SQLite fixtures behind replaceable interfaces and read-only prototype operations
+- **Structure:** app/ or src/, tests/, docs/, synthetic fixtures/data/, and generated/vendor folders as needed; keep the prototype self-contained and local
+- **Delivery mode:** local prototype only; move to production only after review and approval
 
 Missing facts block production, not local work. Infer technical defaults from the request and the
 approved stack, and record them here. Never invent a person, approval, data classification or

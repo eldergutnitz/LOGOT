@@ -1,0 +1,4 @@
+# The harness runs with the Python standard library only (no install required).
+# PyYAML is OPTIONAL — if present, it is used for more robust dataset parsing;
+# otherwise a bundled minimal parser handles the shipped YAML.
+PyYAML>=6.0 ; python_version >= "3.8"

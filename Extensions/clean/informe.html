@@ -1,0 +1,311 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inventario de extensiones VS Code</title>
+<style>
+  :root {
+    --bg: #fbfbfa; --panel: #fff; --ink: #1a1a18; --muted: #6b6a66;
+    --line: #e6e4e0; --accent: #c05621; --accent-soft: #f0d9c9;
+    --ok: #2f6f4f; --ok-soft: #dbeee4; --warn: #8a4b1d; --warn-soft: #f7e2d2;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #17161a; --panel: #201f24; --ink: #eceae6; --muted: #a3a09a;
+      --line: #33313a; --accent: #e08d5b; --accent-soft: #4a3225;
+      --ok: #7fc0a0; --ok-soft: #26402f; --warn: #e0a877; --warn-soft: #45301e;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #17161a; --panel: #201f24; --ink: #eceae6; --muted: #a3a09a;
+    --line: #33313a; --accent: #e08d5b; --accent-soft: #4a3225;
+    --ok: #7fc0a0; --ok-soft: #26402f; --warn: #e0a877; --warn-soft: #45301e;
+  }
+  :root[data-theme="light"] {
+    --bg: #fbfbfa; --panel: #fff; --ink: #1a1a18; --muted: #6b6a66;
+    --line: #e6e4e0; --accent: #c05621; --accent-soft: #f0d9c9;
+    --ok: #2f6f4f; --ok-soft: #dbeee4; --warn: #8a4b1d; --warn-soft: #f7e2d2;
+  }
+  body {
+    background: var(--bg); color: var(--ink); margin: 0;
+    font: 15px/1.55 ui-sans-serif, -apple-system, "Segoe UI", system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 960px; margin: 0 auto; padding: 48px 24px 96px; }
+  header { border-bottom: 2px solid var(--ink); padding-bottom: 20px; margin-bottom: 40px; }
+  h1 { font-size: clamp(28px, 5vw, 40px); line-height: 1.1; margin: 0 0 8px; letter-spacing: -.02em; }
+  .sub { color: var(--muted); font-size: 14px; }
+  h2 {
+    font-size: 13px; text-transform: uppercase; letter-spacing: .1em;
+    color: var(--accent); margin: 48px 0 4px;
+  }
+  h2 + .lede { color: var(--muted); font-size: 14px; margin: 0 0 20px; max-width: 62ch; }
+  .kpis { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); }
+  .kpi {
+    background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 16px;
+  }
+  .kpi b { display: block; font-size: 28px; letter-spacing: -.02em; font-variant-numeric: tabular-nums; }
+  .kpi span { color: var(--muted); font-size: 12.5px; }
+  .scroll { overflow-x: auto; margin: 0 -4px; }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; min-width: 480px; }
+  th {
+    text-align: left; font-size: 11.5px; text-transform: uppercase; letter-spacing: .07em;
+    color: var(--muted); font-weight: 600; padding: 8px 10px; border-bottom: 1px solid var(--line);
+  }
+  td { padding: 9px 10px; border-bottom: 1px solid var(--line); vertical-align: baseline; }
+  tr:hover td { background: color-mix(in srgb, var(--accent-soft) 35%, transparent); }
+  .num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .id, .ver { color: var(--muted); font: 12px ui-monospace, "Cascadia Code", Consolas, monospace; }
+  .id { display: block; }
+  .chart { width: 34%; min-width: 90px; }
+  .bar {
+    display: block; height: 7px; width: var(--w); min-width: 2px; border-radius: 4px;
+    background: var(--accent);
+  }
+  .tag-ok, .tag-warn, .sev {
+    font-size: 11.5px; padding: 2px 8px; border-radius: 20px; white-space: nowrap;
+  }
+  .sev { text-transform: uppercase; letter-spacing: .05em; font-size: 10.5px; font-weight: 600; }
+  .sev-alto { background: var(--warn-soft); color: var(--warn); }
+  .sev-medio { background: var(--accent-soft); color: var(--accent); }
+  .why { display: block; color: var(--muted); font-size: 12.5px; margin-top: 3px; max-width: 52ch; }
+  .tag-ok { background: var(--ok-soft); color: var(--ok); }
+  .tag-warn { background: var(--warn-soft); color: var(--warn); }
+  .note {
+    background: var(--panel); border: 1px solid var(--line); border-left: 3px solid var(--accent);
+    border-radius: 8px; padding: 14px 18px; margin: 20px 0; font-size: 14px;
+  }
+  .note ul { margin: 8px 0 0; padding-left: 20px; }
+  .note li { margin: 4px 0; }
+  code { font: 12.5px ui-monospace, Consolas, monospace; background: var(--accent-soft); padding: 1px 5px; border-radius: 4px; }
+  footer { margin-top: 64px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; }
+</style>
+
+<div class="wrap">
+<header>
+  <h1>Inventario de extensiones VS Code</h1>
+  <div class="sub">Flota corporativa &middot; datos depurados de <code>Ext_VCS_FINAL.csv</code> &middot; 30/07/2026</div>
+</header>
+
+<h2>Resumen</h2>
+<p class="lede">De 7.559 equipos inventariados, solo 530 tienen extensiones de VS Code instaladas (7,0%). El resto se inventarió sin ninguna extensión.</p>
+<div class="kpis">
+  <div class="kpi"><b>5.466</b><span>instalaciones limpias</span></div>
+  <div class="kpi"><b>861</b><span>extensiones distintas</span></div>
+  <div class="kpi"><b>523</b><span>usuarios con extensiones</span></div>
+  <div class="kpi"><b>10,3</b><span>extensiones por usuario (mediana 6)</span></div>
+  <div class="kpi"><b>27%</b><span>usuarios con asistente IA</span></div>
+</div>
+
+<h2>Limpieza aplicada</h2>
+<p class="lede">El fichero de origen traía 14.659 filas. Tras depurar quedan 5.466 instalaciones reales.</p>
+<div class="scroll"><table>
+<tr><th>Problema detectado</th><th class="num">Filas</th><th>Tratamiento</th></tr>
+<tr><td>Filas «No se encontraron extensiones»</td><td class="num">7.068</td><td>Separadas a <code>equipos_sin_extensiones.csv</code> como pares equipo+usuario: son cobertura, no instalaciones</td></tr>
+<tr><td>Duplicados (mismo equipo + usuario + extensión)</td><td class="num">2.114</td><td>Colapsados a una instalación; se conserva la versión más alta</td></tr>
+<tr><td>Registros truncados por escritura concurrente</td><td class="num">5</td><td>Reparados con la ruta de instalación (usuario, versión e ID)</td></tr>
+<tr><td>IDs con distinto uso de mayúsculas</td><td class="num">1.304</td><td>Normalizados a minúsculas para poder agrupar</td></tr>
+<tr><td>Nombres sin traducir en el manifiesto (<code>%displayName%</code>)</td><td class="num">434</td><td>Resueltos por ID; 35 extensiones quedan con nombre derivado</td></tr>
+<tr><td>Manifiesto ilegible: ID con la version pegada</td><td class="num">10</td><td>Separado el ID real (si no, Dart no llegaba a la política)</td></tr>
+<tr><td>Texto con doble codificacion (UTF-8 leido como cp1252)</td><td class="num">101</td><td>Reparado; afecta a nombres y categorias</td></tr>
+<tr><td>Extensiones sin repositorio declarado</td><td class="num">112</td><td>Se mantienen; campo vacío marcado como tal</td></tr>
+</table></div>
+
+<h2>Extensiones más instaladas</h2>
+<p class="lede">Top 25 por número de instalaciones. La columna «vers.» indica cuántas versiones distintas conviven en la flota.</p>
+<div class="scroll"><table>
+<tr><th class="num">#</th><th>Extensión</th><th class="num">Inst.</th><th class="num">Usuarios</th><th class="num">Vers.</th><th></th></tr>
+<tr><td class='num'>1</td><td><strong>Python</strong><span class='id'>ms-python.python</span></td><td class='num'>351</td><td class='num'>347</td><td class='num'>27</td><td class='chart'><span class="bar" style="--w:100%"></span></td></tr>
+<tr><td class='num'>2</td><td><strong>Pylance</strong><span class='id'>ms-python.vscode-pylance</span></td><td class='num'>349</td><td class='num'>345</td><td class='num'>29</td><td class='chart'><span class="bar" style="--w:99%"></span></td></tr>
+<tr><td class='num'>3</td><td><strong>Python Debugger</strong><span class='id'>ms-python.debugpy</span></td><td class='num'>345</td><td class='num'>341</td><td class='num'>17</td><td class='chart'><span class="bar" style="--w:98%"></span></td></tr>
+<tr><td class='num'>4</td><td><strong>Python Environments</strong><span class='id'>ms-python.vscode-python-envs</span></td><td class='num'>308</td><td class='num'>305</td><td class='num'>20</td><td class='chart'><span class="bar" style="--w:88%"></span></td></tr>
+<tr><td class='num'>5</td><td><strong>Jupyter Keymap</strong><span class='id'>ms-toolsai.jupyter-keymap</span></td><td class='num'>92</td><td class='num'>91</td><td class='num'>1</td><td class='chart'><span class="bar" style="--w:26%"></span></td></tr>
+<tr><td class='num'>6</td><td><strong>Jupyter</strong><span class='id'>ms-toolsai.jupyter</span></td><td class='num'>89</td><td class='num'>88</td><td class='num'>11</td><td class='chart'><span class="bar" style="--w:25%"></span></td></tr>
+<tr><td class='num'>7</td><td><strong>Jupyter Notebook Renderers</strong><span class='id'>ms-toolsai.jupyter-renderers</span></td><td class='num'>89</td><td class='num'>88</td><td class='num'>6</td><td class='chart'><span class="bar" style="--w:25%"></span></td></tr>
+<tr><td class='num'>8</td><td><strong>Jupyter Cell Tags</strong><span class='id'>ms-toolsai.vscode-jupyter-cell-tags</span></td><td class='num'>89</td><td class='num'>88</td><td class='num'>2</td><td class='chart'><span class="bar" style="--w:25%"></span></td></tr>
+<tr><td class='num'>9</td><td><strong>Jupyter Slide Show</strong><span class='id'>ms-toolsai.vscode-jupyter-slideshow</span></td><td class='num'>89</td><td class='num'>88</td><td class='num'>2</td><td class='chart'><span class="bar" style="--w:25%"></span></td></tr>
+<tr><td class='num'>10</td><td><strong>C/C++</strong><span class='id'>ms-vscode.cpptools</span></td><td class='num'>66</td><td class='num'>66</td><td class='num'>14</td><td class='chart'><span class="bar" style="--w:19%"></span></td></tr>
+<tr><td class='num'>11</td><td><strong>C/C++ Themes</strong><span class='id'>ms-vscode.cpptools-themes</span></td><td class='num'>63</td><td class='num'>63</td><td class='num'>1</td><td class='chart'><span class="bar" style="--w:18%"></span></td></tr>
+<tr><td class='num'>12</td><td><strong>GitHub Copilot Chat</strong><span class='id'>github.copilot-chat</span></td><td class='num'>61</td><td class='num'>60</td><td class='num'>14</td><td class='chart'><span class="bar" style="--w:17%"></span></td></tr>
+<tr><td class='num'>13</td><td><strong>Rainbow CSV</strong><span class='id'>mechatroner.rainbow-csv</span></td><td class='num'>61</td><td class='num'>59</td><td class='num'>3</td><td class='chart'><span class="bar" style="--w:17%"></span></td></tr>
+<tr><td class='num'>14</td><td><strong>CMake Tools</strong><span class='id'>ms-vscode.cmake-tools</span></td><td class='num'>61</td><td class='num'>61</td><td class='num'>8</td><td class='chart'><span class="bar" style="--w:17%"></span></td></tr>
+<tr><td class='num'>15</td><td><strong>.NET Install Tool</strong><span class='id'>ms-dotnettools.vscode-dotnet-runtime</span></td><td class='num'>58</td><td class='num'>57</td><td class='num'>9</td><td class='chart'><span class="bar" style="--w:17%"></span></td></tr>
+<tr><td class='num'>16</td><td><strong>C/C++ Extension Pack</strong><span class='id'>ms-vscode.cpptools-extension-pack</span></td><td class='num'>56</td><td class='num'>56</td><td class='num'>3</td><td class='chart'><span class="bar" style="--w:16%"></span></td></tr>
+<tr><td class='num'>17</td><td><strong>Remote Wsl</strong><span class='id'>ms-vscode-remote.remote-wsl</span></td><td class='num'>50</td><td class='num'>50</td><td class='num'>1</td><td class='chart'><span class="bar" style="--w:14%"></span></td></tr>
+<tr><td class='num'>18</td><td><strong>PowerShell</strong><span class='id'>ms-vscode.powershell</span></td><td class='num'>50</td><td class='num'>50</td><td class='num'>3</td><td class='chart'><span class="bar" style="--w:14%"></span></td></tr>
+<tr><td class='num'>19</td><td><strong>C#</strong><span class='id'>ms-dotnettools.csharp</span></td><td class='num'>46</td><td class='num'>46</td><td class='num'>12</td><td class='chart'><span class="bar" style="--w:13%"></span></td></tr>
+<tr><td class='num'>20</td><td><strong>Spanish Language Pack for Visual Studio Code</strong><span class='id'>ms-ceintl.vscode-language-pack-es</span></td><td class='num'>42</td><td class='num'>41</td><td class='num'>21</td><td class='chart'><span class="bar" style="--w:12%"></span></td></tr>
+<tr><td class='num'>21</td><td><strong>C/C++ DevTools</strong><span class='id'>ms-vscode.cpp-devtools</span></td><td class='num'>42</td><td class='num'>42</td><td class='num'>2</td><td class='chart'><span class="bar" style="--w:12%"></span></td></tr>
+<tr><td class='num'>22</td><td><strong>Live Server</strong><span class='id'>ritwickdey.liveserver</span></td><td class='num'>38</td><td class='num'>38</td><td class='num'>2</td><td class='chart'><span class="bar" style="--w:11%"></span></td></tr>
+<tr><td class='num'>23</td><td><strong>Prettier - Code formatter</strong><span class='id'>esbenp.prettier-vscode</span></td><td class='num'>37</td><td class='num'>37</td><td class='num'>4</td><td class='chart'><span class="bar" style="--w:11%"></span></td></tr>
+<tr><td class='num'>24</td><td><strong>Csdevkit</strong><span class='id'>ms-dotnettools.csdevkit</span></td><td class='num'>35</td><td class='num'>35</td><td class='num'>6</td><td class='chart'><span class="bar" style="--w:10%"></span></td></tr>
+<tr><td class='num'>25</td><td><strong>Material Icon Theme</strong><span class='id'>pkief.material-icon-theme</span></td><td class='num'>34</td><td class='num'>34</td><td class='num'>6</td><td class='chart'><span class="bar" style="--w:10%"></span></td></tr>
+</table></div>
+
+<h2>Adopción de IA</h2>
+<p class="lede">143 de 523 usuarios (27%) tienen algún asistente de código con IA: 220 instalaciones. Además hay 635 instalaciones de herramientas con funciones de IA (MCP, SDK, integraciones cloud) que no son asistentes.</p>
+<div class="scroll"><table>
+<tr><th>Proveedor</th><th>Estado</th><th class="num">Inst.</th><th class="num">Usuarios</th><th></th></tr>
+<tr><td>GitHub</td><td><span class=tag-ok>permitido</span></td><td class='num'>97</td><td class='num'>72</td><td class='chart'><span class="bar" style="--w:100%"></span></td></tr>
+<tr><td>Anthropic</td><td><span class=tag-warn>no permitido</span></td><td class='num'>29</td><td class='num'>28</td><td class='chart'><span class="bar" style="--w:30%"></span></td></tr>
+<tr><td>Microsoft (IntelliCode)</td><td><span class=tag-ok>permitido</span></td><td class='num'>25</td><td class='num'>25</td><td class='chart'><span class="bar" style="--w:26%"></span></td></tr>
+<tr><td>OpenAI</td><td><span class=tag-warn>no permitido</span></td><td class='num'>23</td><td class='num'>23</td><td class='chart'><span class="bar" style="--w:24%"></span></td></tr>
+<tr><td>Salesforce</td><td><span class=tag-warn>no permitido</span></td><td class='num'>8</td><td class='num'>8</td><td class='chart'><span class="bar" style="--w:8%"></span></td></tr>
+<tr><td>Google</td><td><span class=tag-warn>no permitido</span></td><td class='num'>6</td><td class='num'>5</td><td class='chart'><span class="bar" style="--w:6%"></span></td></tr>
+<tr><td>Continue</td><td><span class=tag-warn>no permitido</span></td><td class='num'>6</td><td class='num'>6</td><td class='chart'><span class="bar" style="--w:6%"></span></td></tr>
+<tr><td>Blackbox</td><td><span class=tag-warn>no permitido</span></td><td class='num'>4</td><td class='num'>3</td><td class='chart'><span class="bar" style="--w:4%"></span></td></tr>
+<tr><td>Sourcery</td><td><span class=tag-warn>no permitido</span></td><td class='num'>4</td><td class='num'>4</td><td class='chart'><span class="bar" style="--w:4%"></span></td></tr>
+<tr><td>Cline</td><td><span class=tag-warn>no permitido</span></td><td class='num'>4</td><td class='num'>4</td><td class='chart'><span class="bar" style="--w:4%"></span></td></tr>
+<tr><td>Windsurf/Codeium</td><td><span class=tag-warn>no permitido</span></td><td class='num'>3</td><td class='num'>3</td><td class='chart'><span class="bar" style="--w:3%"></span></td></tr>
+<tr><td>CodeGPT</td><td><span class=tag-warn>no permitido</span></td><td class='num'>2</td><td class='num'>2</td><td class='chart'><span class="bar" style="--w:2%"></span></td></tr>
+<tr><td>Tabnine</td><td><span class=tag-warn>no permitido</span></td><td class='num'>2</td><td class='num'>2</td><td class='chart'><span class="bar" style="--w:2%"></span></td></tr>
+<tr><td>AWS</td><td><span class=tag-warn>no permitido</span></td><td class='num'>2</td><td class='num'>2</td><td class='chart'><span class="bar" style="--w:2%"></span></td></tr>
+<tr><td>Supermaven</td><td><span class=tag-warn>no permitido</span></td><td class='num'>1</td><td class='num'>1</td><td class='chart'><span class="bar" style="--w:1%"></span></td></tr>
+<tr><td>Mistral</td><td><span class=tag-warn>no permitido</span></td><td class='num'>1</td><td class='num'>1</td><td class='chart'><span class="bar" style="--w:1%"></span></td></tr>
+<tr><td>Local (LM Studio)</td><td><span class=tag-warn>no permitido</span></td><td class='num'>1</td><td class='num'>1</td><td class='chart'><span class="bar" style="--w:1%"></span></td></tr>
+<tr><td>Zoo</td><td><span class=tag-warn>no permitido</span></td><td class='num'>1</td><td class='num'>1</td><td class='chart'><span class="bar" style="--w:1%"></span></td></tr>
+<tr><td>Local (Ollama)</td><td><span class=tag-warn>no permitido</span></td><td class='num'>1</td><td class='num'>1</td><td class='chart'><span class="bar" style="--w:1%"></span></td></tr>
+</table></div>
+<div class="note">
+  <strong>La política corporativa permite un único asistente de terceros: GitHub Copilot.</strong>
+  Se admite además la IA que publique Microsoft (IntelliCode, Azure MCP Server, Copilot for Azure).
+  Todo lo demás queda denegado en <code>policy/</code>, incluidos los asistentes de fabricantes
+  cuyo resto de extensiones sí están permitidas: cada uno envía código fuente a un tercero distinto.
+</div>
+
+<h2>Riesgo de seguridad</h2>
+<p class="lede">Triage de exposición a partir del propio inventario. La columna «cubierto» indica cuántas de esas extensiones bloquea ya la política de <code>policy/</code>.</p>
+<div class="scroll"><table>
+<tr><th>Nivel</th><th>Vector</th><th class="num">Ext.</th><th class="num">Inst.</th><th class="num">Usuarios</th><th class="num">Cubierto</th></tr>
+<tr><td><span class='sev sev-alto'>alto</span></td><td><strong>Código fuente hacia terceros sin contrato</strong><span class='why'>Asistentes de IA de proveedores sin acuerdo corporativo. Cada uno envía fragmentos de código a una infraestructura distinta, con términos de retención y entrenamiento que nadie ha revisado.</span></td><td class='num'>22</td><td class='num'>98</td><td class='num'>70</td><td class='num'>22/22</td></tr>
+<tr><td><span class='sev sev-alto'>alto</span></td><td><strong>Servidores MCP</strong><span class='why'>Dan a un agente de IA acceso a herramientas y datos internos (bases de datos, Confluence, dbt). El marketplace no los categoriza como IA, así que pasan desapercibidos en cualquier revisión basada en categorías.</span></td><td class='num'>5</td><td class='num'>19</td><td class='num'>15</td><td class='num'>3/5</td></tr>
+<tr><td><span class='sev sev-alto'>alto</span></td><td><strong>Sin procedencia y sin implantación</strong><span class='why'>Extensiones sin repositorio declarado y con 2 usuarios o menos. Es donde aparecen el typosquatting y los paquetes abandonados: nadie las revisa y nadie las echaría de menos.</span></td><td class='num'>79</td><td class='num'>88</td><td class='num'>53</td><td class='num'>36/79</td></tr>
+<tr><td><span class='sev sev-medio'>medio</span></td><td><strong>Credenciales y acceso a sistemas</strong><span class='why'>Clientes de base de datos, sesiones remotas (SSH, WSL, contenedores) y ejecutores de código. No son inseguras por sí mismas: marcan dónde viven secretos y accesos fuera del gestor corporativo.</span></td><td class='num'>42</td><td class='num'>316</td><td class='num'>121</td><td class='num'>5/42</td></tr>
+<tr><td><span class='sev sev-medio'>medio</span></td><td><strong>Procedencia no verificable</strong><span class='why'>Sin repositorio declarado en el manifiesto: no se puede auditar el código ni seguir sus CVE.</span></td><td class='num'>112</td><td class='num'>348</td><td class='num'>189</td><td class='num'>50/112</td></tr>
+<tr><td><span class='sev sev-medio'>medio</span></td><td><strong>Marcadas como deprecadas</strong><span class='why'>El propio autor las declara sin mantenimiento. No recibirán parches.</span></td><td class='num'>3</td><td class='num'>21</td><td class='num'>20</td><td class='num'>3/3</td></tr>
+</table></div>
+
+<div class="note">
+  <strong>Software sin parchear es el vector con más alcance.</strong>
+  2.165 instalaciones (39,6% del total),
+  repartidas entre 441 usuarios, ejecutan una versión anterior a la más
+  nueva que ya existe en la flota. No es una comparación contra el marketplace: son equipos
+  por detrás de sus propios compañeros, así que la actualización ya está validada internamente.
+  Una lista blanca no arregla esto — hace falta activar la actualización automática de
+  extensiones por política.
+</div>
+
+<div class="scroll"><table>
+<tr><th>Extensión más desactualizada</th><th class="num">Inst. por detrás</th><th class="num">Versiones en flota</th></tr>
+<tr><td><strong>Python</strong><span class='id'>ms-python.python</span></td><td class='num'>347</td><td class='num'>27</td></tr>
+<tr><td><strong>Python Debugger</strong><span class='id'>ms-python.debugpy</span></td><td class='num'>343</td><td class='num'>17</td></tr>
+<tr><td><strong>Python Environments</strong><span class='id'>ms-python.vscode-python-envs</span></td><td class='num'>307</td><td class='num'>20</td></tr>
+<tr><td><strong>Pylance</strong><span class='id'>ms-python.vscode-pylance</span></td><td class='num'>210</td><td class='num'>29</td></tr>
+<tr><td><strong>Jupyter</strong><span class='id'>ms-toolsai.jupyter</span></td><td class='num'>88</td><td class='num'>11</td></tr>
+<tr><td><strong>Jupyter Notebook Renderers</strong><span class='id'>ms-toolsai.jupyter-renderers</span></td><td class='num'>88</td><td class='num'>6</td></tr>
+<tr><td><strong>C/C++</strong><span class='id'>ms-vscode.cpptools</span></td><td class='num'>64</td><td class='num'>14</td></tr>
+<tr><td><strong>CMake Tools</strong><span class='id'>ms-vscode.cmake-tools</span></td><td class='num'>60</td><td class='num'>8</td></tr>
+<tr><td><strong>C#</strong><span class='id'>ms-dotnettools.csharp</span></td><td class='num'>45</td><td class='num'>12</td></tr>
+<tr><td><strong>Csdevkit</strong><span class='id'>ms-dotnettools.csdevkit</span></td><td class='num'>34</td><td class='num'>6</td></tr>
+</table></div>
+
+<h2>Exposición concreta</h2>
+<p class="lede">Las extensiones detrás de los vectores de nivel alto, ordenadas por usuarios afectados. Es la lista corta sobre la que actuar.</p>
+<div class="scroll"><table>
+<tr><th>Extensión</th><th class="num">Usuarios</th><th>Motivo</th></tr>
+<tr><td><strong>Claude Code for VS Code</strong><span class='id'>anthropic.claude-code</span></td><td class='num'>28</td><td>IA no gestionada</td></tr>
+<tr><td><strong>Codex – OpenAI’s coding agent</strong><span class='id'>openai.chatgpt</span></td><td class='num'>22</td><td>IA no gestionada</td></tr>
+<tr><td><strong>Python Environment Manager (deprecated)</strong><span class='id'>donjayamanne.python-environment-manager</span></td><td class='num'>19</td><td>Deprecada</td></tr>
+<tr><td><strong>Azure MCP Server</strong><span class='id'>ms-azuretools.vscode-azure-mcp-server</span></td><td class='num'>9</td><td>Servidor MCP</td></tr>
+<tr><td><strong>Agentforce Vibes</strong><span class='id'>salesforce.salesforcedx-einstein-gpt</span></td><td class='num'>8</td><td>IA no gestionada</td></tr>
+<tr><td><strong>Continue - open-source AI code agent</strong><span class='id'>continue.continue</span></td><td class='num'>6</td><td>IA no gestionada</td></tr>
+<tr><td><strong>Gemini Code Assist</strong><span class='id'>google.geminicodeassist</span></td><td class='num'>5</td><td>IA no gestionada</td></tr>
+<tr><td><strong>Sourcery</strong><span class='id'>sourcery.sourcery</span></td><td class='num'>4</td><td>IA no gestionada</td></tr>
+<tr><td><strong>Cline</strong><span class='id'>saoudrizwan.claude-dev</span></td><td class='num'>4</td><td>IA no gestionada</td></tr>
+<tr><td><strong>Power BI Modeling MCP Server</strong><span class='id'>analysis-services.powerbi-modeling-mcp</span></td><td class='num'>4</td><td>Servidor MCP</td></tr>
+<tr><td><strong>Datamates</strong><span class='id'>altimateai.vscode-altimate-mcp-server</span></td><td class='num'>3</td><td>Servidor MCP</td></tr>
+<tr><td><strong>Windsurf Plugin (formerly Codeium): AI Coding Autocomplete and Chat for Python, JavaScript, TypeScript, and more</strong><span class='id'>codeium.codeium</span></td><td class='num'>2</td><td>IA no gestionada</td></tr>
+</table></div>
+
+<div class="note">
+  <strong>Alcance de este análisis.</strong> Se apoya solo en el inventario: identificadores,
+  versiones, publishers, categorías y repositorios declarados.
+  <ul>
+    <li>No consulta CVE ni avisos de seguridad publicados.</li>
+    <li>No comprueba el estado de publisher verificado ni la firma en el marketplace.</li>
+    <li>No analiza el código de las extensiones ni su tráfico de red.</li>
+    <li>«Desactualizada» es relativo a la propia flota, no a la última versión publicada.</li>
+  </ul>
+  Sirve para priorizar qué revisar, no para declarar nada seguro.
+</div>
+
+<h2>Fragmentación de versiones</h2>
+<p class="lede">Extensiones con más dispersión de versiones. Indica equipos sin actualizar y superficie de parcheo desigual.</p>
+<div class="scroll"><table>
+<tr><th>Extensión</th><th class="num">Versiones</th><th class="num">Inst.</th><th>Rango</th></tr>
+<tr><td><strong>Pylance</strong><span class='id'>ms-python.vscode-pylance</span></td><td class='num'>29</td><td class='num'>349</td><td class='ver'>2023.8.20 &rarr; 2026.3.1</td></tr>
+<tr><td><strong>Python</strong><span class='id'>ms-python.python</span></td><td class='num'>27</td><td class='num'>351</td><td class='ver'>2023.8.0 &rarr; 2026.5.2026070801</td></tr>
+<tr><td><strong>Spanish Language Pack for Visual Studio Code</strong><span class='id'>ms-ceintl.vscode-language-pack-es</span></td><td class='num'>21</td><td class='num'>42</td><td class='ver'>1.65.3 &rarr; 1.130.2026072017</td></tr>
+<tr><td><strong>Python Environments</strong><span class='id'>ms-python.vscode-python-envs</span></td><td class='num'>20</td><td class='num'>308</td><td class='ver'>1.0.0 &rarr; 1.37.2026072401</td></tr>
+<tr><td><strong>Python Debugger</strong><span class='id'>ms-python.debugpy</span></td><td class='num'>17</td><td class='num'>345</td><td class='ver'>2024.0.0 &rarr; 2026.7.12031010</td></tr>
+<tr><td><strong>C/C++</strong><span class='id'>ms-vscode.cpptools</span></td><td class='num'>14</td><td class='num'>66</td><td class='ver'>1.18.5 &rarr; 1.33.4</td></tr>
+<tr><td><strong>GitHub Copilot Chat</strong><span class='id'>github.copilot-chat</span></td><td class='num'>14</td><td class='num'>61</td><td class='ver'>0.23.2 &rarr; 0.48.1</td></tr>
+<tr><td><strong>C#</strong><span class='id'>ms-dotnettools.csharp</span></td><td class='num'>12</td><td class='num'>46</td><td class='ver'>2.22.3 &rarr; 2.146.2</td></tr>
+<tr><td><strong>Jupyter</strong><span class='id'>ms-toolsai.jupyter</span></td><td class='num'>11</td><td class='num'>89</td><td class='ver'>2023.10.1100000000 &rarr; 2025.10.2025101002</td></tr>
+<tr><td><strong>Claude Code for VS Code</strong><span class='id'>anthropic.claude-code</span></td><td class='num'>11</td><td class='num'>28</td><td class='ver'>2.1.101 &rarr; 2.1.220</td></tr>
+<tr><td><strong>Codex – OpenAI’s coding agent</strong><span class='id'>openai.chatgpt</span></td><td class='num'>10</td><td class='num'>22</td><td class='ver'>26.513.21555 &rarr; 26.5721.30844</td></tr>
+<tr><td><strong>.NET Install Tool</strong><span class='id'>ms-dotnettools.vscode-dotnet-runtime</span></td><td class='num'>9</td><td class='num'>58</td><td class='ver'>2.1.1 &rarr; 3.1.0</td></tr>
+<tr><td><strong>CMake Tools</strong><span class='id'>ms-vscode.cmake-tools</span></td><td class='num'>8</td><td class='num'>61</td><td class='ver'>1.18.44 &rarr; 1.24.23</td></tr>
+<tr><td><strong>GitLens — Git supercharged</strong><span class='id'>eamodio.gitlens</span></td><td class='num'>7</td><td class='num'>24</td><td class='ver'>14.2.1 &rarr; 18.3.0</td></tr>
+<tr><td><strong>IBM Z Open Editor</strong><span class='id'>ibm.zopeneditor</span></td><td class='num'>7</td><td class='num'>12</td><td class='ver'>5.1.0 &rarr; 6.6.1</td></tr>
+</table></div>
+
+<h2>Categorías</h2>
+<p class="lede">Categoría principal declarada por cada extensión, ponderada por instalaciones.</p>
+<div class="scroll"><table>
+<tr><th>Categoría</th><th class="num">Inst.</th><th class="num">%</th><th></th></tr>
+<tr><td>Programming Languages</td><td class='num'>1621</td><td class='num'>29,7%</td><td class='chart'><span class="bar" style="--w:100%"></span></td></tr>
+<tr><td>Other</td><td class='num'>1551</td><td class='num'>28,4%</td><td class='chart'><span class="bar" style="--w:96%"></span></td></tr>
+<tr><td>Debuggers</td><td class='num'>592</td><td class='num'>10,8%</td><td class='chart'><span class="bar" style="--w:37%"></span></td></tr>
+<tr><td>Notebooks</td><td class='num'>270</td><td class='num'>4,9%</td><td class='chart'><span class="bar" style="--w:17%"></span></td></tr>
+<tr><td>Extension Packs</td><td class='num'>268</td><td class='num'>4,9%</td><td class='chart'><span class="bar" style="--w:17%"></span></td></tr>
+<tr><td>AI</td><td class='num'>211</td><td class='num'>3,9%</td><td class='chart'><span class="bar" style="--w:13%"></span></td></tr>
+<tr><td>Themes</td><td class='num'>203</td><td class='num'>3,7%</td><td class='chart'><span class="bar" style="--w:13%"></span></td></tr>
+<tr><td>Formatters</td><td class='num'>136</td><td class='num'>2,5%</td><td class='chart'><span class="bar" style="--w:8%"></span></td></tr>
+<tr><td>Snippets</td><td class='num'>106</td><td class='num'>1,9%</td><td class='chart'><span class="bar" style="--w:7%"></span></td></tr>
+<tr><td>Sin categoria</td><td class='num'>89</td><td class='num'>1,6%</td><td class='chart'><span class="bar" style="--w:5%"></span></td></tr>
+<tr><td>Data Science</td><td class='num'>80</td><td class='num'>1,5%</td><td class='chart'><span class="bar" style="--w:5%"></span></td></tr>
+<tr><td>Azure</td><td class='num'>73</td><td class='num'>1,3%</td><td class='chart'><span class="bar" style="--w:5%"></span></td></tr>
+</table></div>
+
+<h2>Publishers</h2>
+<div class="scroll"><table>
+<tr><th>Publisher</th><th class="num">Inst.</th><th class="num">Usuarios</th><th></th></tr>
+<tr><td>ms-python</td><td class='num'>1399</td><td class='num'>347</td><td class='chart'><span class="bar" style="--w:100%"></span></td></tr>
+<tr><td>ms-toolsai</td><td class='num'>465</td><td class='num'>91</td><td class='chart'><span class="bar" style="--w:33%"></span></td></tr>
+<tr><td>ms-vscode</td><td class='num'>443</td><td class='num'>153</td><td class='chart'><span class="bar" style="--w:32%"></span></td></tr>
+<tr><td>salesforce</td><td class='num'>207</td><td class='num'>8</td><td class='chart'><span class="bar" style="--w:15%"></span></td></tr>
+<tr><td>ms-dotnettools</td><td class='num'>144</td><td class='num'>57</td><td class='chart'><span class="bar" style="--w:10%"></span></td></tr>
+<tr><td>github</td><td class='num'>139</td><td class='num'>100</td><td class='chart'><span class="bar" style="--w:10%"></span></td></tr>
+<tr><td>vscjava</td><td class='num'>132</td><td class='num'>22</td><td class='chart'><span class="bar" style="--w:9%"></span></td></tr>
+<tr><td>ms-azuretools</td><td class='num'>116</td><td class='num'>40</td><td class='chart'><span class="bar" style="--w:8%"></span></td></tr>
+<tr><td>ms-vscode-remote</td><td class='num'>115</td><td class='num'>60</td><td class='chart'><span class="bar" style="--w:8%"></span></td></tr>
+<tr><td>ibm</td><td class='num'>86</td><td class='num'>25</td><td class='chart'><span class="bar" style="--w:6%"></span></td></tr>
+<tr><td>redhat</td><td class='num'>72</td><td class='num'>53</td><td class='chart'><span class="bar" style="--w:5%"></span></td></tr>
+<tr><td>mechatroner</td><td class='num'>61</td><td class='num'>59</td><td class='chart'><span class="bar" style="--w:4%"></span></td></tr>
+</table></div>
+
+<h2>Ficheros generados</h2>
+<div class="note">
+  <ul>
+    <li><code>clean/instalaciones.csv</code> — 5.466 filas: una por equipo + usuario + extensión</li>
+    <li><code>clean/extensiones.csv</code> — 861 filas: catálogo agregado con instalaciones, usuarios y versiones</li>
+    <li><code>clean/usuarios.csv</code> — resumen por usuario con uso de IA</li>
+    <li><code>clean/equipos_sin_extensiones.csv</code> — 7.029 equipos inventariados sin extensiones</li>
+    <li><code>clean/data_quality.json</code> — métricas de la depuración</li>
+  </ul>
+</div>
+
+<footer>
+  Generado con <code>clean_extensions.py</code> + <code>build_report.py</code> sobre 14.659 filas de origen.
+  Contiene identificadores de equipo y usuario: tratar como documento interno.
+</footer>
+</div>

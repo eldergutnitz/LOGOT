@@ -1,0 +1,26 @@
+Se requiere por motivo de auditoria guardar los logs generados por los dispositivos OT de fábrica.
+
+La solución propuesta es la siguiente:
+
+En el servidor SEESMTSSAAUC13 con SO Linux Red Hat Enterprise versión 8.1, se configura el servicio Syslog para la recepción de los logs, los logs recibidos se distribuyen en una estructura de carpetas con el siguiente esquema:
+
+srv----logs_ot------	|-- logs_barcelona
+	                		|-- logs centrales
+		                	|-- logs_chapisteria
+		                	|-- logs_centrales
+		                	|-- logs_CROS
+			                |--  logs.montaje
+		                	|-- logs_pinturas
+			                |-- logs_prensas
+			                |-- remote
+
+Los logs se van recibiendo y almacenando en la estructura, cada dispositivo genera un archivo .log que va registrando los eventos y va creciendo conforme le llegan los eventos.
+Como ejemplo de archivos de log se adjuntan dos archivos; 
+kastil1-----bs1---kfs2.log 
+172.21.245.12.log
+Los datos recibidos de los logs han de almacenarse en una base de datos postgres en el propio servidor SEESMTSSAAUC13.
+
+Se requiere ir registrando las modificaciones en la base de datos.
+Posteriormente se requiere un frontend desde el que realizar las consultas en la base de datos, así como visualizar las alarmas que se puedan derivar de los datos recibidos.
+Las alarmas que han de ser  visualizadas en el frontend se definirán más adelante.
+Inicialmente, desde el frontend se podrán solicitar los datos de un taller, un dispositivo, un tipo de alarma en un taller, un tipo de alarma en un dispositivo, la cantidad total de alarmas de un tipo en un taller, y la cantidad de alamas de un tipo en un dispositivo.

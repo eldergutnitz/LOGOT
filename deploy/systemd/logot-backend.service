@@ -1,0 +1,25 @@
+[Unit]
+Description=LOGOT Backend API
+After=network.target postgresql.service
+Wants=postgresql.service
+
+[Service]
+Type=simple
+User=sjim216
+Group=mytra
+WorkingDirectory=/opt/logot/backend
+EnvironmentFile=/opt/logot/backend/.env
+
+# Ajustar si el backend no usa gunicorn
+ExecStart=/opt/logot/backend/.venv/bin/gunicorn -w 2 -k uvicorn.workers.UvicornWorker app.main:app --bind 127.0.0.1:8000
+Restart=always
+RestartSec=5
+
+# Endurecimiento basico
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=full
+ProtectHome=true
+
+[Install]
+WantedBy=multi-user.target

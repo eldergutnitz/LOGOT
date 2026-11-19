@@ -1,0 +1,7 @@
+# Ejecuta el importador cada dia a las 02:00
+# Instalar con: crontab deploy/cron/import_logs.cron
+
+SHELL=/bin/bash
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+
+0 2 * * * /opt/logot/importer/run_import_logs.sh /srv/logs_ot

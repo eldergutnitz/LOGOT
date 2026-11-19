@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LOGOT | Explorador de Syslog</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <main class="app-shell">
+    <header class="hero">
+      <p class="eyebrow">Centro de observabilidad</p>
+      <h1>Explorador de datos SYSLOG</h1>
+      <p class="subtitle">Selecciona una forma de ver los datos de la BDD y filtra el universo de eventos sin cambiar de pantalla.</p>
+    </header>
+
+    <section class="controls card">
+      <div class="control-group api-group">
+        <label for="apiBaseUrl">API base</label>
+        <div class="api-row">
+          <input id="apiBaseUrl" type="text" value="/api" spellcheck="false" aria-label="URL base de API">
+          <button id="loadButton" class="btn btn-primary">Cargar</button>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <label>Vista</label>
+        <div id="viewSelector" class="segmented" role="tablist" aria-label="Seleccion de vista">
+          <button class="segment active" data-view="detalle" role="tab" aria-selected="true">Detalle</button>
+          <button class="segment" data-view="eventos" role="tab" aria-selected="false">Eventos</button>
+          <button class="segment" data-view="dispositivos" role="tab" aria-selected="false">Dispositivos</button>
+          <button class="segment" data-view="timeline" role="tab" aria-selected="false">Timeline</button>
+        </div>
+      </div>
+
+      <div class="filter-grid">
+        <div class="control-group">
+          <label for="searchInput">Texto</label>
+          <input id="searchInput" type="search" placeholder="hostname, device, mensaje...">
+        </div>
+        <div class="control-group">
+          <label for="eventTypeFilter">Tipo de evento</label>
+          <select id="eventTypeFilter">
+            <option value="">Todos</option>
+          </select>
+        </div>
+        <div class="control-group">
+          <label for="fromDate">Desde</label>
+          <input id="fromDate" type="date">
+        </div>
+        <div class="control-group">
+          <label for="toDate">Hasta</label>
+          <input id="toDate" type="date">
+        </div>
+      </div>
+    </section>
+
+    <section class="stats-strip" id="statsStrip" aria-live="polite"></section>
+
+    <section class="card output">
+      <div class="output-head">
+        <h2 id="viewTitle">Vista Detalle</h2>
+        <span id="statusBadge" class="badge">Sin cargar</span>
+      </div>
+      <div id="viewContainer" class="view-container"></div>
+    </section>
+  </main>
+
+  <template id="emptyTemplate">
+    <div class="empty-state">
+      <h3>Sin datos para esta selección</h3>
+      <p>Ajusta filtros o carga una nueva consulta.</p>
+    </div>
+  </template>
+
+  <script src="app.js"></script>
+</body>
+</html>

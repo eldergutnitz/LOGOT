@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LOGOT | Dashboard SYSLOG</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <main class="app-shell dashboard-shell">
+    <header class="hero">
+      <p class="eyebrow">Analítica de observabilidad</p>
+      <h1>Dashboard SYSLOG</h1>
+      <p class="subtitle">Una vista visual del volumen de eventos, los dispositivos con actividad y su evolución por fecha.</p>
+    </header>
+
+    <a class="btn btn-dashboard dashboard-back" href="index.html">Volver</a>
+
+    <div class="dashboard-status">
+      <span id="statusBadge" class="badge">Cargando datos...</span>
+    </div>
+
+    <section class="stats-strip" id="dashboardStats" aria-live="polite"></section>
+
+    <section class="charts-grid" aria-label="Gráficas de actividad SYSLOG">
+      <article class="card chart-card">
+        <h2>Eventos por tipo</h2>
+        <p class="chart-description">Distribución de los tipos de evento más frecuentes.</p>
+        <div id="eventsChart" class="donut-chart" aria-label="Eventos por tipo"></div>
+      </article>
+      <article class="card chart-card">
+        <h2>Actividad por dispositivo</h2>
+        <p class="chart-description">Dispositivos con más registros.</p>
+        <div id="devicesChart" class="donut-chart" aria-label="Actividad por dispositivo"></div>
+      </article>
+      <article class="card chart-card">
+        <h2>Actividad en el tiempo</h2>
+        <p class="chart-description">Registros agrupados por fecha.</p>
+        <div id="timelineChart" class="donut-chart" aria-label="Actividad por fecha"></div>
+      </article>
+    </section>
+  </main>
+  <script src="dashboard.js"></script>
+</body>
+</html>

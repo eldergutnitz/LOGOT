@@ -29,11 +29,14 @@
 
       <div class="control-group">
         <label>Vista</label>
-        <div id="viewSelector" class="segmented" role="tablist" aria-label="Seleccion de vista">
-          <button class="segment active" data-view="detalle" role="tab" aria-selected="true">Detalle</button>
-          <button class="segment" data-view="eventos" role="tab" aria-selected="false">Eventos</button>
-          <button class="segment" data-view="dispositivos" role="tab" aria-selected="false">Dispositivos</button>
-          <button class="segment" data-view="timeline" role="tab" aria-selected="false">Timeline</button>
+        <div class="view-actions">
+          <div id="viewSelector" class="segmented" role="tablist" aria-label="Seleccion de vista">
+            <button class="segment active" data-view="detalle" role="tab" aria-selected="true">Detalle</button>
+            <button class="segment" data-view="eventos" role="tab" aria-selected="false">Eventos</button>
+            <button class="segment" data-view="dispositivos" role="tab" aria-selected="false">Dispositivos</button>
+            <button class="segment" data-view="timeline" role="tab" aria-selected="false">Timeline</button>
+          </div>
+          <a class="segment dashboard-link" href="dashboard.html">Dashboard <span aria-hidden="true">↗</span></a>
         </div>
       </div>
 

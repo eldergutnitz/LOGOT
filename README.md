@@ -10,6 +10,7 @@ Documentación y plantillas de apoyo para el desarrollo asistido por IA.
 ## Frontend para visualizar datos de BDD (syslog)
 
 Se incluye un frontend estático en `frontend/` para explorar los datos de `syslog_device_logs`.
+La imagen de cabecera de SEAT y CUPRA se sirve desde `frontend/` junto a las páginas del explorador y el dashboard. Al sustituirla, actualiza sus dimensiones si cambian y la versión `v` en ambas páginas para evitar que el navegador muestre la imagen anterior.
 
 ### Qué permite
 

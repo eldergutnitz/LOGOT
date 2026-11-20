@@ -55,9 +55,10 @@ body {
   isolation: isolate;
   overflow: hidden;
   min-height: 208px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) clamp(150px, 23vw, 260px);
+  align-items: center;
+  gap: clamp(16px, 3vw, 36px);
   background: linear-gradient(112deg, #1a1c1f 0%, #111315 75%);
   color: var(--ink);
   border: 1px solid #383a3d;
@@ -65,6 +66,15 @@ body {
   padding: clamp(24px, 4vw, 46px);
   box-shadow: var(--shadow);
   animation: rise-in 550ms ease both;
+}
+
+.hero-logo {
+  display: block;
+  width: 100%;
+  height: auto;
+  justify-self: end;
+  border: 1px solid #704333;
+  border-radius: var(--radius);
 }
 
 .hero::after {
@@ -629,6 +639,11 @@ tr:hover td {
   .hero {
     min-height: 190px;
     padding: 24px 20px;
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .hero-logo {
+    max-width: 180px;
   }
 
   .btn-dashboard {

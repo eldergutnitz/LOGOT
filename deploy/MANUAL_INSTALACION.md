@@ -1,6 +1,6 @@
 # Manual de instalación y despliegue de LOGOT
 
-Versión: 1.0
+Versión: 1.2
 Sistema operativo objetivo: RHEL 8 x86_64
 Arquitectura: PostgreSQL + importador Python + backend FastAPI + Nginx + frontend estático
 
@@ -203,6 +203,27 @@ PGUSER=sysloguser
 PGPASSWORD=CAMBIAR_PASSWORD
 ```
 
+Contenido recomendado para una instalación local:
+
+```env
+PGHOST=/var/run/postgresql
+PGPORT=5432
+PGDATABASE=syslogdb
+PGUSER=sysloguser
+PGPASSWORD=CAMBIAR_PASSWORD
+```
+
+El uso del socket Unix evita depender de DNS o de la resolución de `127.0.0.1`. El usuario `sysloguser` debe tener acceso según `pg_hba.conf`.
+
+El archivo debe usar finales de línea LF. Antes de activar el servicio:
+
+```bash
+sudo sed -i 's/\r$//' /opt/logot/importer/.env
+sudo sed -i 's/\r$//' /opt/logot/importer/run_import_logs.sh
+sudo chmod 600 /opt/logot/importer/.env
+sudo chmod 755 /opt/logot/importer/run_import_logs.sh
+```
+
 Instale la dependencia Python del importador:
 
 ```bash
@@ -236,29 +257,68 @@ sudo tail -n 100 /var/log/logot/import_logs.log
 
 ## 7. Ejecución diaria del importador
 
-Instale el cron para el usuario operativo:
+La opción recomendada en RHEL es un timer systemd.
+
+Cree `/etc/systemd/system/logot-import.service`:
+
+```ini
+[Unit]
+Description=Importación de logs LOGOT
+After=network.target postgresql.service
+
+[Service]
+Type=oneshot
+ExecStart=/opt/logot/importer/run_import_logs.sh /srv/logs_ot
+```
+
+Cree `/etc/systemd/system/logot-import.timer`:
+
+```ini
+[Unit]
+Description=Ejecuta la importación LOGOT a las 02:00
+
+[Timer]
+OnCalendar=*-*-* 02:00:00
+Persistent=true
+Unit=logot-import.service
+
+[Install]
+WantedBy=timers.target
+```
+
+Active y valide:
+
+```bash
+sudo systemctl daemon-reload
+sudo systemctl enable --now logot-import.timer
+sudo systemctl status logot-import.timer --no-pager
+systemctl list-timers logot-import.timer --all
+```
+
+Ejecute manualmente y revise el registro:
+
+```bash
+sudo systemctl start logot-import.service
+sudo systemctl status logot-import.service --no-pager
+sudo tail -n 100 /var/log/logot/import_logs.log
+sudo journalctl -u logot-import.service -n 100 --no-pager
+```
+
+También puede utilizar cron. Para ello instale:
 
 ```bash
 sudo cp deploy/cron/import_logs.cron /etc/cron.d/import_logs
 sudo chmod 644 /etc/cron.d/import_logs
-sudo crontab -u sjim216 -l
+sudo systemctl enable --now crond
 ```
 
-La entrada incluida ejecuta una vez al día:
+Entrada cron diaria:
 
 ```cron
 0 2 * * * /opt/logot/importer/run_import_logs.sh /srv/logs_ot
 ```
 
-El wrapper utiliza `flock`, por lo que impide ejecuciones simultáneas.
-
-Verifique el resultado:
-
-```bash
-sudo systemctl status crond --no-pager
-sudo crontab -u sjim216 -l
-sudo tail -n 100 /var/log/logot/import_logs.log
-```
+Cron y systemd timer no deben activarse simultáneamente para evitar ejecuciones duplicadas. El wrapper usa `flock` como protección adicional.
 
 ## 8. Instalación de Python y dependencias del backend
 
@@ -414,6 +474,22 @@ sudo find /opt/logot/frontend/dist -type f -exec chmod 644 {} \;
 ```
 
 El frontend usa la URL relativa `/api` por defecto y debe mantener ese valor en su interfaz.
+
+Versión instalada: `v1.2`. Los archivos HTML incluyen parámetros de caché en CSS y JavaScript. Después de actualizar el frontend, recargue con `Ctrl+F5` o una ventana privada.
+
+Comportamiento de la versión 1.2:
+
+- `Vista Detalle`: muestra como máximo los últimos 200 eventos devueltos por la API.
+- Tarjetas `Registros`, `Tipos de evento`, `Dispositivos` y `Hosts`: usan estadísticas globales calculadas por el backend sobre toda la tabla.
+- Dashboard: consume agregados globales desde `/api/syslog/stats`.
+- El título de cada página muestra `v1.2`.
+
+Endpoints utilizados:
+
+```text
+GET /api/syslog/logs?limit=200&offset=0
+GET /api/syslog/stats
+```
 
 ## 12. Configuración de Nginx
 

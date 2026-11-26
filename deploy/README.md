@@ -2,6 +2,16 @@
 
 Esta carpeta contiene una plantilla base para desplegar frontend, backend, PostgreSQL e importador de logs en un unico servidor.
 
+## Cambios de la version 1.2
+
+- El importador admite líneas syslog con y sin PID y deriva el hostname desde una IP presente en el nombre del archivo.
+- El importador puede usar el socket Unix `/var/run/postgresql`.
+- El wrapper y los archivos de configuración deben usar finales de línea LF.
+- La importación programada puede realizarse con `logot-import.timer` además de cron.
+- El frontend muestra como máximo 200 mensajes en Vista Detalle.
+- Las estadísticas de la vista y del dashboard se calculan globalmente desde `/api/syslog/stats`.
+- El frontend muestra la versión `v1.2`.
+
 ## Estructura propuesta
 
 - `/opt/logot/frontend/dist`: build estatico del frontend
@@ -20,6 +30,8 @@ Esta carpeta contiene una plantilla base para desplegar frontend, backend, Postg
 - `scripts/run_import_logs.sh`: wrapper robusto para el importador
 - `cron/import_logs.cron`: entrada cron diaria con lock y log
 - `checklists/go-live-checklist.md`: checklist de salida a produccion
+- `systemd/logot-import.service`: ejecución manual o activada por timer del importador.
+- `systemd/logot-import.timer`: programación diaria a las 02:00.
 
 ## Pasos rapidos
 

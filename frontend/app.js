@@ -2,6 +2,7 @@ const state = {
   view: "detalle",
   rows: [],
   filteredRows: [],
+  totalStats: null,
   loading: false,
   error: "",
 };
@@ -75,17 +76,21 @@ async function loadData() {
 
   try {
     const apiBase = sanitizeApiBase(el.apiBaseUrl.value);
-    const rows = await fetchRows(apiBase);
+    const [rows, totalStats] = await Promise.all([
+      fetchRecentRows(apiBase, 200),
+      fetchStats(apiBase),
+    ]);
 
     state.rows = normalizeRows(rows);
+    state.totalStats = totalStats;
     populateEventTypeFilter(state.rows);
 
     applyFiltersAndRender();
-    setStatus(`Conectado: ${state.rows.length} registros`, "ok");
+    setStatus(`Conectado: ${totalStats.total} registros totales`, "ok");
   } catch (error) {
     console.error(error);
-    // Fallback local for offline demos and first-run UX.
     state.rows = normalizeRows(FALLBACK_ROWS);
+    state.totalStats = null;
     populateEventTypeFilter(state.rows);
 
     applyFiltersAndRender();
@@ -95,25 +100,27 @@ async function loadData() {
   }
 }
 
-function sanitizeApiBase(rawValue) {
-  const value = (rawValue || "").trim();
-  if (!value) return "/api";
-  return value.endsWith("/") ? value.slice(0, -1) : value;
-}
-
-async function fetchRows(apiBase) {
-  const url = `${apiBase}/syslog/logs?limit=2000`;
-  const response = await fetch(url);
-  if (!response.ok) {
-    throw new Error(`HTTP ${response.status}: ${url}`);
-  }
+async function fetchRecentRows(apiBase, limit) {
+  const response = await fetch(`${apiBase}/syslog/logs?limit=${limit}&offset=0`);
+  if (!response.ok) throw new Error(`HTTP ${response.status}`);
 
   const payload = await response.json();
   if (Array.isArray(payload)) return payload;
   if (Array.isArray(payload.items)) return payload.items;
   if (Array.isArray(payload.data)) return payload.data;
-
   throw new Error("Formato de respuesta no soportado");
+}
+
+async function fetchStats(apiBase) {
+  const response = await fetch(`${apiBase}/syslog/stats`);
+  if (!response.ok) throw new Error(`HTTP ${response.status}`);
+  return response.json();
+}
+
+function sanitizeApiBase(rawValue) {
+  const value = (rawValue || "").trim();
+  if (!value) return "/api";
+  return value.endsWith("/") ? value.slice(0, -1) : value;
 }
 
 function normalizeRows(rows) {
@@ -173,12 +180,22 @@ function applyFiltersAndRender() {
 
 function renderStats() {
   const rows = state.filteredRows.length ? state.filteredRows : state.rows;
-  const eventTypes = new Set(rows.map((r) => r.event_type).filter(Boolean)).size;
-  const devices = new Set(rows.map((r) => r.device).filter(Boolean)).size;
-  const hosts = new Set(rows.map((r) => r.hostname).filter(Boolean)).size;
+
+  const eventTypes = state.totalStats
+    ? state.totalStats.event_types
+    : new Set(rows.map((r) => r.event_type).filter(Boolean)).size;
+  const devices = state.totalStats
+    ? state.totalStats.devices
+    : new Set(rows.map((r) => r.device).filter(Boolean)).size;
+  const hosts = state.totalStats
+    ? state.totalStats.hosts
+    : new Set(rows.map((r) => r.hostname).filter(Boolean)).size;
+  const total = state.totalStats
+    ? state.totalStats.total
+    : rows.length;
 
   el.statsStrip.innerHTML = "";
-  el.statsStrip.appendChild(renderStat("Registros", String(rows.length)));
+  el.statsStrip.appendChild(renderStat("Registros", String(total)));
   el.statsStrip.appendChild(renderStat("Tipos de evento", String(eventTypes)));
   el.statsStrip.appendChild(renderStat("Dispositivos", String(devices)));
   el.statsStrip.appendChild(renderStat("Hosts", String(hosts)));
@@ -198,7 +215,9 @@ function renderStat(label, value) {
 }
 
 function render() {
-  el.viewTitle.textContent = viewTitles[state.view] || "Vista";
+  el.viewTitle.textContent = state.view === "detalle" && state.totalStats
+    ? `Vista Detalle — ${state.totalStats.total} registros totales`
+    : viewTitles[state.view] || "Vista";
   el.viewContainer.innerHTML = "";
 
   if (!state.filteredRows.length) {

@@ -30,43 +30,38 @@ loadDashboard();
 
 async function loadDashboard() {
   try {
-    const response = await fetch("/api/syslog/logs?limit=2000");
+    const response = await fetch("/api/syslog/stats");
     if (!response.ok) {
-      throw new Error(`HTTP ${response.status}: /api/syslog/logs?limit=2000`);
+      throw new Error(`HTTP ${response.status}: /api/syslog/stats`);
     }
 
-    const payload = await response.json();
-    const rows = Array.isArray(payload) ? payload : payload.items ?? payload.data;
-    if (!Array.isArray(rows)) {
-      throw new Error("Formato de respuesta no soportado");
-    }
-
-    renderDashboard(rows);
-    setStatus(`Conectado: ${rows.length} registros`, "ok");
+    const stats = await response.json();
+    renderDashboard(stats);
+    setStatus(`Conectado: ${stats.total} registros totales`, "ok");
   } catch (error) {
     console.error(error);
-    renderDashboard(FALLBACK_ROWS);
+    renderFallbackDashboard();
     setStatus("Sin API: usando datos de ejemplo", "error");
   }
 }
 
-function renderDashboard(rows) {
-  renderStats(rows);
-  renderChart(charts.events, countBy(rows, (row) => row.event_type || "OTHER"));
-  renderChart(charts.devices, countBy(rows, (row) => row.device || "N/A"));
-  renderChart(charts.timeline, countBy(rows, (row) => row.log_date || "Sin fecha"), true);
+function renderDashboard(stats) {
+  renderStatsFromApi(stats);
+  renderChart(charts.events, stats.event_distribution || []);
+  renderChart(charts.devices, stats.device_distribution || []);
+  renderChart(charts.timeline, stats.timeline_distribution || [], true);
 }
 
-function renderStats(rows) {
-  const stats = [
-    ["Registros", rows.length],
-    ["Tipos de evento", new Set(rows.map((row) => row.event_type).filter(Boolean)).size],
-    ["Dispositivos", new Set(rows.map((row) => row.device).filter(Boolean)).size],
-    ["Hosts", new Set(rows.map((row) => row.hostname).filter(Boolean)).size],
+function renderStatsFromApi(stats) {
+  const values = [
+    ["Registros", stats.total],
+    ["Tipos de evento", stats.event_types],
+    ["Dispositivos", stats.devices],
+    ["Hosts", stats.hosts],
   ];
 
   const container = document.getElementById("dashboardStats");
-  container.replaceChildren(...stats.map(([label, value]) => {
+  container.replaceChildren(...values.map(([label, value]) => {
     const card = document.createElement("article");
     card.className = "stat";
     const title = document.createElement("p");
@@ -76,6 +71,18 @@ function renderStats(rows) {
     card.append(title, total);
     return card;
   }));
+}
+
+function renderFallbackDashboard() {
+  renderDashboard({
+    total: 0,
+    event_types: 0,
+    devices: 0,
+    hosts: 0,
+    event_distribution: [],
+    device_distribution: [],
+    timeline_distribution: [],
+  });
 }
 
 function countBy(rows, getKey) {

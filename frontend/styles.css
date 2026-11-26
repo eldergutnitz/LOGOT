@@ -609,6 +609,21 @@ tr:hover td {
   color: var(--ink-soft);
 }
 
+.app-version {
+  display: inline-block;
+  margin-left: 0.35em;
+  padding: 0.12em 0.55em;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #f4f7ff;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 0.28em;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  vertical-align: middle;
+}
+
 @keyframes rise-in {
   from {
     opacity: 0;

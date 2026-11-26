@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
@@ -7,18 +7,18 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=20261126-201">
 </head>
 <body>
   <div class="bg-grid" aria-hidden="true"></div>
   <main class="app-shell dashboard-shell">
     <header class="hero">
       <div>
-        <p class="eyebrow">Analítica de observabilidad</p>
-        <h1>Dashboard SYSLOG</h1>
-        <p class="subtitle">Una vista visual del volumen de eventos, los dispositivos con actividad y su evolución por fecha.</p>
+        <p class="eyebrow">AnalÃ­tica de observabilidad</p>
+        <h1>Dashboard SYSLOG <span class="app-version">v1.2</span></h1>
+        <p class="subtitle">Una vista visual del volumen de eventos, los dispositivos con actividad y su evoluciÃ³n por fecha.</p>
       </div>
-      <img class="hero-logo" src="portda-cupra-1200x670.jpg?v=2" alt="SEAT y CUPRA — Información interna" width="1888" height="1056">
+      <img class="hero-logo" src="portda-cupra-1200x670.jpg?v=2" alt="SEAT y CUPRA â€” InformaciÃ³n interna" width="1888" height="1056">
     </header>
 
     <a class="btn btn-dashboard dashboard-back" href="index.html">Volver</a>
@@ -29,15 +29,15 @@
 
     <section class="stats-strip" id="dashboardStats" aria-live="polite"></section>
 
-    <section class="charts-grid" aria-label="Gráficas de actividad SYSLOG">
+    <section class="charts-grid" aria-label="GrÃ¡ficas de actividad SYSLOG">
       <article class="card chart-card">
         <h2>Eventos por tipo</h2>
-        <p class="chart-description">Distribución de los tipos de evento más frecuentes.</p>
+        <p class="chart-description">DistribuciÃ³n de los tipos de evento mÃ¡s frecuentes.</p>
         <div id="eventsChart" class="donut-chart" aria-label="Eventos por tipo"></div>
       </article>
       <article class="card chart-card">
         <h2>Actividad por dispositivo</h2>
-        <p class="chart-description">Dispositivos con más registros.</p>
+        <p class="chart-description">Dispositivos con mÃ¡s registros.</p>
         <div id="devicesChart" class="donut-chart" aria-label="Actividad por dispositivo"></div>
       </article>
       <article class="card chart-card">
@@ -47,6 +47,6 @@
       </article>
     </section>
   </main>
-  <script src="dashboard.js"></script>
+  <script src="dashboard.js?v=20261126-201"></script>
 </body>
 </html>

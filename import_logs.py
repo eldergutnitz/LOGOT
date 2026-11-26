@@ -16,6 +16,21 @@ PATTERN = re.compile(
     r"(?P<msg>.*)$"
 )
 
+PATTERN_WITHOUT_PID = re.compile(
+    r"^(?P<mon>[A-Z][a-z]{2})\s+(?P<day>\d{1,2})\s+"
+    r"(?P<time>\d{2}:\d{2}:\d{2})\s+"
+    r"(?P<host>\S+)\s+"
+    r"(?P<device>\S+)\s+"
+    r"(?P<msg>.*)$"
+)
+
+ISO_PATTERN = re.compile(
+    r"^(?P<timestamp>\d{4}-\d{2}-\d{2}[T\s]\d{2}:\d{2}:\d{2}(?:\.\d+)?(?:Z|[+-]\d{2}:?\d{2})?)\s+"
+    r"(?:(?P<host>[^\s]+)\s+)?"
+    r"(?:(?P<device>[^\s:\[]+)(?:\[(?P<pid>\d+)\])?[\s:]+)?"
+    r"(?P<msg>.*)$"
+)
+
 TARGET_FOLDERS = {
     "logs_barcelona",
     "logs centrales",
@@ -45,47 +60,91 @@ def detect_event_type(message):
     return "OTHER"
 
 
-def parse_line(line):
+def parse_line(line, fallback_hostname=None):
     line = line.strip()
     if not line:
         return None
 
     m = PATTERN.match(line)
-    if not m:
+    if m:
+        mon = m.group("mon")
+        day = int(m.group("day"))
+        time_str = m.group("time")
+        year = datetime.now().year
+
+        try:
+            dt = datetime.strptime(f"{year} {mon} {day} {time_str}", "%Y %b %d %H:%M:%S")
+        except ValueError:
+            dt = None
+
+        message = m.group("msg").strip()
         return {
-            "log_date": None,
-            "log_time": None,
-            "hostname": None,
-            "device": None,
-            "process_id": None,
-            "event_type": "UNPARSED",
-            "message": line,
+            "log_date": dt.date() if dt else None,
+            "log_time": dt.time() if dt else None,
+            "hostname": m.group("host"),
+            "device": m.group("device").strip(),
+            "process_id": int(m.group("pid")),
+            "event_type": detect_event_type(message),
+            "message": message,
             "raw_line": line,
         }
 
-    mon = m.group("mon")
-    day = int(m.group("day"))
-    time_str = m.group("time")
-    year = datetime.now().year
+    m = PATTERN_WITHOUT_PID.match(line)
+    if m:
+        mon = m.group("mon")
+        day = int(m.group("day"))
+        time_str = m.group("time")
+        year = datetime.now().year
 
-    try:
-        dt = datetime.strptime(f"{year} {mon} {day} {time_str}", "%Y %b %d %H:%M:%S")
-    except ValueError:
-        dt = None
+        try:
+            dt = datetime.strptime(f"{year} {mon} {day} {time_str}", "%Y %b %d %H:%M:%S")
+        except ValueError:
+            dt = None
 
-    message = m.group("msg").strip()
-    device = m.group("device").strip()
-    hostname = m.group("host")
-    pid = int(m.group("pid"))
+        message = m.group("msg").strip()
+        return {
+            "log_date": dt.date() if dt else None,
+            "log_time": dt.time() if dt else None,
+            "hostname": m.group("host"),
+            "device": m.group("device").strip(),
+            "process_id": None,
+            "event_type": detect_event_type(message),
+            "message": message,
+            "raw_line": line,
+        }
+
+    m = ISO_PATTERN.match(line)
+    if m:
+        timestamp = m.group("timestamp")
+        try:
+            normalized = timestamp.replace("Z", "+00:00")
+            dt = datetime.fromisoformat(normalized)
+        except ValueError:
+            dt = None
+
+        message = m.group("msg").strip()
+        hostname = m.group("host") or fallback_hostname
+        device = (m.group("device") or "").strip() or None
+        pid_text = m.group("pid")
+        return {
+            "log_date": dt.date() if dt else None,
+            "log_time": dt.time() if dt else None,
+            "hostname": hostname,
+            "device": device,
+            "process_id": int(pid_text) if pid_text else None,
+            "event_type": detect_event_type(message),
+            "message": message,
+            "raw_line": line,
+        }
 
     return {
-        "log_date": dt.date() if dt else None,
-        "log_time": dt.time() if dt else None,
-        "hostname": hostname,
-        "device": device,
-        "process_id": pid,
-        "event_type": detect_event_type(message),
-        "message": message,
+        "log_date": None,
+        "log_time": None,
+        "hostname": fallback_hostname,
+        "device": None,
+        "process_id": None,
+        "event_type": "UNPARSED",
+        "message": line,
         "raw_line": line,
     }
 
@@ -157,19 +216,11 @@ def iter_target_log_files(base_dir):
     if not os.path.isdir(base_dir):
         raise FileNotFoundError(f"No existe el directorio base: {base_dir}")
 
-    target_lower = {name.lower() for name in TARGET_FOLDERS}
-
-    for entry in sorted(os.listdir(base_dir)):
-        full_entry = os.path.join(base_dir, entry)
-        if not os.path.isdir(full_entry):
-            continue
-        if entry.lower() not in target_lower:
-            continue
-
-        for root, _, files in os.walk(full_entry):
-            for filename in sorted(files):
-                if filename.lower().endswith(".log"):
-                    yield os.path.join(root, filename)
+    for root, dirs, files in os.walk(base_dir):
+        dirs.sort()
+        for filename in sorted(files):
+            if filename.lower().endswith(".log"):
+                yield os.path.join(root, filename)
 
 
 def flush_valid_rows(cur, rows):
@@ -250,13 +301,27 @@ def import_logs(base_dir, db_host, db_name, db_user, db_password, db_port):
             try:
                 with open(file_path, "r", encoding="utf-8", errors="replace") as f:
                     for line_number, line in enumerate(f, start=1):
-                        parsed = parse_line(line)
+                        parsed = parse_line(
+                            line,
+                            fallback_hostname=extract_ip_from_source(file_path)
+                            or os.path.basename(file_path),
+                        )
                         if parsed is None:
                             continue
 
                         total_lines += 1
 
                         if parsed["hostname"] is None and parsed["device"] is None:
+                            parsed_bad += 1
+                            rejected_rows.append(
+                                (
+                                    file_path,
+                                    line_number,
+                                    parsed["raw_line"],
+                                    "regex_no_match",
+                                )
+                            )
+                        elif parsed["event_type"] == "UNPARSED":
                             parsed_bad += 1
                             rejected_rows.append(
                                 (
@@ -320,6 +385,21 @@ def import_logs(base_dir, db_host, db_name, db_user, db_password, db_port):
     print(f"Inserted rejected rows: {inserted_rejected}")
     print(f"Ignored rejected duplicates: {duplicates_rejected}")
     print(f"Unreadable files skipped: {skipped_unreadable_files}")
+
+
+IP_PATTERN = re.compile(r"(?<!\d)(?:\d{1,3}\.){3}\d{1,3}(?!\d)")
+
+
+def extract_ip_from_source(source_path):
+    basename = os.path.basename(source_path)
+    match = IP_PATTERN.search(basename)
+    if not match:
+        return None
+
+    ip = match.group(0)
+    if all(int(part) <= 255 for part in ip.split(".")):
+        return ip
+    return None
 
 
 if __name__ == "__main__":

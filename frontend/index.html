@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=20261126-201">
 </head>
 <body>
   <div class="bg-grid" aria-hidden="true"></div>
@@ -15,10 +15,10 @@
     <header class="hero">
       <div>
         <p class="eyebrow">Centro de observabilidad</p>
-        <h1>Explorador de datos SYSLOG</h1>
+        <h1>Explorador de datos SYSLOG <span class="app-version">v1.2</span></h1>
         <p class="subtitle">Selecciona una forma de ver los datos de la BDD y filtra el universo de eventos sin cambiar de pantalla.</p>
       </div>
-      <img class="hero-logo" src="portda-cupra-1200x670.jpg?v=2" alt="SEAT y CUPRA — Información interna" width="1888" height="1056">
+      <img class="hero-logo" src="portda-cupra-1200x670.jpg?v=2" alt="SEAT y CUPRA â€” InformaciÃ³n interna" width="1888" height="1056">
     </header>
 
     <section class="controls card">
@@ -39,7 +39,7 @@
             <button class="segment" data-view="dispositivos" role="tab" aria-selected="false">Dispositivos</button>
             <button class="segment" data-view="timeline" role="tab" aria-selected="false">Timeline</button>
           </div>
-          <a class="segment dashboard-link" href="dashboard.html">Dashboard <span aria-hidden="true">↗</span></a>
+          <a class="segment dashboard-link" href="dashboard.html">Dashboard <span aria-hidden="true">â†—</span></a>
         </div>
       </div>
 
@@ -78,11 +78,11 @@
 
   <template id="emptyTemplate">
     <div class="empty-state">
-      <h3>Sin datos para esta selección</h3>
+      <h3>Sin datos para esta selecciÃ³n</h3>
       <p>Ajusta filtros o carga una nueva consulta.</p>
     </div>
   </template>
 
-  <script src="app.js"></script>
+  <script src="app.js?v=20261126-201"></script>
 </body>
 </html>

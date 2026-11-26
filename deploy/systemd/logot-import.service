@@ -1,0 +1,8 @@
+[Unit]
+Description=Importación de logs LOGOT
+After=network.target postgresql.service
+Wants=postgresql.service
+
+[Service]
+Type=oneshot
+ExecStart=/opt/logot/importer/run_import_logs.sh /srv/logs_ot
